@@ -1,0 +1,79 @@
+/* Custom Styles */
+
+/* Base settings and performance utilities */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Custom Gradients and shadows */
+.shadow-premium {
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #F6FAF7;
+}
+::-webkit-scrollbar-thumb {
+    background: #2E7D32;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1B5E20;
+}
+
+/* Mobile Nav Menu Lines (Hamburger) */
+#mobile-menu-btn.active .burger-line-1 {
+    transform: translateY(7px) rotate(45deg);
+}
+#mobile-menu-btn.active .burger-line-2 {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+#mobile-menu-btn.active .burger-line-3 {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Member Card hover image transition */
+.member-card img {
+    will-change: transform;
+}
+
+/* Accordion transition for Districts */
+.accordion-content {
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, margin 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+.accordion-item.active .accordion-header {
+    background-color: #F6FAF7;
+    border-color: #1B5E20;
+}
+
+/* Gallery Image Hover */
+.gallery-item {
+    break-inside: avoid;
+    transform: translateZ(0); /* Force hardware accel */
+}
+.gallery-overlay {
+    background: linear-gradient(to top, rgba(27, 94, 32, 0.9), rgba(27, 94, 32, 0.4), transparent);
+}
