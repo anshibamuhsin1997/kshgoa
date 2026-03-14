@@ -1,11 +1,11 @@
 // Project Data Initialization
 const stateCommittee = [
-    { name: "Dummy Name 1", position: "President", image: "https://ui-avatars.com/api/?name=President&background=1B5E20&color=fff&size=400" },
-    { name: "Dummy Name 2", position: "General Secretary", image: "https://ui-avatars.com/api/?name=General+Secretary&background=2E7D32&color=fff&size=400" },
-    { name: "Dummy Name 3", position: "Vice President", image: "https://ui-avatars.com/api/?name=Vice+President&background=66BB6A&color=fff&size=400" },
-    { name: "Dummy Name 4", position: "Chairman", image: "https://ui-avatars.com/api/?name=Chairman&background=1B5E20&color=fff&size=400" },
-    { name: "Dummy Name 5", position: "Treasurer", image: "https://ui-avatars.com/api/?name=Treasurer&background=2E7D32&color=fff&size=400" },
-    { name: "Dummy Name 6", position: "Executive Member", image: "https://ui-avatars.com/api/?name=Executive&background=66BB6A&color=fff&size=400" }
+    { name: "Dummy Name 1", position: "President", image: "https://ui-avatars.com/api/?name=President&background=0B2447&color=fff&size=400" },
+    { name: "Dummy Name 2", position: "General Secretary", image: "https://ui-avatars.com/api/?name=General+Secretary&background=19376D&color=fff&size=400" },
+    { name: "Dummy Name 3", position: "Vice President", image: "https://ui-avatars.com/api/?name=Vice+President&background=576CBC&color=fff&size=400" },
+    { name: "Dummy Name 4", position: "Chairman", image: "https://ui-avatars.com/api/?name=Chairman&background=0B2447&color=fff&size=400" },
+    { name: "Dummy Name 5", position: "Treasurer", image: "https://ui-avatars.com/api/?name=Treasurer&background=19376D&color=fff&size=400" },
+    { name: "Dummy Name 6", position: "Executive Member", image: "https://ui-avatars.com/api/?name=Executive&background=576CBC&color=fff&size=400" }
 ];
 
 const districts = [
@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleMenu = () => {
         isMenuOpen = !isMenuOpen;
         mobileMenuBtn.classList.toggle('active');
-        
+
         if (isMenuOpen) {
             mobileMenu.classList.remove('translate-x-full');
             document.body.style.overflow = 'hidden';
-            
+
             // Animate links in
             setTimeout(() => {
                 mobileLinks.forEach((link, index) => {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             mobileMenu.classList.add('translate-x-full');
             document.body.style.overflow = '';
-            
+
             // Reset links
             mobileLinks.forEach(link => {
                 link.classList.add('translate-x-4', 'opacity-0');
@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     mobileMenuBtn.addEventListener('click', toggleMenu);
-    
+
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if(isMenuOpen) toggleMenu();
+            if (isMenuOpen) toggleMenu();
         });
     });
 
@@ -150,15 +150,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Accordion Logic
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     accordionHeaders.forEach(header => {
-        header.addEventListener('click', function() {
+        header.addEventListener('click', function () {
             const item = this.parentElement;
             const isActive = item.classList.contains('active');
-            
+
             // Close all
             document.querySelectorAll('.accordion-item').forEach(acc => {
                 acc.classList.remove('active');
             });
-            
+
             // If it wasn't active, open it
             if (!isActive) {
                 item.classList.add('active');
@@ -203,7 +203,7 @@ function initThreeJS() {
 
     // Scene setup
     const scene = new THREE.Scene();
-    
+
     // Camera setup
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 30;
@@ -228,15 +228,15 @@ function initThreeJS() {
     ];
 
     // Colors derived from palette: Primary, Secondary, Accent
-    const colors = [0x1B5E20, 0x2E7D32, 0x66BB6A];
+    const colors = [0x08338A, 0x1E5BB8, 0x4F8EF7];
 
     const shapes = [];
 
     for (let i = 0; i < 40; i++) {
         const geometry = geometries[Math.floor(Math.random() * geometries.length)];
-        
+
         // Material with wireframe for a modern tech/structural look
-        const material = new THREE.MeshBasicMaterial({ 
+        const material = new THREE.MeshBasicMaterial({
             color: colors[Math.floor(Math.random() * colors.length)],
             wireframe: true,
             transparent: true,
@@ -244,12 +244,12 @@ function initThreeJS() {
         });
 
         const mesh = new THREE.Mesh(geometry, material);
-        
+
         // Random positioning
         mesh.position.x = (Math.random() - 0.5) * 60;
         mesh.position.y = (Math.random() - 0.5) * 40;
         mesh.position.z = (Math.random() - 0.5) * 40 - 10;
-        
+
         // Random rotation
         mesh.rotation.x = Math.random() * Math.PI;
         mesh.rotation.y = Math.random() * Math.PI;
@@ -276,14 +276,14 @@ function initThreeJS() {
     const particleCount = 200;
     const posArray = new Float32Array(particleCount * 3);
 
-    for(let i=0; i < particleCount * 3; i++) {
+    for (let i = 0; i < particleCount * 3; i++) {
         posArray[i] = (Math.random() - 0.5) * 80;
     }
 
     particleGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
     const particleMaterial = new THREE.PointsMaterial({
         size: 0.15,
-        color: 0x66BB6A,
+        color: 0x576CBC,
         transparent: true,
         opacity: 0.6
     });
@@ -314,7 +314,7 @@ function initThreeJS() {
         // Smooth mouse target following
         targetX = mouseX * 0.5;
         targetY = mouseY * 0.5;
-        
+
         // Move camera slightly based on mouse
         group.rotation.x += 0.05 * (targetY - group.rotation.x);
         group.rotation.y += 0.05 * (targetX - group.rotation.y);
@@ -364,7 +364,7 @@ function initGSAP() {
     const fadeElements = document.querySelectorAll('.gsap-fade-up');
     fadeElements.forEach(el => {
         const delay = el.getAttribute('data-delay') || 0;
-        gsap.fromTo(el, 
+        gsap.fromTo(el,
             { y: 50, opacity: 0 },
             {
                 y: 0,
@@ -393,21 +393,21 @@ function initGSAP() {
 
     staggerContainers.forEach(container => {
         const elements = document.querySelectorAll(container.targets);
-        if(elements.length > 0) {
+        if (elements.length > 0) {
             ScrollTrigger.batch(elements, {
                 start: "top 85%",
                 onEnter: batch => gsap.to(batch, {
-                    opacity: 1, 
-                    y: 0, 
-                    stagger: 0.1, 
+                    opacity: 1,
+                    y: 0,
+                    stagger: 0.1,
                     duration: 0.8,
                     ease: "power2.out"
                 }),
                 // Optional: set initial state if not handled by CSS
-                onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 50})
+                onLeaveBack: batch => gsap.set(batch, { opacity: 0, y: 50 })
             });
             // Initial set
-            gsap.set(elements, {opacity: 0, y: 50});
+            gsap.set(elements, { opacity: 0, y: 50 });
         }
     });
 
@@ -416,10 +416,10 @@ function initGSAP() {
     counters.forEach(counter => {
         const target = parseInt(counter.getAttribute('data-target'));
         const duration = 2; // seconds
-        
+
         // Initial setup
         counter.innerText = '0';
-        
+
         ScrollTrigger.create({
             trigger: counter,
             start: "top 90%",
@@ -430,7 +430,7 @@ function initGSAP() {
                     duration: duration,
                     snap: { innerHTML: 1 },
                     ease: "power1.inOut",
-                    onUpdate: function() {
+                    onUpdate: function () {
                         counter.innerHTML = Math.round(this.targets()[0].innerHTML);
                     }
                 });
