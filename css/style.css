@@ -11,6 +11,26 @@ body {
     overflow-x: hidden;
 }
 
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+    /* Ensure minimum touch target size */
+    button, a, input, textarea, select {
+        min-height: 44px;
+    }
+
+    /* Improve readability */
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Better spacing for mobile */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 /* Custom Gradients and shadows */
 .shadow-premium {
     box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
@@ -35,17 +55,8 @@ body {
 }
 
 /* Mobile Nav Menu Lines (Hamburger) */
-#mobile-menu-btn.active .burger-line-1 {
-    transform: translateY(7px) rotate(45deg);
-}
-
-#mobile-menu-btn.active .burger-line-2 {
-    opacity: 0;
-    transform: translateX(-10px);
-}
-
-#mobile-menu-btn.active .burger-line-3 {
-    transform: translateY(-7px) rotate(-45deg);
+#mobile-menu-btn.active {
+    transform: rotate(90deg);
 }
 
 /* Member Card hover image transition */

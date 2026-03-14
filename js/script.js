@@ -58,10 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleMenu = () => {
         isMenuOpen = !isMenuOpen;
         mobileMenuBtn.classList.toggle('active');
+        mobileMenuBtn.setAttribute('aria-expanded', isMenuOpen);
 
         if (isMenuOpen) {
             mobileMenu.classList.remove('translate-x-full');
             document.body.style.overflow = 'hidden';
+            mobileMenu.setAttribute('aria-hidden', 'false');
 
             // Animate links in
             setTimeout(() => {
@@ -77,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             mobileMenu.classList.add('translate-x-full');
             document.body.style.overflow = '';
+            mobileMenu.setAttribute('aria-hidden', 'true');
 
             // Reset links
             mobileLinks.forEach(link => {
@@ -92,6 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             if (isMenuOpen) toggleMenu();
         });
+    });
+
+    // Close menu on escape key for better accessibility
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isMenuOpen) {
+            toggleMenu();
+        }
     });
 
     // 2. DOM Injection (State Committee, Districts, Gallery)
@@ -174,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const delay = index * 0.05;
 
         galleryGrid.innerHTML += `
-            <div class="gallery-item relative overflow-hidden rounded-2xl mb-4 group cursor-pointer gsap-stagger-up ${heightClass}" data-delay="${delay}">
+            <div class="gallery-item relative overflow-hidden rounded-2xl group cursor-pointer gsap-stagger-up ${heightClass}" data-delay="${delay}">
                 <img src="${src}" alt="Gallery Image ${index + 1}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
                 <div class="gallery-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">

@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#12108F">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="KSHGOA">
     <title>Kerala Hire Goods Owners Association (KSHGOA)</title>
     <meta name="description"
         content="KSHGOA is a statewide association supporting hire goods businesses across Kerala.">
@@ -36,6 +40,9 @@
             }
         }
     </script>
+    <!-- Favicon -->
+    <link rel="icon" href="img/kshgoa-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/kshgoa-logo.png">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -46,11 +53,12 @@
     <nav id="navbar"
         class="fixed w-full z-50 top-0 transition-all duration-300 py-4 bg-white/80 backdrop-blur-md shadow-sm border-b border-white/20">
         <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
-            <a href="#" class="flex flex-col z-50 relative">
-                <span class="text-xl md:text-2xl font-heading font-bold text-primary tracking-tight">KSHGOA</span>
-                <span
-                    class="text-[10px] md:text-xs text-secondary/80 font-medium uppercase tracking-widest hidden sm:block">Kerala
-                    Hire Goods Owners Association</span>
+            <a href="#" class="flex items-center space-x-2 z-50 relative">
+                <img src="img/kshgoa-logo.png" alt="KSHGOA Logo" class="h-8 w-8 md:h-12 md:w-12 object-contain">
+                <div class="flex flex-col">
+                    <span class="text-lg md:text-2xl font-heading font-bold text-primary tracking-tight">KSHGOA</span>
+                    <span class="text-[9px] md:text-xs text-secondary/80 font-medium uppercase tracking-widest hidden sm:block">Kerala Hire Goods Owners Association</span>
+                </div>
             </a>
 
             <!-- Desktop Menu -->
@@ -74,22 +82,21 @@
 
             <!-- Mobile Menu Toggle -->
             <button id="mobile-menu-btn"
-                class="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center focus:outline-none group">
-                <div
-                    class="flex flex-col justify-between w-[20px] h-[16px] transform transition-all duration-300 origin-center overflow-hidden">
-                    <div class="bg-text h-[2px] w-full transform transition-all duration-300 origin-left burger-line-1">
-                    </div>
-                    <div class="bg-text h-[2px] w-full rounded transform transition-all duration-300 burger-line-2">
-                    </div>
-                    <div class="bg-text h-[2px] w-full transform transition-all duration-300 origin-left burger-line-3">
-                    </div>
-                </div>
+                class="lg:hidden relative z-50 w-10 h-10 flex items-center justify-center focus:outline-none group bg-white/10 rounded-md hover:bg-white/20 transition-colors"
+                aria-label="Toggle mobile menu" aria-expanded="false">
+                <!-- Inline SVG hamburger icon (no external icon dependency) -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="4" y="6" width="16" height="2" fill="#12108F" rx="1" />
+                    <rect x="4" y="11" width="16" height="2" fill="#12108F" rx="1" />
+                    <rect x="4" y="16" width="16" height="2" fill="#12108F" rx="1" />
+                </svg>
             </button>
         </div>
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu"
-            class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-500 ease-in-out lg:hidden flex flex-col pt-24 px-8 pb-8 h-screen w-full">
+            class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-500 ease-in-out lg:hidden flex flex-col pt-24 px-8 pb-8 h-screen w-full"
+            aria-hidden="true" role="dialog" aria-label="Mobile navigation menu">
             <div class="flex flex-col space-y-6 text-2xl font-heading font-bold mt-10">
                 <a href="#home"
                     class="mobile-link text-text hover:text-primary transform transition-all duration-300 translate-x-4 opacity-0">Home</a>
@@ -110,12 +117,16 @@
 
             <div class="mt-auto pb-10 transform transition-all duration-300 translate-y-4 opacity-0"
                 id="mobile-contact-info">
-                <p class="text-sm text-gray-500 mb-2">Get in touch</p>
-                <div class="flex flex-col space-y-2">
-                    <a href="tel:04952304102" class="text-primary font-bold flex items-center gap-2"><i
-                            class="fa-solid fa-phone"></i> 0495 230 4102</a>
-                    <a href="mailto:info@kshgoa.org" class="text-gray-600 flex items-center gap-2"><i
-                            class="fa-solid fa-envelope"></i> info@kshgoa.org</a>
+                <p class="text-sm text-gray-500 mb-4">Get in touch</p>
+                <div class="flex flex-col space-y-3">
+                    <a href="tel:04952304102" class="text-primary font-bold flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-primary/5 transition-colors">
+                        <i class="fa-solid fa-phone text-lg"></i>
+                        <span>0495 230 4102</span>
+                    </a>
+                    <a href="mailto:info@kshgoa.org" class="text-gray-600 flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                        <span>info@kshgoa.org</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -138,8 +149,8 @@
                 Statewide Organization
             </div>
             <h1
-                class="gsap-hero-item opacity-0 translate-y-8 text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold text-primary mb-6 leading-[1.1] max-w-4xl drop-shadow-sm">
-                Kerala Hire Goods <br class="hidden md:block" /> Owners Association
+                class="gsap-hero-item opacity-0 translate-y-8 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-extrabold text-primary mb-6 leading-[1.1] max-w-4xl drop-shadow-sm">
+                Kerala Hire Goods <br class="hidden sm:block" /> Owners Association
             </h1>
             <p
                 class="gsap-hero-item opacity-0 translate-y-8 text-lg md:text-xl text-gray-700 max-w-2xl mb-10 font-medium">
@@ -149,12 +160,12 @@
             <div
                 class="gsap-hero-item opacity-0 translate-y-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#state-committee"
-                    class="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-secondary hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-primary/30 flex items-center justify-center group gap-2">
+                    class="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold rounded-xl hover:bg-secondary hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-primary/30 flex items-center justify-center group text-sm sm:text-base gap-2">
                     View State Committee <i
                         class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                 </a>
                 <a href="#district-committees"
-                    class="px-8 py-4 bg-white/80 backdrop-blur text-primary border-2 border-primary/20 font-bold rounded-xl hover:bg-white hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group gap-2 shadow-lg shadow-black/5">
+                    class="px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur text-primary border-2 border-primary/20 font-bold rounded-xl hover:bg-white hover:-translate-y-1 transition-all duration-300 flex items-center justify-center group text-sm sm:text-base gap-2 shadow-lg shadow-black/5">
                     Explore District Committees
                 </a>
             </div>
@@ -187,7 +198,7 @@
                         <span class="text-primary font-bold uppercase tracking-wider text-sm">About The
                             Organization</span>
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 mb-6 leading-tight">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-6 leading-tight">
                         Strengthening Collaboration Across Districts</h2>
                     <p class="text-gray-600 text-lg leading-relaxed mb-6">
                         <strong class="text-gray-800">Kerala Hire Goods Owners Association (KSHGOA)</strong> is a
@@ -273,7 +284,7 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
                 <span class="text-accent font-bold uppercase tracking-widest text-sm">Leadership</span>
-                <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">State Committee</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">State Committee</h2>
                 <p class="text-gray-600 text-lg">Guiding the association with vision and dedication to support the hire
                     goods community across Kerala.</p>
             </div>
@@ -297,7 +308,7 @@
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
                 <span class="text-accent font-bold uppercase tracking-widest text-sm">Statewide Network</span>
-                <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">District Committees</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">District Committees</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
                 <p class="text-gray-600 text-lg">Explore our 14 active district committees facilitating local support
                     and collaboration.</p>
@@ -326,7 +337,7 @@
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gsap-fade-up">
                 <div class="max-w-2xl">
                     <span class="text-accent font-bold uppercase tracking-widest text-sm">Our Operations</span>
-                    <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mt-3 mb-6">Key Activities</h2>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mt-3 mb-6">Key Activities</h2>
                     <p class="text-white/80 text-lg">Driving growth and establishing standards across the hire goods
                         industry.</p>
                 </div>
@@ -389,12 +400,12 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 gsap-fade-up">
                 <span class="text-accent font-bold uppercase tracking-widest text-sm">Visuals</span>
-                <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">Photo Gallery</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">Photo Gallery</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-6"></div>
                 <p class="text-gray-600 text-lg">Moments from our meetings, events, and community support programs.</p>
             </div>
 
-            <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4" id="gallery-grid">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="gallery-grid">
                 <!-- Gallery items injected via JS -->
             </div>
 
@@ -415,7 +426,7 @@
                 <div class="lg:w-1/2 flex flex-col justify-between gsap-fade-up">
                     <div>
                         <span class="text-accent font-bold uppercase tracking-widest text-sm">Get in Touch</span>
-                        <h2 class="text-3xl md:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">Contact Us</h2>
+                        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mt-3 mb-6">Contact Us</h2>
                         <p class="text-gray-600 text-lg mb-10">Reach out to our state office for queries, membership, or
                             general info.</p>
 
@@ -471,14 +482,14 @@
                             class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-[100px] pointer-events-none">
                         </div>
                         <h3 class="text-2xl font-heading font-bold text-gray-900 mb-6 relative z-10">Send a Message</h3>
-                        <form class="space-y-6 relative z-10 flex-grow flex flex-col justify-between" action="#"
+                        <form class="space-y-5 relative z-10 flex-grow flex flex-col justify-between" action="#"
                             method="POST" onsubmit="event.preventDefault();">
                             <div class="space-y-4">
                                 <div>
                                     <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Full
                                         Name</label>
                                     <input type="text" id="name" name="name"
-                                        class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none font-medium placeholder-gray-400"
+                                        class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none font-medium placeholder-gray-400 text-base"
                                         placeholder="John Doe">
                                 </div>
 
@@ -486,7 +497,7 @@
                                     <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone
                                         Number</label>
                                     <input type="tel" id="phone" name="phone"
-                                        class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none font-medium placeholder-gray-400"
+                                        class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none font-medium placeholder-gray-400 text-base"
                                         placeholder="+91 98765 43210">
                                 </div>
 
@@ -494,13 +505,13 @@
                                     <label for="message"
                                         class="block text-sm font-bold text-gray-700 mb-2">Message</label>
                                     <textarea id="message" name="message" rows="4"
-                                        class="w-full px-5 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none font-medium placeholder-gray-400 resize-none"
+                                        class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none font-medium placeholder-gray-400 resize-none text-base"
                                         placeholder="How can we help you?"></textarea>
                                 </div>
                             </div>
 
                             <button type="submit"
-                                class="w-full mt-6 py-4 bg-primary text-white font-bold rounded-xl hover:bg-secondary hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/30 flex items-center justify-center group text-lg">
+                                class="w-full mt-6 py-4 bg-primary text-white font-bold rounded-xl hover:bg-secondary hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/30 flex items-center justify-center group text-base">
                                 Send Message <i
                                     class="fa-regular fa-paper-plane ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
                             </button>
@@ -522,7 +533,7 @@
         </div>
 
         <div class="container mx-auto px-4 md:px-8 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-16">
                 <!-- Column 1 -->
                 <div class="lg:col-span-1">
                     <a href="#" class="flex flex-col mb-6">
@@ -630,12 +641,12 @@
             </div>
 
             <div
-                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs sm:text-sm font-medium">
-                <p>&copy;
+                class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-white/50 text-xs sm:text-sm font-medium">
+                <p class="mb-4 sm:mb-0">&copy;
                     <script>document.write(new Date().getFullYear())</script> Kerala Hire Goods Owners Association. All
                     Rights Reserved.
                 </p>
-                <div class="mt-4 md:mt-0 flex space-x-6">
+                <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-center">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
                 </div>
