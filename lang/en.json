@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Kerala Hire Goods Owners Association (KSHGOA)",
+    "description": "KSHGOA is a statewide association supporting hire goods businesses across Kerala."
+  },
+  "controls": {
+    "theme": {
+      "dark": "Enable dark theme",
+      "light": "Enable light theme"
+    }
+  },
+  "brand": {
+    "subtitle": "Kerala Hire Goods Owners Association"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "stateCommittee": "State Committee",
+    "districtCommittees": "District Committees",
+    "gallery": "Gallery",
+    "contact": "Contact Us"
+  },
+  "mobile": {
+    "getInTouch": "Get in touch"
+  },
+  "hero": {
+    "badge": "Statewide Organization",
+    "title": "Kerala Hire Goods <br class=\"hidden sm:block\" /> Owners Association",
+    "description": "Empowering Hire Goods Businesses Across Kerala through connectivity, community, and statewide collaboration.",
+    "primaryCta": "View State Committee",
+    "secondaryCta": "Explore District Committees",
+    "scroll": "Scroll Target"
+  },
+  "about": {
+    "eyebrow": "About The Organization",
+    "title": "Strengthening Collaboration Across Districts",
+    "paragraphOne": "<strong class=\"text-gray-800\">Kerala Hire Goods Owners Association (KSHGOA)</strong> is a premier statewide association supporting hire goods businesses across Kerala. We connect industry professionals and strengthen collaboration between districts, ensuring the sustainable growth of the rental services sector.",
+    "paragraphTwo": "Our organization serves as the unified voice for rental service providers, championing their rights, sharing industry standards, and providing an expansive network that empowers every business owner from Kasaragod to Thiruvananthapuram.",
+    "highlight": "Exclusive State-Level Member Recognition"
+  },
+  "stats": {
+    "districtCommittees": "District Committees",
+    "registeredMembers": "Registered Members",
+    "yearsOfService": "Years of Service",
+    "eventsSupported": "Events Supported"
+  },
+  "stateCommittee": {
+    "eyebrow": "Leadership",
+    "title": "State Committee",
+    "description": "Guiding the association with vision and dedication to support the hire goods community across Kerala."
+  },
+  "districtSection": {
+    "eyebrow": "Statewide Network",
+    "title": "District Committees",
+    "description": "Explore our 14 active district committees facilitating local support and collaboration."
+  },
+  "activities": {
+    "eyebrow": "Our Operations",
+    "title": "Key Activities",
+    "description": "Driving growth and establishing standards across the hire goods industry.",
+    "cards": {
+      "conference": {
+        "title": "Annual State Conference",
+        "description": "Gathering statewide members to discuss industry trends, elect committees, and set future goals."
+      },
+      "meetings": {
+        "title": "District Meetings",
+        "description": "Regular regional assemblies to address local challenges and strengthen community bonds."
+      },
+      "training": {
+        "title": "Training Programs",
+        "description": "Skill development workshops ensuring businesses stay ahead with modern practices and equipment."
+      },
+      "support": {
+        "title": "Industry Support",
+        "description": "Advocating for members' rights, providing legal guidance, and establishing fair business guidelines."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Visuals",
+    "title": "Photo Gallery",
+    "description": "Moments from our meetings, events, and community support programs.",
+    "viewAll": "View Complete Gallery",
+    "cardTitle": "Event Highlights",
+    "cardDescription": "KSHGOA Gathering",
+    "imageAlt": "Gallery Image {number}"
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "title": "Contact Us",
+    "description": "Reach out to our state office for queries, membership, or general info.",
+    "stateOffice": "State Office",
+    "address": "Kerala Hire Goods Owners Association (KSHGOA)<br>K.S.H.G.O.A Building, Francis Road<br>Idiyangara, Kuttichira<br>Kozhikode, Kerala 673003",
+    "phoneNumber": "Phone Number"
+  },
+  "form": {
+    "title": "Send a Message",
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number",
+    "message": "Message",
+    "namePlaceholder": "John Doe",
+    "phonePlaceholder": "+91 98765 43210",
+    "messagePlaceholder": "How can we help you?",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "badge": "Statewide Association",
+    "description": "The ultimate voice for hire goods businesses in Kerala. Connecting districts, supporting owners, and building a stronger community.",
+    "quickLinks": "Quick Links",
+    "aboutLink": "About KSHGOA",
+    "galleryLink": "Photo Gallery",
+    "topDistricts": "Top Districts",
+    "contactDetails": "Contact Details",
+    "copyright": "Kerala Hire Goods Owners Association. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "labels": {
+    "positions": {
+      "president": "President",
+      "generalSecretary": "General Secretary",
+      "vicePresident": "Vice President",
+      "chairman": "Chairman",
+      "treasurer": "Treasurer",
+      "executiveMember": "Executive Member",
+      "secretary": "Secretary"
+    }
+  },
+  "districtNames": {
+    "thiruvananthapuram": "Thiruvananthapuram",
+    "kollam": "Kollam",
+    "pathanamthitta": "Pathanamthitta",
+    "alappuzha": "Alappuzha",
+    "kottayam": "Kottayam",
+    "idukki": "Idukki",
+    "ernakulam": "Ernakulam",
+    "thrissur": "Thrissur",
+    "palakkad": "Palakkad",
+    "malappuram": "Malappuram",
+    "kozhikode": "Kozhikode",
+    "wayanad": "Wayanad",
+    "kannur": "Kannur",
+    "kasaragod": "Kasaragod"
+  }
+}
