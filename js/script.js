@@ -1,10 +1,10 @@
 const stateCommittee = [
-    { name: "Dummy Name 1", positionKey: "labels.positions.president", image: "https://ui-avatars.com/api/?name=President&background=0B2447&color=fff&size=400" },
-    { name: "Dummy Name 2", positionKey: "labels.positions.generalSecretary", image: "https://ui-avatars.com/api/?name=General+Secretary&background=19376D&color=fff&size=400" },
-    { name: "Dummy Name 3", positionKey: "labels.positions.vicePresident", image: "https://ui-avatars.com/api/?name=Vice+President&background=576CBC&color=fff&size=400" },
-    { name: "Dummy Name 4", positionKey: "labels.positions.chairman", image: "https://ui-avatars.com/api/?name=Chairman&background=0B2447&color=fff&size=400" },
-    { name: "Dummy Name 5", positionKey: "labels.positions.treasurer", image: "https://ui-avatars.com/api/?name=Treasurer&background=19376D&color=fff&size=400" },
-    { name: "Dummy Name 6", positionKey: "labels.positions.executiveMember", image: "https://ui-avatars.com/api/?name=Executive&background=576CBC&color=fff&size=400" }
+    { name: "Abdul Rahman", positionKey: "labels.positions.president", image: "https://randomuser.me/api/portraits/men/32.jpg" },
+    { name: "Anjali Nair", positionKey: "labels.positions.generalSecretary", image: "https://randomuser.me/api/portraits/women/44.jpg" },
+    { name: "Shyam Kumar", positionKey: "labels.positions.vicePresident", image: "https://randomuser.me/api/portraits/men/75.jpg" },
+    { name: "Naseema Ali", positionKey: "labels.positions.chairman", image: "https://randomuser.me/api/portraits/women/68.jpg" },
+    { name: "Manoj Das", positionKey: "labels.positions.treasurer", image: "https://randomuser.me/api/portraits/men/41.jpg" },
+    { name: "Deepa Suresh", positionKey: "labels.positions.executiveMember", image: "https://randomuser.me/api/portraits/women/24.jpg" }
 ];
 
 const districts = [
@@ -61,7 +61,7 @@ const fallbackTranslations = {
             highlight: "Exclusive State-Level Member Recognition"
         },
         stats: { districtCommittees: "District Committees", registeredMembers: "Registered Members", yearsOfService: "Years of Service", eventsSupported: "Events Supported" },
-        stateCommittee: { eyebrow: "Leadership", title: "State Committee", description: "Guiding the association with vision and dedication to support the hire goods community across Kerala." },
+        stateCommittee: { eyebrow: "Leadership", title: "State Committee", description: "Guiding the association with vision and dedication to support the hire goods community across Kerala.", coreTag: "Core Team", profileLink: "View Profile" },
         districtSection: { eyebrow: "Statewide Network", title: "District Committees", description: "Explore our 14 active district committees facilitating local support and collaboration." },
         activities: {
             eyebrow: "Our Operations",
@@ -166,7 +166,7 @@ const fallbackTranslations = {
             highlight: "സംസ്ഥാനതല അംഗീകാരം ലഭിക്കുന്ന പ്രത്യേക അംഗത്വം"
         },
         stats: { districtCommittees: "ജില്ലാ കമ്മിറ്റികൾ", registeredMembers: "രജിസ്റ്റർ ചെയ്ത അംഗങ്ങൾ", yearsOfService: "സേവനവർഷങ്ങൾ", eventsSupported: "പിന്തുണച്ച പരിപാടികൾ" },
-        stateCommittee: { eyebrow: "നേതൃത്വം", title: "സംസ്ഥാന കമ്മിറ്റി", description: "കേരളമൊട്ടാകെയുള്ള ഹയർ ഗുഡ്സ് സമൂഹത്തെ പിന്തുണയ്ക്കാൻ ദൂരദർശനത്തോടെയും പ്രതിബദ്ധതയോടെയും പ്രവർത്തിക്കുന്ന നേതൃത്വം." },
+        stateCommittee: { eyebrow: "നേതൃത്വം", title: "സംസ്ഥാന കമ്മിറ്റി", description: "കേരളമൊട്ടാകെയുള്ള ഹയർ ഗുഡ്സ് സമൂഹത്തെ പിന്തുണയ്ക്കാൻ ദൂരദർശനത്തോടെയും പ്രതിബദ്ധതയോടെയും പ്രവർത്തിക്കുന്ന നേതൃത്വം.", coreTag: "പ്രധാന സംഘം", profileLink: "കൂടുതൽ കാണുക" },
         districtSection: { eyebrow: "സംസ്ഥാന വ്യാപക ശൃംഖല", title: "ജില്ലാ കമ്മിറ്റികൾ", description: "പ്രാദേശിക പിന്തുണയും സഹകരണവും ഉറപ്പാക്കുന്ന ഞങ്ങളുടെ 14 സജീവ ജില്ലാ കമ്മിറ്റികളെ പരിചയപ്പെടുക." },
         activities: {
             eyebrow: "ഞങ്ങളുടെ പ്രവർത്തനം",
@@ -617,19 +617,23 @@ function renderStateCommittee() {
     stateCommittee.forEach((member, index) => {
         const delay = (index % 3) * 0.1;
         container.innerHTML += `
-            <div class="member-card bg-white rounded-3xl overflow-hidden shadow-premium hover:shadow-2xl transition-all duration-500 group border border-gray-100 gsap-stagger-up" data-delay="${delay}">
-                <div class="h-80 overflow-hidden relative">
-                    <div class="absolute inset-0 bg-primary/20 mix-blend-multiply z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <img src="${member.image}" alt="${member.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out">
-                    <div class="absolute bottom-4 right-4 z-20 w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-lg">
-                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            <article class="member-card member-card-premium relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 text-center shadow-premium transition-all duration-500 group gsap-stagger-up" data-delay="${delay}">
+                <div class="member-card-glow absolute inset-x-8 top-8 h-24 rounded-full bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 blur-2xl pointer-events-none"></div>
+                <div class="relative px-6 pt-10 pb-8 sm:px-8">
+                    <div class="member-photo-frame mx-auto mb-7 h-44 w-44 sm:h-48 sm:w-48 rounded-full p-2 shadow-[0_25px_55px_-28px_rgba(18,16,143,0.45)] transition-all duration-500 group-hover:-translate-y-2">
+                        <div class="h-full w-full overflow-hidden rounded-full border-[10px] border-white bg-slate-100 shadow-inner">
+                            <img src="${member.image}" alt="${member.name}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+                        </div>
+                    </div>
+                    <h3 class="text-[1.7rem] sm:text-[1.9rem] font-heading font-extrabold uppercase tracking-[0.06em] text-gray-900 transition-colors duration-300 group-hover:text-primary">${member.name}</h3>
+                    <p class="member-role-label mt-3 text-sm sm:text-[0.95rem] font-extrabold uppercase tracking-[0.2em] text-lime-600">${t(member.positionKey)}</p>
+                    <div class="member-card-line mx-auto mt-5 h-1.5 w-14 rounded-full bg-gradient-to-r from-primary via-accent to-primary transition-all duration-500 group-hover:w-24"></div>
+                    <div class="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/10 bg-primary/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">
+                        <span class="h-2.5 w-2.5 rounded-full bg-accent animate-pulse"></span>
+                        ${t("stateCommittee.coreTag")}
                     </div>
                 </div>
-                <div class="p-8 text-center relative bg-white z-20 transform -translate-y-4 rounded-t-3xl border-t border-gray-100/50">
-                    <h3 class="text-2xl font-heading font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">${member.name}</h3>
-                    <p class="text-accent font-bold text-sm tracking-wide uppercase">${t(member.positionKey)}</p>
-                </div>
-            </div>
+            </article>
         `;
     });
 }
