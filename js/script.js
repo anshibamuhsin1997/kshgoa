@@ -54,13 +54,13 @@ const fallbackTranslations = {
             scroll: "Scroll Target"
         },
         about: {
-            eyebrow: "About The Organization",
-            title: "Strengthening Collaboration Across Districts",
-            paragraphOne: "<strong class=\"text-gray-800\">Kerala Hire Goods Owners Association (KSHGOA)</strong> is a premier statewide association supporting hire goods businesses across Kerala. We connect industry professionals and strengthen collaboration between districts, ensuring the sustainable growth of the rental services sector.",
-            paragraphTwo: "Our organization serves as the unified voice for rental service providers, championing their rights, sharing industry standards, and providing an expansive network that empowers every business owner from Kasaragod to Thiruvananthapuram.",
-            highlight: "Exclusive State-Level Member Recognition"
+            eyebrow: "About Us",
+            title: "Kerala State Hire Goods Owners Association (KSHGOA)",
+            paragraphOne: "<strong class=\"text-gray-800\">Kerala State Hire Goods Owners Association (KSHGOA)</strong> is the premier organization dedicated to the empowerment and welfare of owners and workers in Kerala's Pandhal, Decoration, and Light & Sound sectors. For over three and a half decades, KSHGOA has been at the forefront of advocating for the rights of its members and ensuring their socio-economic security.",
+            paragraphTwo: "Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
+            highlight: "Statewide welfare, advocacy, and socio-economic security"
         },
-        stats: { districtCommittees: "District Committees", registeredMembers: "Registered Members", yearsOfService: "Years of Service", eventsSupported: "Events Supported" },
+        stats: { districtCommittees: "District Committees", registeredMembers: "Owners United", yearsOfService: "Years of Service", eventsSupported: "Workers Supported" },
         stateCommittee: { eyebrow: "Leadership", title: "State Committee", description: "Guiding the association with vision and dedication to support the hire goods community across Kerala.", coreTag: "Core Team", profileLink: "View Profile" },
         districtSection: { eyebrow: "Statewide Network", title: "District Committees", description: "Explore our 14 active district committees facilitating local support and collaboration." },
         activities: {
@@ -494,18 +494,15 @@ function applyStaticTranslations() {
     setText(heroButtons[1], t("hero.secondaryCta"));
     setText(qs("#home > a span"), t("hero.scroll"));
 
-    const aboutBlock = qs("#about .lg\\:w-1\\/2.gsap-fade-up");
-    if (aboutBlock) {
-        setText(aboutBlock.querySelector("span"), t("about.eyebrow"));
-        setText(aboutBlock.querySelector("h2"), t("about.title"));
-        const paragraphs = aboutBlock.querySelectorAll("p");
-        setHTML(paragraphs[0], t("about.paragraphOne"));
-        setText(paragraphs[1], t("about.paragraphTwo"));
-        setText(paragraphs[2], t("about.highlight"));
-    }
+    setText(qs("#about-eyebrow"), t("about.eyebrow"));
+    setText(qs("#about-title"), t("about.title"));
+    setHTML(qs("#about-paragraph-one"), t("about.paragraphOne"));
+    setText(qs("#about-paragraph-two"), t("about.paragraphTwo"));
 
-    const statKeys = ["stats.districtCommittees", "stats.registeredMembers", "stats.yearsOfService", "stats.eventsSupported"];
-    qsa("#about .grid.grid-cols-2 p").forEach((node, index) => setText(node, t(statKeys[index])));
+    setText(qs("#about-stat-districts"), t("stats.districtCommittees"));
+    setText(qs("#about-stat-members"), t("stats.registeredMembers"));
+    setText(qs("#about-stat-years"), t("stats.yearsOfService"));
+    setText(qs("#about-stat-workers"), t("stats.eventsSupported"));
 
     const stateSection = qs("#state-committee .text-center");
     if (stateSection) {
