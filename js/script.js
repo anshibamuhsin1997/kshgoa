@@ -58,7 +58,42 @@ const fallbackTranslations = {
             title: "Kerala State Hire Goods Owners Association (KSHGOA)",
             paragraphOne: "<strong class=\"text-gray-800\">Kerala State Hire Goods Owners Association (KSHGOA)</strong> is the premier organization dedicated to the empowerment and welfare of owners and workers in Kerala's Pandhal, Decoration, and Light & Sound sectors. For over three and a half decades, KSHGOA has been at the forefront of advocating for the rights of its members and ensuring their socio-economic security.",
             paragraphTwo: "Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
-            highlight: "Statewide welfare, advocacy, and socio-economic security"
+            highlight: "Statewide welfare, advocacy, and socio-economic security",
+            history: {
+                label: "Legacy",
+                title: "History & Evolution",
+                item1: "<strong class=\"text-gray-800\">Foundation:</strong> The journey began 37 years ago in Kozhikode, born from the visionary decision of nine pioneering individuals. This organizational model has since become a benchmark, inspiring the formation and active functioning of the Tamil Azhaga State Hire Goods Owners Association in Tamil Nadu.",
+                item2: "<strong class=\"text-gray-800\">Expansion:</strong> Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
+                item3: "<strong class=\"text-gray-800\">Infrastructure:</strong> While the State Committee currently operates from its own building on Francis Road, Kozhikode, the organization is entering a new era of growth. Construction has commenced for a state-of-the-art headquarters near Kallai, Kozhikode, on land acquired for Rs. 1.50 crores. We also maintain dedicated district offices in Malappuram and Kannur."
+            },
+            objectives: {
+                label: "Purpose",
+                title: "Our Objectives",
+                item1: "<strong class=\"text-gray-800\">*</strong> To elevate the living standards of owners and employees within the industry.",
+                item2: "<strong class=\"text-gray-800\">*</strong> To proactively intervene in professional challenges and provide members with comprehensive legal and practical support.",
+                item3: "<strong class=\"text-gray-800\">*</strong> To bridge the gap between our members and the government, ensuring all entitled benefits and rights are secured."
+            },
+            welfare: {
+                label: "Member Welfare",
+                title: "Welfare Schemes & Achievements",
+                item1: "KSHGOA implements extensive welfare programs to ensure the safety and stability of our members and their families.",
+                item2: "<strong class=\"text-gray-800\">Cooperative Banking:</strong> We successfully operate dedicated cooperative banking systems in the Kannur and Palakkad districts.",
+                item3: "<strong class=\"text-gray-800\">HIGOS:</strong> Operating in five districts, HIGOS provides essential industry products to members at subsidized rates through a cooperative procurement model.",
+                item4: "<strong class=\"text-gray-800\">Financial Security:</strong> Most districts offer death benefit schemes providing up to Rs. 5 lakhs to the families of deceased members. Additionally, the State Committee's HOWACT project provides an additional Rs. 50,000 in immediate financial assistance."
+            },
+            philanthropy: {
+                label: "Humanitarian Work",
+                title: "Social Responsibility & Philanthropy",
+                item1: "KSHGOA is deeply committed to humanitarian causes and community support.",
+                item2: "<strong class=\"text-gray-800\">Disaster Relief:</strong> In response to the Chooralmala disaster in Wayanad, the State Committee contributed approximately Rs. 20 lakhs to the Chief Minister's Distress Relief Fund. Furthermore, the Malappuram District Committee distributed household appliances and essentials worth Rs. 20 lakhs to those affected by the Nilambur Kavalappara floods.",
+                item3: "<strong class=\"text-gray-800\">Compassionate Care:</strong> Beyond emergency aid for workplace accidents, the association has also undertaken projects like constructing a home for a financially distressed member in Wayanad."
+            },
+            standing: {
+                label: "Recognition",
+                title: "Social & Professional Standing",
+                item1: "The Government of Kerala recognizes KSHGOA as an integral part of the state's cultural fabric. As a testament to our impact, the association has been granted membership in the Kerala State Cultural Welfare Fund Board.",
+                item2: "Currently, over 90% of the industry, more than 9,000 out of 11,000 owners, is united under the KSHGOA banner. This vast family also supports the livelihoods of approximately 4 lakh workers across Kerala."
+            }
         },
         stats: { districtCommittees: "District Committees", registeredMembers: "Owners United", yearsOfService: "Years of Service", eventsSupported: "Workers Supported" },
         stateCommittee: { eyebrow: "Leadership", title: "State Committee", description: "Guiding the association with vision and dedication to support the hire goods community across Kerala.", coreTag: "Core Team", profileLink: "View Profile" },
@@ -248,7 +283,7 @@ const fallbackTranslations = {
     }
 };
 
-const translationCache = { ...fallbackTranslations };
+const translationCache = {};
 let translations = fallbackTranslations.en;
 let currentLang = localStorage.getItem("kshgoa-language") || "en";
 let currentTheme = localStorage.getItem("kshgoa-theme") || "light";
@@ -264,17 +299,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.documentElement.lang = currentLang;
 
     setTheme(currentTheme, { persist: false });
-    updateLanguageButtons();
-    applyStaticTranslations();
-    renderDynamicContent();
-    initThreeJS();
-    initGSAP();
 
     try {
-        await setLanguage(currentLang, { skipRefresh: true });
+        await setLanguage(currentLang, { skipRefresh: true, silent: true });
     } catch (error) {
         console.warn("Language file load failed, using fallback translations.", error);
     }
+
+    initThreeJS();
+    initGSAP();
 });
 
 function qs(selector) {
@@ -305,7 +338,8 @@ async function loadTranslations(lang) {
         return translationCache[lang];
     }
 
-    const response = await fetch(`lang/${lang}.json`);
+    const langFile = lang === "en" ? "eng" : lang;
+    const response = await fetch(`lang/${langFile}.json`);
     if (!response.ok) {
         throw new Error(`Failed to load translations for ${lang}`);
     }
@@ -503,6 +537,36 @@ function applyStaticTranslations() {
     setText(qs("#about-stat-members"), t("stats.registeredMembers"));
     setText(qs("#about-stat-years"), t("stats.yearsOfService"));
     setText(qs("#about-stat-workers"), t("stats.eventsSupported"));
+
+    setText(qs("#about-history-label"), t("about.history.label"));
+    setText(qs("#about-history-title"), t("about.history.title"));
+    setHTML(qs("#about-history-item-1"), t("about.history.item1"));
+    setHTML(qs("#about-history-item-2"), t("about.history.item2"));
+    setHTML(qs("#about-history-item-3"), t("about.history.item3"));
+
+    setText(qs("#about-objectives-label"), t("about.objectives.label"));
+    setText(qs("#about-objectives-title"), t("about.objectives.title"));
+    setHTML(qs("#about-objectives-item-1"), t("about.objectives.item1"));
+    setHTML(qs("#about-objectives-item-2"), t("about.objectives.item2"));
+    setHTML(qs("#about-objectives-item-3"), t("about.objectives.item3"));
+
+    setText(qs("#about-welfare-label"), t("about.welfare.label"));
+    setText(qs("#about-welfare-title"), t("about.welfare.title"));
+    setHTML(qs("#about-welfare-item-1"), t("about.welfare.item1"));
+    setHTML(qs("#about-welfare-item-2"), t("about.welfare.item2"));
+    setHTML(qs("#about-welfare-item-3"), t("about.welfare.item3"));
+    setHTML(qs("#about-welfare-item-4"), t("about.welfare.item4"));
+
+    setText(qs("#about-philanthropy-label"), t("about.philanthropy.label"));
+    setText(qs("#about-philanthropy-title"), t("about.philanthropy.title"));
+    setHTML(qs("#about-philanthropy-item-1"), t("about.philanthropy.item1"));
+    setHTML(qs("#about-philanthropy-item-2"), t("about.philanthropy.item2"));
+    setHTML(qs("#about-philanthropy-item-3"), t("about.philanthropy.item3"));
+
+    setText(qs("#about-standing-label"), t("about.standing.label"));
+    setText(qs("#about-standing-title"), t("about.standing.title"));
+    setHTML(qs("#about-standing-item-1"), t("about.standing.item1"));
+    setHTML(qs("#about-standing-item-2"), t("about.standing.item2"));
 
     const stateSection = qs("#state-committee .text-center");
     if (stateSection) {
