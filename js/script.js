@@ -325,7 +325,11 @@ function getTranslation(path) {
 function t(path, replacements = {}) {
     const value = getTranslation(path);
     if (typeof value !== "string") {
-        return path;
+        // If the current language is missing a translation, fall back to English.
+        const fallbackValue = path
+            .split(".")
+            .reduce((val, key) => (val && val[key] !== undefined ? val[key] : undefined), fallbackTranslations.en);
+        return typeof fallbackValue === "string" ? fallbackValue : path;
     }
 
     return Object.entries(replacements).reduce((result, [key, replacement]) => {
