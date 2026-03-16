@@ -1,10 +1,13 @@
 const stateCommittee = [
-    { name: "Abdul Rahman", positionKey: "labels.positions.president", image: "https://randomuser.me/api/portraits/men/32.jpg" },
-    { name: "Anjali Nair", positionKey: "labels.positions.generalSecretary", image: "https://randomuser.me/api/portraits/women/44.jpg" },
-    { name: "Shyam Kumar", positionKey: "labels.positions.vicePresident", image: "https://randomuser.me/api/portraits/men/75.jpg" },
-    { name: "Naseema Ali", positionKey: "labels.positions.chairman", image: "https://randomuser.me/api/portraits/women/68.jpg" },
-    { name: "Manoj Das", positionKey: "labels.positions.treasurer", image: "https://randomuser.me/api/portraits/men/41.jpg" },
-    { name: "Deepa Suresh", positionKey: "labels.positions.executiveMember", image: "https://randomuser.me/api/portraits/women/24.jpg" }
+    // img/state_committee/president.jpeg
+    { name: "A. P. Ahamed koya", positionKey: "labels.positions.president", image: "img/state_committee/president.jpeg" },
+    // img/state_committee/general_secretry.jpeg
+    { name: "T. V. Balan", positionKey: "labels.positions.generalSecretary", image: "img/state_committee/general_secretry.jpeg" },
+    // { name: "K. P. Prakash", positionKey: "labels.positions.vicePresident", image: "https://randomuser.me/api/portraits/men/75.jpg" },
+    // { name: "Naseema Ali", positionKey: "labels.positions.chairman", image: "https://randomuser.me/api/portraits/women/68.jpg" },
+    // img/state_committee/tresurer.jpeg
+    { name: "P. Shamsudheen", positionKey: "labels.positions.treasurer", image: "img/state_committee/tresurer.jpeg" },
+    // { name: "Deepa Suresh", positionKey: "labels.positions.executiveMember", image: "https://randomuser.me/api/portraits/women/24.jpg" }
 ];
 
 const districts = [
@@ -196,9 +199,44 @@ const fallbackTranslations = {
         about: {
             eyebrow: "സംഘടനയെക്കുറിച്ച്",
             title: "ജില്ലകളെ ഒന്നിപ്പിക്കുന്ന സഹകരണം",
-            paragraphOne: "<strong class=\"text-gray-800\">കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)</strong> കേരളമൊട്ടാകെയുള്ള ഹയർ ഗുഡ്സ് സ്ഥാപനങ്ങൾക്ക് പിന്തുണ നൽകുന്ന മുൻനിര സംസ്ഥാനതല സംഘടനയാണ്. വ്യവസായ മേഖലയിലെ അംഗങ്ങളെ തമ്മിൽ ബന്ധിപ്പിക്കുകയും ജില്ലകൾ തമ്മിലുള്ള സഹകരണം ശക്തിപ്പെടുത്തുകയും ചെയ്ത് വാടക സേവന മേഖലയിലെ സ്ഥിരതയുള്ള വളർച്ചയ്ക്ക് പിന്തുണ നൽകുന്നു.",
-            paragraphTwo: "വാടക സേവന മേഖലയിലെ സ്ഥാപനങ്ങൾക്ക് ഒരുമിച്ചുള്ള ശബ്ദമായി പ്രവർത്തിച്ച് അവകാശങ്ങൾ സംരക്ഷിക്കുകയും, വ്യവസായ മാനദണ്ഡങ്ങൾ പങ്കുവെക്കുകയും, കാസർഗോഡ് മുതൽ തിരുവനന്തപുരം വരെ എല്ലാ ഉടമകൾക്കും ശക്തമായ ഒരു നെറ്റ്‌വർക്ക് നൽകുകയും ചെയ്യുന്നു.",
-            highlight: "സംസ്ഥാനതല അംഗീകാരം ലഭിക്കുന്ന പ്രത്യേക അംഗത്വം"
+            paragraphOne: "<strong class=\"text-gray-800\">കേരള സ്റ്റേറ്റ് ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)</strong> കേരളത്തിലെ പന്തൽ, ഡെക്കറേഷൻ, ലൈറ്റ് & സൗണ്ട് മേഖലകളിലെ ഉടമകളുടെയും തൊഴിലാളികളുടെയും ക്ഷേമത്തിനും ശക്തീകരണത്തിനുമായി പ്രവർത്തിക്കുന്ന പ്രമുഖ സംഘടനയാണ്. മൂന്ന് പതിറ്റാണ്ടിനും അരയ്ക്കും മേൽക്കാലമായി അംഗങ്ങളുടെ അവകാശങ്ങൾക്കായി പ്രവർത്തിച്ചുകൊണ്ട് അവരുടെ സാമൂഹ്യ-സാമ്പത്തിക സുരക്ഷ ഉറപ്പാക്കുന്നതിൽ KSHGOA മുന്നണിയിലുണ്ട്.",
+            paragraphTwo: "ഇന്ന് അസോസിയേഷൻ കേരളത്തിലെ എല്ലാ 14 ജില്ലകളിലും ശക്തമായ സാന്നിധ്യമുള്ള ഒരു പ്രസ്ഥാനമായി വളർന്നു, സജീവ ജില്ലാകമ്മിറ്റികളും വലിയ അംഗബലവും അതിന്റെ ശക്തിയാണ്.",
+            highlight: "സംസ്ഥാനതല ക്ഷേമവും അവകാശസംരക്ഷണവും സാമൂഹ്യ-സാമ്പത്തിക സുരക്ഷയും",
+            history: {
+                label: "പാരമ്പര്യം",
+                title: "ചരിത്രവും വളർച്ചയും",
+                item1: "<strong class=\"text-gray-800\">സ്ഥാപനം:</strong> കോഴിക്കോട് ഒൻപത് ദൂരദർശികളായ വ്യക്തികളുടെ തീരുമാനത്തിലൂടെയാണ് 37 വർഷങ്ങൾക്ക് മുമ്പ് ഈ യാത്ര ആരംഭിച്ചത്. തുടർന്ന് ഈ സംഘടനാ മാതൃക തമിഴ്നാട്ടിലെ തമിഴ് അഴക സ്റ്റേറ്റ് ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷനെയും പ്രചോദിപ്പിച്ചു.",
+                item2: "<strong class=\"text-gray-800\">വിപുലീകരണം:</strong> ഇന്ന് കേരളത്തിലെ 14 ജില്ലകളിലുമുള്ള സജീവ കമ്മിറ്റികളുടെയും വലിയ അംഗപങ്കാളിത്തത്തിന്റെയും പിന്തുണയോടെ അസോസിയേഷൻ ശക്തമായി പ്രവർത്തിക്കുന്നു.",
+                item3: "<strong class=\"text-gray-800\">അടിസ്ഥാന സൗകര്യങ്ങൾ:</strong> സംസ്ഥാന കമ്മിറ്റി ഇപ്പോൾ കോഴിക്കോട് ഫ്രാൻസിസ് റോഡിലെ സ്വന്തം കെട്ടിടത്തിലാണ് പ്രവർത്തിക്കുന്നത്. കൂടാതെ കോഴിക്കോട് കല്ലായിക്ക് സമീപം 1.50 കോടി രൂപ വിലമതിക്കുന്ന സ്ഥലത്ത് പുതിയ ആസ്ഥാനമന്ദിരം നിർമ്മാണത്തിലുമാണ്. മലപ്പുറത്തും കണ്ണൂരിലും ജില്ല ഓഫിസുകളും പ്രവർത്തിക്കുന്നു."
+            },
+            objectives: {
+                label: "ലക്ഷ്യം",
+                title: "ഞങ്ങളുടെ ലക്ഷ്യങ്ങൾ",
+                item1: "<strong class=\"text-gray-800\">*</strong> വ്യവസായത്തിലെ ഉടമകളുടെയും ജീവനക്കാരുടെയും ജീവിതനിലവാരം ഉയർത്തുക.",
+                item2: "<strong class=\"text-gray-800\">*</strong> തൊഴിൽപരമായ പ്രശ്നങ്ങളിൽ ഇടപെട്ട് അംഗങ്ങൾക്ക് സമഗ്രമായ നിയമ-പ്രായോഗിക പിന്തുണ നൽകുക.",
+                item3: "<strong class=\"text-gray-800\">*</strong> അംഗങ്ങളെയും സർക്കാരിനെയും ബന്ധിപ്പിച്ച് അവർക്കുള്ള എല്ലാ അവകാശങ്ങളും ആനുകൂല്യങ്ങളും ഉറപ്പാക്കുക."
+            },
+            welfare: {
+                label: "അംഗക്ഷേമം",
+                title: "ക്ഷേമപദ്ധതികളും നേട്ടങ്ങളും",
+                item1: "അംഗങ്ങളുടെയും അവരുടെ കുടുംബങ്ങളുടെയും സുരക്ഷയും സ്ഥിരതയും ഉറപ്പാക്കുന്നതിനായി KSHGOA വിപുലമായ ക്ഷേമപദ്ധതികൾ നടപ്പിലാക്കുന്നു.",
+                item2: "<strong class=\"text-gray-800\">കോ-ഓപ്പറേറ്റീവ് ബാങ്കിംഗ്:</strong> കണ്ണൂർ, പാലക്കാട് ജില്ലകളിൽ പ്രത്യേക സഹകരണ ബാങ്കിംഗ് സംവിധാനം വിജയകരമായി പ്രവർത്തിക്കുന്നു.",
+                item3: "<strong class=\"text-gray-800\">HIGOS:</strong> അഞ്ച് ജില്ലകളിൽ പ്രവർത്തിക്കുന്ന ഹിഗോസ് സഹകരണ സമാഹരണ രീതിയിലൂടെ ആവശ്യമായ വ്യവസായ ഉൽപ്പന്നങ്ങൾ അംഗങ്ങൾക്ക് സബ്സിഡി നിരക്കിൽ ലഭ്യമാക്കുന്നു.",
+                item4: "<strong class=\"text-gray-800\">സാമ്പത്തിക സുരക്ഷ:</strong> പല ജില്ലകളിലും മരണാനന്തര സഹായ പദ്ധതിയിലൂടെ അംഗങ്ങളുടെ കുടുംബങ്ങൾക്ക് 5 ലക്ഷം രൂപ വരെ ലഭ്യമാക്കുന്നു. കൂടാതെ HOWACT പദ്ധതിയിലൂടെ സംസ്ഥാന കമ്മിറ്റി അടിയന്തരമായി 50,000 രൂപയും നൽകുന്നു."
+            },
+            philanthropy: {
+                label: "മാനവീയ സേവനം",
+                title: "സാമൂഹിക ഉത്തരവാദിത്തവും പരോപകാര പ്രവർത്തനങ്ങളും",
+                item1: "മാനവീയ ഇടപെടലുകൾക്കും സമൂഹ പിന്തുണയ്ക്കും KSHGOA ആഴത്തിലുള്ള പ്രതിബദ്ധത പുലർത്തുന്നു.",
+                item2: "<strong class=\"text-gray-800\">ദുരന്താശ്വാസം:</strong> വയനാട്ടിലെ ചൂരൽമല ദുരന്തത്തെ തുടർന്ന് സംസ്ഥാന കമ്മിറ്റി മുഖ്യമന്ത്രിയുടെ ദുരിതാശ്വാസ നിധിയിലേക്ക് ഏകദേശം 20 ലക്ഷം രൂപ നൽകി. നിലമ്പൂർ കാവലപ്പാറ വെള്ളപ്പൊക്കബാധിതർക്കായി മലപ്പുറം ജില്ലാ കമ്മിറ്റി 20 ലക്ഷം രൂപ വിലമതിക്കുന്ന ഗൃഹോപകരണങ്ങളും അവശ്യവസ്തുക്കളും വിതരണം ചെയ്തു.",
+                item3: "<strong class=\"text-gray-800\">കരുണാപൂർണ്ണ സേവനം:</strong> ജോലി സ്ഥലത്തെ അപകടങ്ങളിൽ അടിയന്തര സഹായം നൽകുന്നതിന് പുറമെ, വയനാട്ടിലെ സാമ്പത്തികമായി ബുദ്ധിമുട്ടുന്ന അംഗത്തിന് വീട് നിർമിച്ചു നൽകുന്നതുപോലുള്ള പദ്ധതികളും അസോസിയേഷൻ നടപ്പിലാക്കിയിട്ടുണ്ട്."
+            },
+            standing: {
+                label: "അംഗീകാരം",
+                title: "സാമൂഹികവും തൊഴിൽപരവുമായ നിലപാട്",
+                item1: "കേരളത്തിന്റെ സാംസ്കാരിക ഘടനയുടെ അഭിഭാജ്യ ഘടകമായി KSHGOAയെ കേരള സർക്കാർ അംഗീകരിക്കുന്നു. അതിന്റെ സ്വാധീനത്തിന്റെ ഭാഗമായി കേരള സ്റ്റേറ്റ് കൾച്ചറൽ വെൽഫെയർ ഫണ്ട് ബോർഡിൽ അംഗത്വവും ലഭിച്ചിട്ടുണ്ട്.",
+                item2: "ഇപ്പോൾ വ്യവസായത്തിലെ 90 ശതമാനത്തിലധികം, അതായത് 11,000 ഉടമകളിൽ 9,000ത്തിലധികം പേർ KSHGOAയുടെ കീഴിൽ ഒന്നിച്ചിരിക്കുന്നു. ഈ വലിയ കുടുംബം കേരളമെമ്പാടുമുള്ള ഏകദേശം 4 ലക്ഷം തൊഴിലാളികളുടെ ഉപജീവനത്തെയും പിന്തുണക്കുന്നു."
+            }
         },
         stats: { districtCommittees: "ജില്ലാ കമ്മിറ്റികൾ", registeredMembers: "രജിസ്റ്റർ ചെയ്ത അംഗങ്ങൾ", yearsOfService: "സേവനവർഷങ്ങൾ", eventsSupported: "പിന്തുണച്ച പരിപാടികൾ" },
         stateCommittee: { eyebrow: "നേതൃത്വം", title: "സംസ്ഥാന കമ്മിറ്റി", description: "കേരളമൊട്ടാകെയുള്ള ഹയർ ഗുഡ്സ് സമൂഹത്തെ പിന്തുണയ്ക്കാൻ ദൂരദർശനത്തോടെയും പ്രതിബദ്ധതയോടെയും പ്രവർത്തിക്കുന്ന നേതൃത്വം.", coreTag: "പ്രധാന സംഘം", profileLink: "കൂടുതൽ കാണുക" },
@@ -342,7 +380,7 @@ async function loadTranslations(lang) {
         return translationCache[lang];
     }
 
-    const langFile = lang === "en" ? "eng" : lang;
+    const langFile = lang;
     const response = await fetch(`lang/${langFile}.json`);
     if (!response.ok) {
         throw new Error(`Failed to load translations for ${lang}`);
@@ -685,18 +723,18 @@ function renderStateCommittee() {
             <article class="member-card member-card-premium relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 text-center shadow-premium transition-all duration-500 group gsap-stagger-up" data-delay="${delay}">
                 <div class="member-card-glow absolute inset-x-8 top-8 h-24 rounded-full bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 blur-2xl pointer-events-none"></div>
                 <div class="relative px-6 pt-10 pb-8 sm:px-8">
-                    <div class="member-photo-frame mx-auto mb-7 h-44 w-44 sm:h-48 sm:w-48 rounded-full p-2 shadow-[0_25px_55px_-28px_rgba(18,16,143,0.45)] transition-all duration-500 group-hover:-translate-y-2">
+                     <div class="member-photo-frame mx-auto mb-7 h-44 w-44 sm:h-48 sm:w-48 rounded-full p-2 shadow-[0_25px_55px_-28px_rgba(18,16,143,0.45)] transition-all duration-500 group-hover:-translate-y-2">
                         <div class="h-full w-full overflow-hidden rounded-full border-[10px] border-white bg-slate-100 shadow-inner">
                             <img src="${member.image}" alt="${member.name}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
                         </div>
                     </div>
-                    <h3 class="text-[1.7rem] sm:text-[1.9rem] font-heading font-extrabold uppercase tracking-[0.06em] text-gray-900 transition-colors duration-300 group-hover:text-primary">${member.name}</h3>
+                    <h6 class="text-xl sm:text-2xl font-heading font-extrabold uppercase tracking-[0.06em] text-gray-900 transition-colors duration-300 group-hover:text-primary">${member.name}</h6>
                     <p class="member-role-label mt-3 text-sm sm:text-[0.95rem] font-extrabold uppercase tracking-[0.2em] text-lime-600">${t(member.positionKey)}</p>
                     <div class="member-card-line mx-auto mt-5 h-1.5 w-14 rounded-full bg-gradient-to-r from-primary via-accent to-primary transition-all duration-500 group-hover:w-24"></div>
-                    <div class="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/10 bg-primary/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">
+                    <!-- <div class="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/10 bg-primary/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">
                         <span class="h-2.5 w-2.5 rounded-full bg-accent animate-pulse"></span>
                         ${t("stateCommittee.coreTag")}
-                    </div>
+                    </div> -->
                 </div>
             </article>
         `;

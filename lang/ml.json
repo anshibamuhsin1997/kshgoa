@@ -13,12 +13,12 @@
     "subtitle": "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ"
   },
   "nav": {
-    "home": "Home",
-    "about": "About",
+    "home": "ഹോം",
+    "about": "അസോസിയേഷൻ",
     "stateCommittee": "സംസ്ഥാന കമ്മിറ്റി",
     "districtCommittees": "ജില്ലാ കമ്മിറ്റി",
-    "gallery": "Gallery",
-    "contact": "Contact"
+    "gallery": "ഗാലറി",
+    "contact": "ബന്ധപ്പെടുക"
   },
   "mobile": {
     "getInTouch": "ഞങ്ങളുമായി ബന്ധപ്പെടുക"
