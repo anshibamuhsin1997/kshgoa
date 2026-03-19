@@ -723,3 +723,157 @@ body.dark-theme ::-webkit-scrollbar-thumb {
 .gallery-overlay {
     background: linear-gradient(to top, rgba(11, 36, 71, 0.9), rgba(11, 36, 71, 0.4), transparent);
 }
+
+/* District Grouping Sections */
+.district-section {
+    display: contents;
+}
+
+.district-header {
+    grid-column: 1 / -1;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(92, 108, 250, 0.15);
+}
+
+.district-header:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.district-header h3 {
+    transition: color 0.3s ease;
+}
+
+.district-header h3:hover {
+    color: #5C6CFA;
+}
+
+.district-members-grid {
+    grid-column: 1 / -1;
+}
+
+/* Member Position Cards Styling */
+.member-position-card {
+    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-fill-mode: both;
+}
+
+.member-position-card[style*="--delay"] {
+    animation-delay: var(--delay, 0s);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.member-position-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow;
+}
+
+.member-position-card:hover {
+    transform: translateY(-12px);
+}
+
+.member-photo-circle {
+    will-change: transform;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.member-position-card:hover .member-photo-circle {
+    transform: scale(1.05);
+}
+
+.member-position-card h4 {
+    transition: color 0.3s ease;
+}
+
+/* Responsive Member Position Cards */
+@media (max-width: 640px) {
+    .member-position-card {
+        border-radius: 1.5rem;
+        min-height: 420px;
+    }
+    
+    .member-position-card h4 {
+        font-size: 1rem;
+    }
+    
+    .member-photo-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .district-header h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .member-position-card {
+        min-height: 460px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .member-position-card {
+        min-height: 480px;
+    }
+}
+
+/* Dark theme adjustments for member position cards */
+body.dark-theme .member-position-card {
+    background-color: rgba(17, 28, 52, 0.95) !important;
+    border-color: rgba(148, 163, 184, 0.18) !important;
+}
+
+body.dark-theme .member-position-card h4 {
+    color: #e2e8f0 !important;
+}
+
+body.dark-theme .member-position-card p {
+    color: #cbd5e1 !important;
+}
+
+body.dark-theme .member-position-card .text-gray-500,
+body.dark-theme .member-position-card .text-gray-600 {
+    color: #94a3b8 !important;
+}
+
+body.dark-theme .member-position-card .border-gray-100 {
+    border-color: rgba(148, 163, 184, 0.18) !important;
+}
+
+body.dark-theme .member-position-card button {
+    background-color: rgba(92, 108, 250, 0.2) !important;
+    color: #dbe5ff !important;
+}
+
+body.dark-theme .member-position-card button:hover {
+    background-color: #5c6cfa !important;
+    color: #ffffff !important;
+}
+
+body.dark-theme .member-photo-circle {
+    background: linear-gradient(135deg, rgba(92, 108, 250, 0.15), rgba(92, 108, 250, 0.08)) !important;
+    border-color: rgba(92, 108, 250, 0.3) !important;
+}
+
+body.dark-theme .district-header {
+    border-top-color: rgba(92, 108, 250, 0.25) !important;
+}
+
+body.dark-theme .district-header h3 {
+    color: #e2e8f0 !important;
+}
+
+body.dark-theme .district-header p {
+    color: #cbd5e1 !important;
+}
