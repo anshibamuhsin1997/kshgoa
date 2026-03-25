@@ -699,18 +699,35 @@ body.dark-theme ::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.35s ease;
+}
+
 .accordion-item.active .accordion-content {
-    max-height: 300px;
+    max-height: 2000px; /* allow enough space for cards (dynamic content) */
     opacity: 1;
+}
+
+.accordion-item .accordion-header {
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: #f0f4f8;
+    border-color: #0c418d;
+}
+
+.accordion-item .accordion-icon {
+    transition: transform 0.3s ease;
 }
 
 .accordion-item.active .accordion-icon {
     transform: rotate(180deg);
-}
-
-.accordion-item.active .accordion-header {
-    background-color: #F0F4F8;
-    border-color: #0c418d;
 }
 
 /* Gallery Image Hover */
@@ -752,7 +769,39 @@ body.dark-theme ::-webkit-scrollbar-thumb {
     grid-column: 1 / -1;
 }
 
-/* Member Position Cards Styling */
+/* District card + single-block position layout */
+.district-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.district-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.district-positions-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .district-positions-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.district-position-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.district-position-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* Member Position Cards Styling (now optional; before individual cards)
+   retained for backwards compatibility or repeated usage. */
 .member-position-card {
     animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     animation-fill-mode: both;

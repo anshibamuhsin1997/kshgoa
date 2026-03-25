@@ -11,146 +11,621 @@ const stateCommittee = [
 ];
 
 const districts = [
-    { 
-        nameKey: "districtNames.thiruvananthapuram", 
-        place: "Thiruvananthapuram",
-        shopName: "Thiruvananthapuram District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "K. P. Rajesh", photo: "https://i.pravatar.cc/150?img=1", place: "Thiruvananthapuram", shopName: "Hire Solutions TVM" },
-            { posKey: "labels.positions.secretary", name: "M. V. Suresh", photo: "https://i.pravatar.cc/150?img=2", place: "Thiruvananthapuram", shopName: "Event Rentals TVM" },
-            { posKey: "labels.positions.treasurer", name: "P. S. Murali", photo: "https://i.pravatar.cc/150?img=3", place: "Thiruvananthapuram", shopName: "Premier Events" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.kollam", 
+  {
+    nameKey: "districtNames.thiruvananthapuram",
+    place: "Thiruvananthapuram",
+    shopName: "Thiruvananthapuram District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "V. Vijayakumar",
+        photo: "img/district/thiruvananthapuram/precident.png",
+        place: "",
+        shopName: "SV Hire service and Decorations",
+        phone: "+91 9447167070",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "Alavudin. S",
+        photo: "img/district/thiruvananthapuram/general-secretary.png",
+        place: "",
+        shopName: "Event Rentals TVM",
+        phone: "+91 9745926777",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "Pradeep M",
+        photo: "img/district/thiruvananthapuram/treasurer.png",
+        place: "",
+        shopName: "Vinayaka stage decorations & hire services",
+        phone: "+91 9746128880",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.kollam",
+    place: "Kollam",
+    shopName: "Kollam District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "A. C. Babu",
+        photo: "https://i.pravatar.cc/150?img=4",
         place: "Kollam",
-        shopName: "Kollam District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "A. C. Babu", photo: "https://i.pravatar.cc/150?img=4", place: "Kollam", shopName: "Kollam Rentals" },
-            { posKey: "labels.positions.secretary", name: "N. Prakash", photo: "https://i.pravatar.cc/150?img=5", place: "Kollam", shopName: "Events Plus" },
-            { posKey: "labels.positions.treasurer", name: "S. K. Unni", photo: "https://i.pravatar.cc/150?img=6", place: "Kollam", shopName: "Heritage Events" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.pathanamthitta", 
+        shopName: "Kollam Rentals",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "N. Prakash",
+        photo: "https://i.pravatar.cc/150?img=5",
+        place: "Kollam",
+        shopName: "Events Plus",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "S. K. Unni",
+        photo: "https://i.pravatar.cc/150?img=6",
+        place: "Kollam",
+        shopName: "Heritage Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.pathanamthitta",
+    place: "Pathanamthitta",
+    shopName: "Pathanamthitta District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "J. K. Anto",
+        photo: "https://i.pravatar.cc/150?img=7",
         place: "Pathanamthitta",
-        shopName: "Pathanamthitta District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "J. K. Anto", photo: "https://i.pravatar.cc/150?img=7", place: "Pathanamthitta", shopName: "Divine Events" },
-            { posKey: "labels.positions.secretary", name: "R. G. Ravi", photo: "https://i.pravatar.cc/150?img=8", place: "Pathanamthitta", shopName: "Celebrations" },
-            { posKey: "labels.positions.treasurer", name: "C. M. Sajan", photo: "https://i.pravatar.cc/150?img=9", place: "Pathanamthitta", shopName: "Royal Rentals" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.alappuzha", 
+        shopName: "Divine Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "R. G. Ravi",
+        photo: "https://i.pravatar.cc/150?img=8",
+        place: "Pathanamthitta",
+        shopName: "Celebrations",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "C. M. Sajan",
+        photo: "https://i.pravatar.cc/150?img=9",
+        place: "Pathanamthitta",
+        shopName: "Royal Rentals",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.alappuzha",
+    place: "Alappuzha",
+    shopName: "Alappuzha District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "P. A. Verghese",
+        photo: "https://i.pravatar.cc/150?img=10",
         place: "Alappuzha",
-        shopName: "Alappuzha District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "P. A. Verghese", photo: "https://i.pravatar.cc/150?img=10", place: "Alappuzha", shopName: "Alappuzha Hire" },
-            { posKey: "labels.positions.secretary", name: "V. N. John", photo: "https://i.pravatar.cc/150?img=11", place: "Alappuzha", shopName: "Events Hub" },
-            { posKey: "labels.positions.treasurer", name: "M. J. Thomas", photo: "https://i.pravatar.cc/150?img=12", place: "Alappuzha", shopName: "Paradise Events" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.kottayam", 
-        place: "Kottayam",
-        shopName: "Kottayam District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "G. K. Markose", photo: "https://i.pravatar.cc/150?img=13", place: "Kottayam", shopName: "Kottayam Events" },
-            { posKey: "labels.positions.secretary", name: "P. M. Joseph", photo: "https://i.pravatar.cc/150?img=14", place: "Kottayam", shopName: "Hire Kerala" },
-            { posKey: "labels.positions.treasurer", name: "L. C. Aby", photo: "https://i.pravatar.cc/150?img=15", place: "Kottayam", shopName: "Grand Celebrations" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.idukki", 
+        shopName: "Alappuzha Hire",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.generalSecretary",
+        name: "V. N. John",
+        photo: "https://i.pravatar.cc/150?img=11",
+        place: "Alappuzha",
+        shopName: "Events Hub",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "M. J. Thomas",
+        photo: "https://i.pravatar.cc/150?img=12",
+        place: "Alappuzha",
+        shopName: "Paradise Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.kottayam",
+    place: "Kottayam",
+    shopName: "Kottayam District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "KUNJUMON K.M",
+        photo: "img/district/kottayam/precident.png",
+        place: "VETTI MUKAL P.O",
+        shopName: "ST: PAULS DECORATION",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.generalSecretary",
+        name: "MADHUSUDHANAN NAIR",
+        photo: "img/district/kottayam/general-secretary.png",
+        place: "S.H MOUNT P.O",
+        shopName: "MADHURIMA",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "K.C. SURESH",
+        photo: "img/district/kottayam/treasurer.png",
+        place: "KARUVALLITHARA",
+        shopName: "ASIAN DECORATION",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.idukki",
+    place: "Idukki",
+    shopName: "Idukki District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "S. P. Haridas",
+        photo: "https://i.pravatar.cc/150?img=16",
         place: "Idukki",
-        shopName: "Idukki District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "S. P. Haridas", photo: "https://i.pravatar.cc/150?img=16", place: "Idukki", shopName: "Mountain Events" },
-            { posKey: "labels.positions.secretary", name: "K. J. Ali", photo: "https://i.pravatar.cc/150?img=17", place: "Idukki", shopName: "Alpine Rentals" },
-            { posKey: "labels.positions.treasurer", name: "P. K. Manoj", photo: "https://i.pravatar.cc/150?img=18", place: "Idukki", shopName: "Valley Events" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.ernakulam", 
+        shopName: "Mountain Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "K. J. Ali",
+        photo: "https://i.pravatar.cc/150?img=17",
+        place: "Idukki",
+        shopName: "Alpine Rentals",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "P. K. Manoj",
+        photo: "https://i.pravatar.cc/150?img=18",
+        place: "Idukki",
+        shopName: "Valley Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.ernakulam",
+    place: "Ernakulam",
+    shopName: "Ernakulam District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "B. R. Mohanan",
+        photo: "https://i.pravatar.cc/150?img=19",
         place: "Ernakulam",
-        shopName: "Ernakulam District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "B. R. Mohanan", photo: "https://i.pravatar.cc/150?img=19", place: "Ernakulam", shopName: "Ernakulam Hire" },
-            { posKey: "labels.positions.secretary", name: "T. K. Prem", photo: "https://i.pravatar.cc/150?img=20", place: "Ernakulam", shopName: "Metro Events" },
-            { posKey: "labels.positions.treasurer", name: "N. P. Anil", photo: "https://i.pravatar.cc/150?img=21", place: "Ernakulam", shopName: "Urban Celebrations" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.thrissur", 
+        shopName: "Ernakulam Hire",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "T. K. Prem",
+        photo: "https://i.pravatar.cc/150?img=20",
+        place: "Ernakulam",
+        shopName: "Metro Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "N. P. Anil",
+        photo: "https://i.pravatar.cc/150?img=21",
+        place: "Ernakulam",
+        shopName: "Urban Celebrations",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.thrissur",
+    place: "Thrissur",
+    shopName: "Thrissur District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "A. K. Sreedharan",
+        photo: "https://i.pravatar.cc/150?img=22",
         place: "Thrissur",
-        shopName: "Thrissur District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "A. K. Sreedharan", photo: "https://i.pravatar.cc/150?img=22", place: "Thrissur", shopName: "Thrissur Events" },
-            { posKey: "labels.positions.secretary", name: "M. A. Vikram", photo: "https://i.pravatar.cc/150?img=23", place: "Thrissur", shopName: "Festival Rentals" },
-            { posKey: "labels.positions.treasurer", name: "R. S. Kumar", photo: "https://i.pravatar.cc/150?img=24", place: "Thrissur", shopName: "Celebrations Plus" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.palakkad", 
+        shopName: "Thrissur Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "M. A. Vikram",
+        photo: "https://i.pravatar.cc/150?img=23",
+        place: "Thrissur",
+        shopName: "Festival Rentals",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "R. S. Kumar",
+        photo: "https://i.pravatar.cc/150?img=24",
+        place: "Thrissur",
+        shopName: "Celebrations Plus",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.palakkad",
+    place: "Palakkad",
+    shopName: "Palakkad District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "C. K. Gopal",
+        photo: "https://i.pravatar.cc/150?img=25",
         place: "Palakkad",
-        shopName: "Palakkad District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "C. K. Gopal", photo: "https://i.pravatar.cc/150?img=25", place: "Palakkad", shopName: "Palakkad Hire" },
-            { posKey: "labels.positions.secretary", name: "K. V. Jayan", photo: "https://i.pravatar.cc/150?img=26", place: "Palakkad", shopName: "Gateway Events" },
-            { posKey: "labels.positions.treasurer", name: "P. N. Saju", photo: "https://i.pravatar.cc/150?img=27", place: "Palakkad", shopName: "Plains Events" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.malappuram", 
+        shopName: "Palakkad Hire",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "K. V. Jayan",
+        photo: "https://i.pravatar.cc/150?img=26",
+        place: "Palakkad",
+        shopName: "Gateway Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "P. N. Saju",
+        photo: "https://i.pravatar.cc/150?img=27",
+        place: "Palakkad",
+        shopName: "Plains Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.malappuram",
+    place: "Malappuram",
+    shopName: "Malappuram District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "M. K. Hamsa",
+        photo: "https://i.pravatar.cc/150?img=28",
         place: "Malappuram",
-        shopName: "Malappuram District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "M. K. Hamsa", photo: "https://i.pravatar.cc/150?img=28", place: "Malappuram", shopName: "Malappuram Rentals" },
-            { posKey: "labels.positions.secretary", name: "A. P. Saif", photo: "https://i.pravatar.cc/150?img=29", place: "Malappuram", shopName: "Grand Events" },
-            { posKey: "labels.positions.treasurer", name: "U. K. Rashid", photo: "https://i.pravatar.cc/150?img=30", place: "Malappuram", shopName: "Celebration Station" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.kozhikode", 
+        shopName: "Malappuram Rentals",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "A. P. Saif",
+        photo: "https://i.pravatar.cc/150?img=29",
+        place: "Malappuram",
+        shopName: "Grand Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "U. K. Rashid",
+        photo: "https://i.pravatar.cc/150?img=30",
+        place: "Malappuram",
+        shopName: "Celebration Station",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.kozhikode",
+    place: "Kozhikode",
+    shopName: "Kozhikode District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "A. P. Ahamed Koya",
+        photo: "https://i.pravatar.cc/150?img=31",
         place: "Kozhikode",
-        shopName: "Kozhikode District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "A. P. Ahamed Koya", photo: "https://i.pravatar.cc/150?img=31", place: "Kozhikode", shopName: "Kozhikode Events" },
-            { posKey: "labels.positions.secretary", name: "T. V. Balan", photo: "https://i.pravatar.cc/150?img=32", place: "Kozhikode", shopName: "Coast Rentals" },
-            { posKey: "labels.positions.treasurer", name: "P. Shamsudheen", photo: "https://i.pravatar.cc/150?img=33", place: "Kozhikode", shopName: "Premier Celebrations" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.wayanad", 
-        place: "Wayanad",
-        shopName: "Wayanad District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "S. B. Pramod", photo: "https://i.pravatar.cc/150?img=34", place: "Wayanad", shopName: "Wayanad Hire" },
-            { posKey: "labels.positions.secretary", name: "J. V. Raman", photo: "https://i.pravatar.cc/150?img=35", place: "Wayanad", shopName: "Nature Events" },
-            { posKey: "labels.positions.treasurer", name: "K. M. Aravind", photo: "https://i.pravatar.cc/150?img=36", place: "Wayanad", shopName: "Forest Celebrations" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.kannur", 
-        place: "Kannur",
-        shopName: "Kannur District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "E. K. Nair", photo: "https://i.pravatar.cc/150?img=37", place: "Kannur", shopName: "Kannur Events" },
-            { posKey: "labels.positions.secretary", name: "M. N. Sasi", photo: "https://i.pravatar.cc/150?img=38", place: "Kannur", shopName: "Northern Rentals" },
-            { posKey: "labels.positions.treasurer", name: "N. A. Kishan", photo: "https://i.pravatar.cc/150?img=39", place: "Kannur", shopName: "Celebration Hub" }
-        ] 
-    },
-    { 
-        nameKey: "districtNames.kasaragod", 
+        shopName: "Kozhikode Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "T. V. Balan",
+        photo: "https://i.pravatar.cc/150?img=32",
+        place: "Kozhikode",
+        shopName: "Coast Rentals",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "P. Shamsudheen",
+        photo: "https://i.pravatar.cc/150?img=33",
+        place: "Kozhikode",
+        shopName: "Premier Celebrations",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.wayanad",
+    place: "Wayanad",
+    shopName: "Wayanad District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "SHIBU KARANI",
+        photo: "img/district/wayanad/precident.png",
+        place: "",
+        shopName: "",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "MANAF PIDANGOD",
+        photo: "img/district/wayanad/general-secretary.png",
+        place: "",
+        shopName: "",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "RAJU MASS",
+        photo: "img/district/wayanad/treasurer.png",
+        place: "",
+        shopName: "",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.kannur",
+    place: "Kannur",
+    shopName: "Kannur District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "E. K. Nair",
+        photo: "img/district/kannur/precident.png",
+        place: "",
+        shopName: "",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "M. N. Sasi",
+        photo: "img/district/kannur/general-secretary.png",
+        place: "",
+        shopName: "",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "N. A. Kishan",
+        photo: "img/district/kannur/treasurer.png",
+        place: "",
+        shopName: "",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  },
+
+  {
+    nameKey: "districtNames.kasaragod",
+    place: "Kasaragod",
+    shopName: "Kasaragod District Committee",
+    members: [
+      {
+        posKey: "labels.positions.president",
+        name: "X. K. Hassan",
+        photo: "https://i.pravatar.cc/150?img=40",
         place: "Kasaragod",
-        shopName: "Kasaragod District Committee",
-        members: [
-            { posKey: "labels.positions.president", name: "X. K. Hassan", photo: "https://i.pravatar.cc/150?img=40", place: "Kasaragod", shopName: "Kasaragod Hire" },
-            { posKey: "labels.positions.secretary", name: "P. M. Ibrahim", photo: "https://i.pravatar.cc/150?img=41", place: "Kasaragod", shopName: "Border Events" },
-            { posKey: "labels.positions.treasurer", name: "K. P. Mustafa", photo: "https://i.pravatar.cc/150?img=42", place: "Kasaragod", shopName: "Northern Star Events" }
-        ] 
-    }
+        shopName: "Kasaragod Hire",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.secretary",
+        name: "P. M. Ibrahim",
+        photo: "https://i.pravatar.cc/150?img=41",
+        place: "Kasaragod",
+        shopName: "Border Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      },
+      {
+        posKey: "labels.positions.treasurer",
+        name: "K. P. Mustafa",
+        photo: "https://i.pravatar.cc/150?img=42",
+        place: "Kasaragod",
+        shopName: "Northern Star Events",
+        phone: "",
+        address1: "",
+        address2: "",
+        address3: "",
+        address4: ""
+      }
+    ]
+  }
 ];
 
 const galleryImages = [
@@ -872,104 +1347,75 @@ function renderDistricts() {
     if (!districtGrid) return;
 
     districtGrid.innerHTML = "";
-    
+
     districts.forEach((district) => {
-        // Create district section
-        const districtSection = document.createElement("div");
-        districtSection.className = "district-section col-span-full";
+        const accordionItem = document.createElement("article");
+        accordionItem.className = "accordion-item rounded-2xl bg-white shadow-sm overflow-hidden active";
+
+        const header = document.createElement("button");
+        header.className = "accordion-header flex items-center justify-between w-full px-5 py-4 sm:py-5 text-left bg-gray-50 rounded-t-2xl";
+        header.type = "button";
         
-        // District Header
-        const districtHeader = document.createElement("div");
-        districtHeader.className = "district-header mb-8 gsap-fade-up";
-        districtHeader.innerHTML = `
-            <div class="flex items-center gap-4 mb-6">
-                <div class="h-1 w-16 bg-gradient-to-r from-primary to-accent rounded-full"></div>
-                <h3 class="text-2xl sm:text-3xl font-heading font-bold text-gray-900">
-                    <i class="fa-solid fa-map-pin text-primary mr-3"></i>${t(district.nameKey)}
-                </h3>
-                <div class="h-1 flex-grow bg-gradient-to-l from-primary to-accent rounded-full"></div>
+        const districtNameKey = district.nameKey;
+        const firstLetter = t(districtNameKey).charAt(0).toUpperCase();
+        
+        header.innerHTML = `
+            <div class="flex items-center gap-4 flex-1">
+                <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-lg flex-shrink-0">
+                    ${firstLetter}
+                </div>
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-heading font-bold text-gray-900">${t(districtNameKey)}</h3>
+                    <p class="text-sm text-gray-600">${district.shopName}</p>
+                </div>
             </div>
-            <p class="text-gray-600 text-base font-medium ml-8">${district.shopName}</p>
+            <span class="accordion-icon w-5 h-5 text-primary flex-shrink-0"><i class="fa-solid fa-chevron-down"></i></span>
         `;
-        districtSection.appendChild(districtHeader);
-        
-        // Members container
-        const membersContainer = document.createElement("div");
-        membersContainer.className = "district-members-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 col-span-full";
-        
-        // Create member cards for this district
-        let memberIndex = 0;
+
+        const content = document.createElement("div");
+        content.className = "accordion-content px-5 pb-5";
+        content.style.maxHeight = "0px";
+
+        const positionsGrid = document.createElement("div");
+        positionsGrid.className = "district-positions-grid grid grid-cols-1 md:grid-cols-3 gap-4 pt-4";
+
         district.members.forEach((member) => {
-            const delay = memberIndex * 0.08;
             const positionTitle = t(member.posKey);
-            
-            const memberCard = document.createElement("div");
-            memberCard.className = "member-position-card group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-lg shadow-gray-200/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 flex flex-col items-center p-6 sm:p-8";
-            memberCard.style.setProperty("--delay", `${delay}s`);
-            memberCard.innerHTML = `
-                <!-- Circular Photo Container -->
-                <div class="relative mb-6 flex-shrink-0">
-                    <div class="member-photo-circle w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg group-hover:shadow-xl group-hover:shadow-primary/30 transition-all duration-300 bg-gradient-to-br from-primary/10 to-accent/10">
-                        <img src="${member.photo}" alt="${member.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    </div>
-                    <!-- Position Badge -->
-                    <div class="absolute -bottom-2 -right-2 px-3 py-1 bg-primary text-white text-xs font-bold rounded-full shadow-lg whitespace-nowrap">
-                        ${positionTitle}
-                    </div>
+
+            const positionBlock = document.createElement("div");
+            positionBlock.className = "district-position-item rounded-xl bg-white p-3 sm:p-4 flex flex-col items-center text-center gap-2";
+            positionBlock.innerHTML = `
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-3 border-primary/20 shadow-md mx-auto">
+                    <img src="${member.photo}" alt="${member.name}" class="w-full h-full object-cover">
                 </div>
-
-                <!-- Content -->
-                <div class="text-center flex-grow w-full flex flex-col">
-                    <!-- Name -->
-                    <h4 class="text-lg sm:text-xl font-heading font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors duration-300">
-                        ${member.name}
-                    </h4>
-                    
-                    <!-- Position -->
-                    <p class="text-xs sm:text-sm font-bold text-accent uppercase tracking-wider mb-3">
-                        ${positionTitle}
-                    </p>
-
-                    <!-- Divider -->
-                    <div class="w-12 h-1 bg-gradient-to-r from-transparent to-primary/40 mx-auto mb-3"></div>
-
-                    <!-- Place -->
-                    <div class="mb-2 flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-location-dot text-primary text-sm"></i>
-                        <p class="text-sm font-medium text-gray-600">${member.place}</p>
-                    </div>
-
-                    <!-- District -->
-                    <p class="text-xs text-gray-500 uppercase tracking-widest mb-4">
-                        ${t(district.nameKey)}
-                    </p>
-
-                    <!-- Shop/Committee Name -->
-                    <div class="mt-auto pt-4 border-t border-gray-100 w-full">
-                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">Shop Name</p>
-                        <p class="text-sm font-bold text-primary">${member.shopName}</p>
-                    </div>
-                </div>
-
-                <!-- Contact Button -->
-                <button class="mt-6 w-full px-4 py-2.5 bg-primary/10 hover:bg-primary text-primary hover:text-white font-bold rounded-lg transition-all duration-300 text-xs sm:text-sm uppercase tracking-wider">
-                    Contact
-                </button>
+                <p class="text-xs text-primary font-bold uppercase tracking-widest">${positionTitle}</p>
+                <h4 class="text-sm sm:text-base font-bold text-gray-800">${member.name}</h4>
+                <p class="text-xs text-gray-600">${member.place}</p>
+                <p class="text-xs text-gray-500 uppercase tracking-wide">${member.shopName}</p>
             `;
-            
-            memberCard.addEventListener("mouseenter", function() {
-                this.style.transform = "translateY(-12px)";
-            });
-            memberCard.addEventListener("mouseleave", function() {
-                this.style.transform = "translateY(0)";
-            });
-            
-            membersContainer.appendChild(memberCard);
-            memberIndex++;
+
+            positionsGrid.appendChild(positionBlock);
         });
-        
-        districtSection.appendChild(membersContainer);
-        districtGrid.appendChild(districtSection);
+
+        content.appendChild(positionsGrid);
+        accordionItem.appendChild(header);
+        accordionItem.appendChild(content);
+        districtGrid.appendChild(accordionItem);
+
+        header.addEventListener("click", () => {
+            const isExpanded = accordionItem.classList.toggle("active");
+            const maxHeight = isExpanded ? `${content.scrollHeight + 30}px` : "0px";
+            content.style.maxHeight = maxHeight;
+
+            const icon = header.querySelector(".accordion-icon i");
+            if (icon) icon.className = isExpanded ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down";
+        });
+
+        setTimeout(() => {
+            if (accordionItem.classList.contains("active")) {
+                content.style.maxHeight = `${content.scrollHeight + 30}px`;
+            }
+        }, 20);
     });
 }
 
