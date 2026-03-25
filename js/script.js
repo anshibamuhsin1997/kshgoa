@@ -150,38 +150,38 @@ const districts = [
     members: [
       {
         posKey: "labels.positions.president",
-        name: "P. A. Verghese",
-        photo: "https://i.pravatar.cc/150?img=10",
-        place: "Alappuzha",
-        shopName: "Alappuzha Hire",
+        name: "Sunil karukathara",
+        photo: "img/district/alappuzha/president.png",
+        place: "Kayamkulam",
+        shopName: "",
         phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
+        address1: "Karukatharayil house",
+        address2: "Pullikkanakku Po",
+        address3: "690537",
         address4: ""
       },
       {
         posKey: "labels.positions.generalSecretary",
-        name: "V. N. John",
-        photo: "https://i.pravatar.cc/150?img=11",
-        place: "Alappuzha",
-        shopName: "Events Hub",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
+        name: "Sajikumar Peralasseril",
+        photo: "img/district/alappuzha/general-secretary.png",
+        place: "Kayamkulam",
+        shopName: "",
+        phone: "+91 8075707566",
+        address1: "Malathinivas",
+        address2: "Kareelakulangara Po",
+        address3: "690572",
         address4: ""
       },
       {
         posKey: "labels.positions.treasurer",
-        name: "M. J. Thomas",
-        photo: "https://i.pravatar.cc/150?img=12",
-        place: "Alappuzha",
-        shopName: "Paradise Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
+        name: "Rajesh Nalamadam",
+        photo: "img/district/alappuzha/treasurer.png",
+        place: "Avalookkunnu",
+        shopName: "",
+        phone: "+91 94952 10801",
+        address1: "Nalamadam house",
+        address2: "South Aryadu Po",
+        address3: "Alapuzha",
         address4: ""
       }
     ]
@@ -1348,7 +1348,11 @@ function renderDistricts() {
 
     districtGrid.innerHTML = "";
 
-    districts.forEach((district) => {
+    [...districts]
+        .sort((firstDistrict, secondDistrict) => (
+            t(firstDistrict.nameKey).localeCompare(t(secondDistrict.nameKey))
+        ))
+        .forEach((district) => {
         const accordionItem = document.createElement("article");
         accordionItem.className = "accordion-item rounded-2xl bg-white shadow-sm overflow-hidden active";
 
@@ -1381,6 +1385,15 @@ function renderDistricts() {
 
         district.members.forEach((member) => {
             const positionTitle = t(member.posKey);
+            const detailLines = [
+                member.place,
+                member.shopName,
+                member.phone,
+                member.address1,
+                member.address2,
+                member.address3,
+                member.address4
+            ].filter((value) => typeof value === "string" && value.trim() !== "");
 
             const positionBlock = document.createElement("div");
             positionBlock.className = "district-position-item rounded-xl bg-white p-3 sm:p-4 flex flex-col items-center text-center gap-2";
@@ -1390,8 +1403,9 @@ function renderDistricts() {
                 </div>
                 <p class="text-xs text-primary font-bold uppercase tracking-widest">${positionTitle}</p>
                 <h4 class="text-sm sm:text-base font-bold text-gray-800">${member.name}</h4>
-                <p class="text-xs text-gray-600">${member.place}</p>
-                <p class="text-xs text-gray-500 uppercase tracking-wide">${member.shopName}</p>
+                ${detailLines.map((line, index) => `
+                    <p class="text-xs ${index === 1 ? "text-gray-500 uppercase tracking-wide" : "text-gray-600"}">${line}</p>
+                `).join("")}
             `;
 
             positionsGrid.appendChild(positionBlock);
