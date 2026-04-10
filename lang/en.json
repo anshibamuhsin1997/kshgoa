@@ -177,5 +177,273 @@
     "wayanad": "Wayanad",
     "kannur": "Kannur",
     "kasaragod": "Kasaragod"
+  },
+  "committee": {
+    "state": {
+      "ahamedKoya": "A. P. Ahamed Koya",
+      "balan": "T. V. Balan",
+      "shamsudheen": "P. Shamsudheen"
+    },
+    "districts": {
+      "thiruvananthapuram": {
+        "title": "Thiruvananthapuram District Committee",
+        "president": {
+          "name": "V. Vijayakumar",
+          "shop": "SV Hire service and Decorations",
+          "place": ""
+        },
+        "secretary": {
+          "name": "Alavudin. S",
+          "shop": "Event Rentals TVM",
+          "place": ""
+        },
+        "treasurer": {
+          "name": "Pradeep M",
+          "shop": "Vinayaka stage decorations & hire services",
+          "place": ""
+        }
+      },
+      "kollam": {
+        "title": "Kollam District Committee",
+        "president": {
+          "name": "A. C. Babu",
+          "shop": "Kollam Rentals",
+          "place": "Kollam"
+        },
+        "secretary": {
+          "name": "N. Prakash",
+          "shop": "Events Plus",
+          "place": "Kollam"
+        },
+        "treasurer": {
+          "name": "S. K. Unni",
+          "shop": "Heritage Events",
+          "place": "Kollam"
+        }
+      },
+      "pathanamthitta": {
+        "title": "Pathanamthitta District Committee",
+        "president": {
+          "name": "J. K. Anto",
+          "shop": "Divine Events",
+          "place": "Pathanamthitta"
+        },
+        "secretary": {
+          "name": "R. G. Ravi",
+          "shop": "Celebrations",
+          "place": "Pathanamthitta"
+        },
+        "treasurer": {
+          "name": "C. M. Sajan",
+          "shop": "Royal Rentals",
+          "place": "Pathanamthitta"
+        }
+      },
+      "alappuzha": {
+        "title": "Alappuzha District Committee",
+        "president": {
+          "name": "Sunil karukathara",
+          "place": "Kayamkulam",
+          "address1": "Karukatharayil house",
+          "address2": "Pullikkanakku Po",
+          "address3": "690537"
+        },
+        "generalSecretary": {
+          "name": "Sajikumar Peralasseril",
+          "place": "Kayamkulam",
+          "address1": "Malathinivas",
+          "address2": "Kareelakulangara Po",
+          "address3": "690572"
+        },
+        "treasurer": {
+          "name": "Rajesh Nalamadam",
+          "place": "Avalookkunnu",
+          "address1": "Nalamadam house",
+          "address2": "South Aryadu Po",
+          "address3": "Alapuzha"
+        }
+      },
+      "kottayam": {
+        "title": "Kottayam District Committee",
+        "president": {
+          "name": "KUNJUMON K.M",
+          "shop": "ST: PAULS DECORATION",
+          "place": "VETTI MUKAL P.O"
+        },
+        "generalSecretary": {
+          "name": "MADHUSUDHANAN NAIR",
+          "shop": "MADHURIMA",
+          "place": "S.H MOUNT P.O"
+        },
+        "treasurer": {
+          "name": "K.C. SURESH",
+          "shop": "ASIAN DECORATION",
+          "place": "KARUVALLITHARA"
+        }
+      },
+      "idukki": {
+        "title": "Idukki District Committee",
+        "president": {
+          "name": "S. P. Haridas",
+          "shop": "Mountain Events",
+          "place": "Idukki"
+        },
+        "secretary": {
+          "name": "K. J. Ali",
+          "shop": "Alpine Rentals",
+          "place": "Idukki"
+        },
+        "treasurer": {
+          "name": "P. K. Manoj",
+          "shop": "Valley Events",
+          "place": "Idukki"
+        }
+      },
+      "ernakulam": {
+        "title": "Ernakulam District Committee",
+        "president": {
+          "name": "B. R. Mohanan",
+          "shop": "Ernakulam Hire",
+          "place": "Ernakulam"
+        },
+        "secretary": {
+          "name": "T. K. Prem",
+          "shop": "Metro Events",
+          "place": "Ernakulam"
+        },
+        "treasurer": {
+          "name": "N. P. Anil",
+          "shop": "Urban Celebrations",
+          "place": "Ernakulam"
+        }
+      },
+      "thrissur": {
+        "title": "Thrissur District Committee",
+        "president": {
+          "name": "Manikanda Das. P.P",
+          "shop": "Thrissur Events",
+          "place": "Thrissur",
+          "phone": ""
+        },
+        "secretary": {
+          "name": "Jyothish K B",
+          "shop": "Festival Rentals",
+          "place": "Thrissur"
+        },
+        "treasurer": {
+          "name": "Shamsudheen CKM",
+          "shop": "Celebrations Plus",
+          "place": "Thrissur"
+        }
+      },
+      "palakkad": {
+        "title": "Palakkad District Committee",
+        "president": {
+          "name": "C. K. Gopal",
+          "shop": "Palakkad Hire",
+          "place": "Palakkad"
+        },
+        "secretary": {
+          "name": "K. V. Jayan",
+          "shop": "Gateway Events",
+          "place": "Palakkad"
+        },
+        "treasurer": {
+          "name": "P. N. Saju",
+          "shop": "Plains Events",
+          "place": "Palakkad"
+        }
+      },
+      "malappuram": {
+        "title": "Malappuram District Committee",
+        "president": {
+          "name": "M. K. Hamsa",
+          "shop": "Malappuram Rentals",
+          "place": "Malappuram"
+        },
+        "secretary": {
+          "name": "A. P. Saif",
+          "shop": "Grand Events",
+          "place": "Malappuram"
+        },
+        "treasurer": {
+          "name": "U. K. Rashid",
+          "shop": "Celebration Station",
+          "place": "Malappuram"
+        }
+      },
+      "kozhikode": {
+        "title": "Kozhikode District Committee",
+        "president": {
+          "name": "A. P. Ahamed Koya",
+          "shop": "Kozhikode Events",
+          "place": "Kozhikode"
+        },
+        "secretary": {
+          "name": "T. V. Balan",
+          "shop": "Coast Rentals",
+          "place": "Kozhikode"
+        },
+        "treasurer": {
+          "name": "P. Shamsudheen",
+          "shop": "Premier Celebrations",
+          "place": "Kozhikode"
+        }
+      },
+      "wayanad": {
+        "title": "Wayanad District Committee",
+        "president": {
+          "name": "SHIBU KARANI",
+          "shop": "",
+          "place": ""
+        },
+        "secretary": {
+          "name": "MANAF PIDANGOD",
+          "shop": "",
+          "place": ""
+        },
+        "treasurer": {
+          "name": "RAJU MASS",
+          "shop": "",
+          "place": ""
+        }
+      },
+      "kannur": {
+        "title": "Kannur District Committee",
+        "president": {
+          "name": "E. K. Nair",
+          "shop": "",
+          "place": ""
+        },
+        "secretary": {
+          "name": "M. N. Sasi",
+          "shop": "",
+          "place": ""
+        },
+        "treasurer": {
+          "name": "N. A. Kishan",
+          "shop": "",
+          "place": ""
+        }
+      },
+      "kasaragod": {
+        "title": "Kasaragod District Committee",
+        "president": {
+          "name": "X. K. Hassan",
+          "shop": "Kasaragod Hire",
+          "place": "Kasaragod"
+        },
+        "secretary": {
+          "name": "P. M. Ibrahim",
+          "shop": "Border Events",
+          "place": "Kasaragod"
+        },
+        "treasurer": {
+          "name": "K. P. Mustafa",
+          "shop": "Northern Star Events",
+          "place": "Kasaragod"
+        }
+      }
+    }
   }
 }

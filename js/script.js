@@ -1,631 +1,435 @@
 const stateCommittee = [
-    // img/state_committee/president.jpeg
-    { name: "A. P. Ahamed koya", positionKey: "labels.positions.president", image: "img/state_committee/president.jpeg" },
-    // img/state_committee/general_secretry.jpeg
-    { name: "T. V. Balan", positionKey: "labels.positions.generalSecretary", image: "img/state_committee/general_secretry.jpeg" },
-    // { name: "K. P. Prakash", positionKey: "labels.positions.vicePresident", image: "https://randomuser.me/api/portraits/men/75.jpg" },
-    // { name: "Naseema Ali", positionKey: "labels.positions.chairman", image: "https://randomuser.me/api/portraits/women/68.jpg" },
-    // img/state_committee/tresurer.jpeg
-    { name: "P. Shamsudheen", positionKey: "labels.positions.treasurer", image: "img/state_committee/tresurer.jpeg" },
-    // { name: "Deepa Suresh", positionKey: "labels.positions.executiveMember", image: "https://randomuser.me/api/portraits/women/24.jpg" }
+    { nameKey: "committee.state.ahamedKoya", positionKey: "labels.positions.president", image: "img/state_committee/president.jpeg" },
+    { nameKey: "committee.state.balan", positionKey: "labels.positions.generalSecretary", image: "img/state_committee/general_secretry.jpeg" },
+    { nameKey: "committee.state.shamsudheen", positionKey: "labels.positions.treasurer", image: "img/state_committee/tresurer.jpeg" },
 ];
 
 const districts = [
-  {
-    nameKey: "districtNames.thiruvananthapuram",
-    place: "Thiruvananthapuram",
-    shopName: "Thiruvananthapuram District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "V. Vijayakumar",
-        photo: "img/district/thiruvananthapuram/precident.png",
-        place: "",
-        shopName: "SV Hire service and Decorations",
-        phone: "+91 9447167070",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "Alavudin. S",
-        photo: "img/district/thiruvananthapuram/general-secretary.png",
-        place: "",
-        shopName: "Event Rentals TVM",
-        phone: "+91 9745926777",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "Pradeep M",
-        photo: "img/district/thiruvananthapuram/treasurer.png",
-        place: "",
-        shopName: "Vinayaka stage decorations & hire services",
-        phone: "+91 9746128880",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.kollam",
-    place: "Kollam",
-    shopName: "Kollam District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "A. C. Babu",
-        photo: "https://i.pravatar.cc/150?img=4",
-        place: "Kollam",
-        shopName: "Kollam Rentals",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "N. Prakash",
-        photo: "https://i.pravatar.cc/150?img=5",
-        place: "Kollam",
-        shopName: "Events Plus",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "S. K. Unni",
-        photo: "https://i.pravatar.cc/150?img=6",
-        place: "Kollam",
-        shopName: "Heritage Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.pathanamthitta",
-    place: "Pathanamthitta",
-    shopName: "Pathanamthitta District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "J. K. Anto",
-        photo: "https://i.pravatar.cc/150?img=7",
-        place: "Pathanamthitta",
-        shopName: "Divine Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "R. G. Ravi",
-        photo: "https://i.pravatar.cc/150?img=8",
-        place: "Pathanamthitta",
-        shopName: "Celebrations",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "C. M. Sajan",
-        photo: "https://i.pravatar.cc/150?img=9",
-        place: "Pathanamthitta",
-        shopName: "Royal Rentals",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.alappuzha",
-    place: "Alappuzha",
-    shopName: "Alappuzha District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "Sunil karukathara",
-        photo: "img/district/alappuzha/president.png",
-        place: "Kayamkulam",
-        shopName: "",
-        phone: "",
-        address1: "Karukatharayil house",
-        address2: "Pullikkanakku Po",
-        address3: "690537",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.generalSecretary",
-        name: "Sajikumar Peralasseril",
-        photo: "img/district/alappuzha/general-secretary.png",
-        place: "Kayamkulam",
-        shopName: "",
-        phone: "+91 8075707566",
-        address1: "Malathinivas",
-        address2: "Kareelakulangara Po",
-        address3: "690572",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "Rajesh Nalamadam",
-        photo: "img/district/alappuzha/treasurer.png",
-        place: "Avalookkunnu",
-        shopName: "",
-        phone: "+91 94952 10801",
-        address1: "Nalamadam house",
-        address2: "South Aryadu Po",
-        address3: "Alapuzha",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.kottayam",
-    place: "Kottayam",
-    shopName: "Kottayam District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "KUNJUMON K.M",
-        photo: "img/district/kottayam/precident.png",
-        place: "VETTI MUKAL P.O",
-        shopName: "ST: PAULS DECORATION",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.generalSecretary",
-        name: "MADHUSUDHANAN NAIR",
-        photo: "img/district/kottayam/general-secretary.png",
-        place: "S.H MOUNT P.O",
-        shopName: "MADHURIMA",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "K.C. SURESH",
-        photo: "img/district/kottayam/treasurer.png",
-        place: "KARUVALLITHARA",
-        shopName: "ASIAN DECORATION",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.idukki",
-    place: "Idukki",
-    shopName: "Idukki District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "S. P. Haridas",
-        photo: "https://i.pravatar.cc/150?img=16",
-        place: "Idukki",
-        shopName: "Mountain Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "K. J. Ali",
-        photo: "https://i.pravatar.cc/150?img=17",
-        place: "Idukki",
-        shopName: "Alpine Rentals",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "P. K. Manoj",
-        photo: "https://i.pravatar.cc/150?img=18",
-        place: "Idukki",
-        shopName: "Valley Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.ernakulam",
-    place: "Ernakulam",
-    shopName: "Ernakulam District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "B. R. Mohanan",
-        photo: "https://i.pravatar.cc/150?img=19",
-        place: "Ernakulam",
-        shopName: "Ernakulam Hire",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "T. K. Prem",
-        photo: "https://i.pravatar.cc/150?img=20",
-        place: "Ernakulam",
-        shopName: "Metro Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "N. P. Anil",
-        photo: "https://i.pravatar.cc/150?img=21",
-        place: "Ernakulam",
-        shopName: "Urban Celebrations",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.thrissur",
-    place: "Thrissur",
-    shopName: "Thrissur District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "A. K. Sreedharan",
-        photo: "https://i.pravatar.cc/150?img=22",
-        place: "Thrissur",
-        shopName: "Thrissur Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "M. A. Vikram",
-        photo: "https://i.pravatar.cc/150?img=23",
-        place: "Thrissur",
-        shopName: "Festival Rentals",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "R. S. Kumar",
-        photo: "https://i.pravatar.cc/150?img=24",
-        place: "Thrissur",
-        shopName: "Celebrations Plus",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.palakkad",
-    place: "Palakkad",
-    shopName: "Palakkad District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "C. K. Gopal",
-        photo: "https://i.pravatar.cc/150?img=25",
-        place: "Palakkad",
-        shopName: "Palakkad Hire",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "K. V. Jayan",
-        photo: "https://i.pravatar.cc/150?img=26",
-        place: "Palakkad",
-        shopName: "Gateway Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "P. N. Saju",
-        photo: "https://i.pravatar.cc/150?img=27",
-        place: "Palakkad",
-        shopName: "Plains Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.malappuram",
-    place: "Malappuram",
-    shopName: "Malappuram District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "M. K. Hamsa",
-        photo: "https://i.pravatar.cc/150?img=28",
-        place: "Malappuram",
-        shopName: "Malappuram Rentals",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "A. P. Saif",
-        photo: "https://i.pravatar.cc/150?img=29",
-        place: "Malappuram",
-        shopName: "Grand Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "U. K. Rashid",
-        photo: "https://i.pravatar.cc/150?img=30",
-        place: "Malappuram",
-        shopName: "Celebration Station",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.kozhikode",
-    place: "Kozhikode",
-    shopName: "Kozhikode District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "A. P. Ahamed Koya",
-        photo: "https://i.pravatar.cc/150?img=31",
-        place: "Kozhikode",
-        shopName: "Kozhikode Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "T. V. Balan",
-        photo: "https://i.pravatar.cc/150?img=32",
-        place: "Kozhikode",
-        shopName: "Coast Rentals",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "P. Shamsudheen",
-        photo: "https://i.pravatar.cc/150?img=33",
-        place: "Kozhikode",
-        shopName: "Premier Celebrations",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.wayanad",
-    place: "Wayanad",
-    shopName: "Wayanad District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "SHIBU KARANI",
-        photo: "img/district/wayanad/precident.png",
-        place: "",
-        shopName: "",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "MANAF PIDANGOD",
-        photo: "img/district/wayanad/general-secretary.png",
-        place: "",
-        shopName: "",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "RAJU MASS",
-        photo: "img/district/wayanad/treasurer.png",
-        place: "",
-        shopName: "",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.kannur",
-    place: "Kannur",
-    shopName: "Kannur District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "E. K. Nair",
-        photo: "img/district/kannur/precident.png",
-        place: "",
-        shopName: "",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "M. N. Sasi",
-        photo: "img/district/kannur/general-secretary.png",
-        place: "",
-        shopName: "",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "N. A. Kishan",
-        photo: "img/district/kannur/treasurer.png",
-        place: "",
-        shopName: "",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  },
-
-  {
-    nameKey: "districtNames.kasaragod",
-    place: "Kasaragod",
-    shopName: "Kasaragod District Committee",
-    members: [
-      {
-        posKey: "labels.positions.president",
-        name: "X. K. Hassan",
-        photo: "https://i.pravatar.cc/150?img=40",
-        place: "Kasaragod",
-        shopName: "Kasaragod Hire",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.secretary",
-        name: "P. M. Ibrahim",
-        photo: "https://i.pravatar.cc/150?img=41",
-        place: "Kasaragod",
-        shopName: "Border Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      },
-      {
-        posKey: "labels.positions.treasurer",
-        name: "K. P. Mustafa",
-        photo: "https://i.pravatar.cc/150?img=42",
-        place: "Kasaragod",
-        shopName: "Northern Star Events",
-        phone: "",
-        address1: "",
-        address2: "",
-        address3: "",
-        address4: ""
-      }
-    ]
-  }
+    {
+        id: "thiruvananthapuram",
+        nameKey: "districtNames.thiruvananthapuram",
+        shopNameKey: "committee.districts.thiruvananthapuram.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.thiruvananthapuram.president.name",
+                photo: "img/district/thiruvananthapuram/precident.png",
+                shopNameKey: "committee.districts.thiruvananthapuram.president.shop",
+                phoneKey: "committee.districts.thiruvananthapuram.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.thiruvananthapuram.secretary.name",
+                photo: "img/district/thiruvananthapuram/general-secretary.png",
+                shopNameKey: "committee.districts.thiruvananthapuram.secretary.shop",
+                phoneKey: "committee.districts.thiruvananthapuram.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.thiruvananthapuram.treasurer.name",
+                photo: "img/district/thiruvananthapuram/treasurer.png",
+                shopNameKey: "committee.districts.thiruvananthapuram.treasurer.shop",
+                phoneKey: "committee.districts.thiruvananthapuram.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "kollam",
+        nameKey: "districtNames.kollam",
+        shopNameKey: "committee.districts.kollam.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.kollam.president.name",
+                photo: "https://i.pravatar.cc/150?img=4",
+                placeKey: "committee.districts.kollam.president.place",
+                shopNameKey: "committee.districts.kollam.president.shop",
+                phoneKey: "committee.districts.kollam.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.kollam.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=5",
+                placeKey: "committee.districts.kollam.secretary.place",
+                shopNameKey: "committee.districts.kollam.secretary.shop",
+                phoneKey: "committee.districts.kollam.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.kollam.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=6",
+                placeKey: "committee.districts.kollam.treasurer.place",
+                shopNameKey: "committee.districts.kollam.treasurer.shop",
+                phoneKey: "committee.districts.kollam.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "pathanamthitta",
+        nameKey: "districtNames.pathanamthitta",
+        shopNameKey: "committee.districts.pathanamthitta.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.pathanamthitta.president.name",
+                photo: "https://i.pravatar.cc/150?img=7",
+                placeKey: "committee.districts.pathanamthitta.president.place",
+                shopNameKey: "committee.districts.pathanamthitta.president.shop",
+                phoneKey: "committee.districts.pathanamthitta.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.pathanamthitta.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=8",
+                placeKey: "committee.districts.pathanamthitta.secretary.place",
+                shopNameKey: "committee.districts.pathanamthitta.secretary.shop",
+                phoneKey: "committee.districts.pathanamthitta.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.pathanamthitta.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=9",
+                placeKey: "committee.districts.pathanamthitta.treasurer.place",
+                shopNameKey: "committee.districts.pathanamthitta.treasurer.shop",
+                phoneKey: "committee.districts.pathanamthitta.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "alappuzha",
+        nameKey: "districtNames.alappuzha",
+        shopNameKey: "committee.districts.alappuzha.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.alappuzha.president.name",
+                photo: "img/district/alappuzha/president.png",
+                placeKey: "committee.districts.alappuzha.president.place",
+                address1Key: "committee.districts.alappuzha.president.address1",
+                address2Key: "committee.districts.alappuzha.president.address2",
+                address3Key: "committee.districts.alappuzha.president.address3",
+                phoneKey: "committee.districts.alappuzha.president.phone"
+            },
+            {
+                posKey: "labels.positions.generalSecretary",
+                nameKey: "committee.districts.alappuzha.generalSecretary.name",
+                photo: "img/district/alappuzha/general-secretary.png",
+                placeKey: "committee.districts.alappuzha.generalSecretary.place",
+                phoneKey: "committee.districts.alappuzha.generalSecretary.phone",
+                address1Key: "committee.districts.alappuzha.generalSecretary.address1",
+                address2Key: "committee.districts.alappuzha.generalSecretary.address2",
+                address3Key: "committee.districts.alappuzha.generalSecretary.address3"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.alappuzha.treasurer.name",
+                photo: "img/district/alappuzha/treasurer.png",
+                placeKey: "committee.districts.alappuzha.treasurer.place",
+                phoneKey: "committee.districts.alappuzha.treasurer.phone",
+                address1Key: "committee.districts.alappuzha.treasurer.address1",
+                address2Key: "committee.districts.alappuzha.treasurer.address2",
+                address3Key: "committee.districts.alappuzha.treasurer.address3"
+            }
+        ]
+    },
+    {
+        id: "kottayam",
+        nameKey: "districtNames.kottayam",
+        shopNameKey: "committee.districts.kottayam.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.kottayam.president.name",
+                photo: "img/district/kottayam/precident.png",
+                placeKey: "committee.districts.kottayam.president.place",
+                shopNameKey: "committee.districts.kottayam.president.shop",
+                phoneKey: "committee.districts.kottayam.president.phone"
+            },
+            {
+                posKey: "labels.positions.generalSecretary",
+                nameKey: "committee.districts.kottayam.generalSecretary.name",
+                photo: "img/district/kottayam/general-secretary.png",
+                placeKey: "committee.districts.kottayam.generalSecretary.place",
+                shopNameKey: "committee.districts.kottayam.generalSecretary.shop",
+                phoneKey: "committee.districts.kottayam.generalSecretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.kottayam.treasurer.name",
+                photo: "img/district/kottayam/treasurer.png",
+                placeKey: "committee.districts.kottayam.treasurer.place",
+                shopNameKey: "committee.districts.kottayam.treasurer.shop",
+                phoneKey: "committee.districts.kottayam.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "idukki",
+        nameKey: "districtNames.idukki",
+        shopNameKey: "committee.districts.idukki.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.idukki.president.name",
+                photo: "https://i.pravatar.cc/150?img=16",
+                placeKey: "committee.districts.idukki.president.place",
+                shopNameKey: "committee.districts.idukki.president.shop",
+                phoneKey: "committee.districts.idukki.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.idukki.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=17",
+                placeKey: "committee.districts.idukki.secretary.place",
+                shopNameKey: "committee.districts.idukki.secretary.shop",
+                phoneKey: "committee.districts.idukki.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.idukki.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=18",
+                placeKey: "committee.districts.idukki.treasurer.place",
+                shopNameKey: "committee.districts.idukki.treasurer.shop",
+                phoneKey: "committee.districts.idukki.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "ernakulam",
+        nameKey: "districtNames.ernakulam",
+        shopNameKey: "committee.districts.ernakulam.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.ernakulam.president.name",
+                photo: "https://i.pravatar.cc/150?img=19",
+                placeKey: "committee.districts.ernakulam.president.place",
+                shopNameKey: "committee.districts.ernakulam.president.shop",
+                phoneKey: "committee.districts.ernakulam.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.ernakulam.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=20",
+                placeKey: "committee.districts.ernakulam.secretary.place",
+                shopNameKey: "committee.districts.ernakulam.secretary.shop",
+                phoneKey: "committee.districts.ernakulam.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.ernakulam.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=21",
+                placeKey: "committee.districts.ernakulam.treasurer.place",
+                shopNameKey: "committee.districts.ernakulam.treasurer.shop",
+                phoneKey: "committee.districts.ernakulam.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "thrissur",
+        nameKey: "districtNames.thrissur",
+        shopNameKey: "committee.districts.thrissur.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.thrissur.president.name",
+                photo: "img/district/thrissur/precident.jpeg",
+                placeKey: "committee.districts.thrissur.president.place",
+                shopNameKey: "committee.districts.thrissur.president.shop",
+                phoneKey: "committee.districts.thrissur.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.thrissur.secretary.name",
+                photo: "img/district/thrissur/general-secretary.jpeg",
+                placeKey: "committee.districts.thrissur.secretary.place",
+                shopNameKey: "committee.districts.thrissur.secretary.shop",
+                phoneKey: "committee.districts.thrissur.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.thrissur.treasurer.name",
+                photo: "img/district/thrissur/treasurer.jpeg",
+                placeKey: "committee.districts.thrissur.treasurer.place",
+                shopNameKey: "committee.districts.thrissur.treasurer.shop",
+                phoneKey: "committee.districts.thrissur.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "palakkad",
+        nameKey: "districtNames.palakkad",
+        shopNameKey: "committee.districts.palakkad.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.palakkad.president.name",
+                photo: "https://i.pravatar.cc/150?img=25",
+                placeKey: "committee.districts.palakkad.president.place",
+                shopNameKey: "committee.districts.palakkad.president.shop",
+                phoneKey: "committee.districts.palakkad.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.palakkad.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=26",
+                placeKey: "committee.districts.palakkad.secretary.place",
+                shopNameKey: "committee.districts.palakkad.secretary.shop",
+                phoneKey: "committee.districts.palakkad.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.palakkad.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=27",
+                placeKey: "committee.districts.palakkad.treasurer.place",
+                shopNameKey: "committee.districts.palakkad.treasurer.shop",
+                phoneKey: "committee.districts.palakkad.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "malappuram",
+        nameKey: "districtNames.malappuram",
+        shopNameKey: "committee.districts.malappuram.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.malappuram.president.name",
+                photo: "https://i.pravatar.cc/150?img=28",
+                placeKey: "committee.districts.malappuram.president.place",
+                shopNameKey: "committee.districts.malappuram.president.shop",
+                phoneKey: "committee.districts.malappuram.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.malappuram.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=29",
+                placeKey: "committee.districts.malappuram.secretary.place",
+                shopNameKey: "committee.districts.malappuram.secretary.shop",
+                phoneKey: "committee.districts.malappuram.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.malappuram.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=30",
+                placeKey: "committee.districts.malappuram.treasurer.place",
+                shopNameKey: "committee.districts.malappuram.treasurer.shop",
+                phoneKey: "committee.districts.malappuram.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "kozhikode",
+        nameKey: "districtNames.kozhikode",
+        shopNameKey: "committee.districts.kozhikode.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.kozhikode.president.name",
+                photo: "https://i.pravatar.cc/150?img=31",
+                placeKey: "committee.districts.kozhikode.president.place",
+                shopNameKey: "committee.districts.kozhikode.president.shop",
+                phoneKey: "committee.districts.kozhikode.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.kozhikode.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=32",
+                placeKey: "committee.districts.kozhikode.secretary.place",
+                shopNameKey: "committee.districts.kozhikode.secretary.shop",
+                phoneKey: "committee.districts.kozhikode.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.kozhikode.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=33",
+                placeKey: "committee.districts.kozhikode.treasurer.place",
+                shopNameKey: "committee.districts.kozhikode.treasurer.shop",
+                phoneKey: "committee.districts.kozhikode.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "wayanad",
+        nameKey: "districtNames.wayanad",
+        shopNameKey: "committee.districts.wayanad.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.wayanad.president.name",
+                photo: "img/district/wayanad/precident.png",
+                phoneKey: "committee.districts.wayanad.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.wayanad.secretary.name",
+                photo: "img/district/wayanad/general-secretary.png",
+                phoneKey: "committee.districts.wayanad.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.wayanad.treasurer.name",
+                photo: "img/district/wayanad/treasurer.png",
+                phoneKey: "committee.districts.wayanad.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "kannur",
+        nameKey: "districtNames.kannur",
+        shopNameKey: "committee.districts.kannur.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.kannur.president.name",
+                photo: "img/district/kannur/precident.png",
+                phoneKey: "committee.districts.kannur.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.kannur.secretary.name",
+                photo: "img/district/kannur/general-secretary.png",
+                phoneKey: "committee.districts.kannur.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.kannur.treasurer.name",
+                photo: "img/district/kannur/treasurer.png",
+                phoneKey: "committee.districts.kannur.treasurer.phone"
+            }
+        ]
+    },
+    {
+        id: "kasaragod",
+        nameKey: "districtNames.kasaragod",
+        shopNameKey: "committee.districts.kasaragod.title",
+        members: [
+            {
+                posKey: "labels.positions.president",
+                nameKey: "committee.districts.kasaragod.president.name",
+                photo: "https://i.pravatar.cc/150?img=40",
+                placeKey: "committee.districts.kasaragod.president.place",
+                shopNameKey: "committee.districts.kasaragod.president.shop",
+                phoneKey: "committee.districts.kasaragod.president.phone"
+            },
+            {
+                posKey: "labels.positions.secretary",
+                nameKey: "committee.districts.kasaragod.secretary.name",
+                photo: "https://i.pravatar.cc/150?img=41",
+                placeKey: "committee.districts.kasaragod.secretary.place",
+                shopNameKey: "committee.districts.kasaragod.secretary.shop",
+                phoneKey: "committee.districts.kasaragod.secretary.phone"
+            },
+            {
+                posKey: "labels.positions.treasurer",
+                nameKey: "committee.districts.kasaragod.treasurer.name",
+                photo: "https://i.pravatar.cc/150?img=42",
+                placeKey: "committee.districts.kasaragod.treasurer.place",
+                shopNameKey: "committee.districts.kasaragod.treasurer.shop",
+                phoneKey: "committee.districts.kasaragod.treasurer.phone"
+            }
+        ]
+    }
 ];
 
 const galleryImages = [
@@ -639,315 +443,130 @@ const galleryImages = [
     "https://images.unsplash.com/photo-1475721025592-220a21cf12da?auto=format&fit=crop&q=80&w=800"
 ];
 
-const fallbackTranslations = {
+const TRANSLATIONS = {
     en: {
-        meta: {
-            title: "Kerala Hire Goods Owners Association (KSHGOA)",
-            description: "KSHGOA is a statewide association supporting hire goods businesses across Kerala."
+        "meta": { "title": "Kerala Hire Goods Owners Association (KSHGOA)", "description": "KSHGOA is a statewide association supporting hire goods businesses across Kerala." },
+        "controls": { "theme": { "dark": "Enable dark theme", "light": "Enable light theme" } },
+        "brand": { "subtitle": "Kerala Hire Goods Owners Association" },
+        "nav": { "home": "Home", "about": "About", "stateCommittee": "State Committee", "districtCommittees": "District Committees", "gallery": "Gallery", "contact": "Contact Us" },
+        "mobile": { "getInTouch": "Get in touch" },
+        "hero": { "badge": "Statewide Organization", "title": "Kerala Hire Goods <br class=\"hidden sm:block\" /> Owners Association", "description": "Empowering Hire Goods Businesses Across Kerala through connectivity, community, and statewide collaboration.", "primaryCta": "View State Committee", "secondaryCta": "Explore District Committees", "scroll": "Scroll Target" },
+        "about": {
+            "eyebrow": "About Us", "title": "Kerala State Hire Goods Owners Association (KSHGOA)",
+            "paragraphOne": "<strong class=\"text-gray-800\">Kerala State Hire Goods Owners Association (KSHGOA)</strong> is the premier organization dedicated to the empowerment and welfare of owners and workers in Kerala's Pandhal, Decoration, and Light & Sound sectors. For over three and a half decades, KSHGOA has been at the forefront of advocating for the rights of its members and ensuring their socio-economic security.",
+            "paragraphTwo": "Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
+            "highlight": "Statewide welfare, advocacy, and socio-economic security",
+            "history": { "label": "Legacy", "title": "History & Evolution", "item1": "<strong class=\"text-gray-800\">Foundation:</strong> The journey began 37 years ago in Kozhikode, born from the visionary decision of nine pioneering individuals. This organizational model has since become a benchmark, inspiring the formation and active functioning of the Tamil Azhaga State Hire Goods Owners Association in Tamil Nadu.", "item2": "<strong class=\"text-gray-800\">Expansion:</strong> Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.", "item3": "<strong class=\"text-gray-800\">Infrastructure:</strong> While the State Committee currently operates from its own building on Francis Road, Kozhikode, the organization is entering a new era of growth. Construction has commenced for a state-of-the-art headquarters near Kallai, Kozhikode, on land acquired for Rs. 1.50 crores. We also maintain dedicated district offices in Malappuram and Kannur." },
+            "objectives": { "label": "Purpose", "title": "Our Objectives", "item1": "<strong class=\"text-gray-800\">*</strong> To elevate the living standards of owners and employees within the industry.", "item2": "<strong class=\"text-gray-800\">*</strong> To proactively intervene in professional challenges and provide members with comprehensive legal and practical support.", "item3": "<strong class=\"text-gray-800\">*</strong> To bridge the gap between our members and the government, ensuring all entitled benefits and rights are secured." },
+            "welfare": { "label": "Member Welfare", "title": "Welfare Schemes & Achievements", "item1": "KSHGOA implements extensive welfare programs to ensure the safety and stability of our members and their families.", "item2": "<strong class=\"text-gray-800\">Cooperative Banking:</strong> We successfully operate dedicated cooperative banking systems in the Kannur and Palakkad districts.", "item3": "<strong class=\"text-gray-800\">HIGOS:</strong> Operating in five districts, HIGOS provides essential industry products to members at subsidized rates through a cooperative procurement model.", "item4": "<strong class=\"text-gray-800\">Financial Security:</strong> Most districts offer death benefit schemes providing up to Rs. 5 lakhs to the families of deceased members. Additionally, the State Committee's HOWACT project provides an additional Rs. 50,000 in immediate financial assistance." },
+            "philanthropy": { "label": "Humanitarian Work", "title": "Social Responsibility & Philanthropy", "item1": "KSHGOA is deeply committed to humanitarian causes and community support.", "item2": "<strong class=\"text-gray-800\">Disaster Relief:</strong> In response to the Chooralmala disaster in Wayanad, the State Committee contributed approximately Rs. 20 lakhs to the Chief Minister's Distress Relief Fund. Furthermore, the Malappuram District Committee distributed household appliances and essentials worth Rs. 20 lakhs to those affected by the Nilambur Kavalappara floods.", "item3": "<strong class=\"text-gray-800\">Compassionate Care:</strong> Beyond emergency aid for workplace accidents, the association has also undertaken projects like constructing a home for a financially distressed member in Wayanad." },
+            "standing": { "label": "Recognition", "title": "Social & Professional Standing", "item1": "The Government of Kerala recognizes KSHGOA as an integral part of the state's cultural fabric. As a testament to our impact, the association has been granted membership in the Kerala State Cultural Welfare Fund Board.", "item2": "Currently, over 90% of the industry, more than 9,000 out of 11,000 owners, is united under the KSHGOA banner. This vast family also supports the livelihoods of approximately 4 lakh workers across Kerala." }
         },
-        controls: { theme: { dark: "Enable dark theme", light: "Enable light theme" } },
-        brand: { subtitle: "Kerala Hire Goods Owners Association" },
-        nav: { home: "Home", about: "About", stateCommittee: "State Committee", districtCommittees: "District Committees", gallery: "Gallery", contact: "Contact Us" },
-        mobile: { getInTouch: "Get in touch" },
-        hero: {
-            badge: "Statewide Organization",
-            title: "Kerala Hire Goods <br class=\"hidden sm:block\" /> Owners Association",
-            description: "Empowering Hire Goods Businesses Across Kerala through connectivity, community, and statewide collaboration.",
-            primaryCta: "View State Committee",
-            secondaryCta: "Explore District Committees",
-            scroll: "Scroll Target"
-        },
-        about: {
-            eyebrow: "About Us",
-            title: "Kerala State Hire Goods Owners Association (KSHGOA)",
-            paragraphOne: "<strong class=\"text-gray-800\">Kerala State Hire Goods Owners Association (KSHGOA)</strong> is the premier organization dedicated to the empowerment and welfare of owners and workers in Kerala's Pandhal, Decoration, and Light & Sound sectors. For over three and a half decades, KSHGOA has been at the forefront of advocating for the rights of its members and ensuring their socio-economic security.",
-            paragraphTwo: "Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
-            highlight: "Statewide welfare, advocacy, and socio-economic security",
-            history: {
-                label: "Legacy",
-                title: "History & Evolution",
-                item1: "<strong class=\"text-gray-800\">Foundation:</strong> The journey began 37 years ago in Kozhikode, born from the visionary decision of nine pioneering individuals. This organizational model has since become a benchmark, inspiring the formation and active functioning of the Tamil Azhaga State Hire Goods Owners Association in Tamil Nadu.",
-                item2: "<strong class=\"text-gray-800\">Expansion:</strong> Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
-                item3: "<strong class=\"text-gray-800\">Infrastructure:</strong> While the State Committee currently operates from its own building on Francis Road, Kozhikode, the organization is entering a new era of growth. Construction has commenced for a state-of-the-art headquarters near Kallai, Kozhikode, on land acquired for Rs. 1.50 crores. We also maintain dedicated district offices in Malappuram and Kannur."
-            },
-            objectives: {
-                label: "Purpose",
-                title: "Our Objectives",
-                item1: "<strong class=\"text-gray-800\">*</strong> To elevate the living standards of owners and employees within the industry.",
-                item2: "<strong class=\"text-gray-800\">*</strong> To proactively intervene in professional challenges and provide members with comprehensive legal and practical support.",
-                item3: "<strong class=\"text-gray-800\">*</strong> To bridge the gap between our members and the government, ensuring all entitled benefits and rights are secured."
-            },
-            welfare: {
-                label: "Member Welfare",
-                title: "Welfare Schemes & Achievements",
-                item1: "KSHGOA implements extensive welfare programs to ensure the safety and stability of our members and their families.",
-                item2: "<strong class=\"text-gray-800\">Cooperative Banking:</strong> We successfully operate dedicated cooperative banking systems in the Kannur and Palakkad districts.",
-                item3: "<strong class=\"text-gray-800\">HIGOS:</strong> Operating in five districts, HIGOS provides essential industry products to members at subsidized rates through a cooperative procurement model.",
-                item4: "<strong class=\"text-gray-800\">Financial Security:</strong> Most districts offer death benefit schemes providing up to Rs. 5 lakhs to the families of deceased members. Additionally, the State Committee's HOWACT project provides an additional Rs. 50,000 in immediate financial assistance."
-            },
-            philanthropy: {
-                label: "Humanitarian Work",
-                title: "Social Responsibility & Philanthropy",
-                item1: "KSHGOA is deeply committed to humanitarian causes and community support.",
-                item2: "<strong class=\"text-gray-800\">Disaster Relief:</strong> In response to the Chooralmala disaster in Wayanad, the State Committee contributed approximately Rs. 20 lakhs to the Chief Minister's Distress Relief Fund. Furthermore, the Malappuram District Committee distributed household appliances and essentials worth Rs. 20 lakhs to those affected by the Nilambur Kavalappara floods.",
-                item3: "<strong class=\"text-gray-800\">Compassionate Care:</strong> Beyond emergency aid for workplace accidents, the association has also undertaken projects like constructing a home for a financially distressed member in Wayanad."
-            },
-            standing: {
-                label: "Recognition",
-                title: "Social & Professional Standing",
-                item1: "The Government of Kerala recognizes KSHGOA as an integral part of the state's cultural fabric. As a testament to our impact, the association has been granted membership in the Kerala State Cultural Welfare Fund Board.",
-                item2: "Currently, over 90% of the industry, more than 9,000 out of 11,000 owners, is united under the KSHGOA banner. This vast family also supports the livelihoods of approximately 4 lakh workers across Kerala."
+        "stats": { "districtCommittees": "District Committees", "registeredMembers": "Owners United", "yearsOfService": "Years of Service", "eventsSupported": "Workers Supported" },
+        "stateCommittee": { "eyebrow": "Leadership", "title": "State Committee", "description": "Guiding the association with vision and dedication to support the hire goods community across Kerala." },
+        "districtSection": { "eyebrow": "Statewide Network", "title": "District Committees", "description": "Explore our 14 active district committees facilitating local support and collaboration." },
+        "activities": { "eyebrow": "Our Operations", "title": "Key Activities", "description": "Driving growth and establishing standards across the hire goods industry.", "cards": { "conference": { "title": "Annual State Conference", "description": "Gathering statewide members to discuss industry trends, elect committees, and set future goals." }, "meetings": { "title": "District Meetings", "description": "Regular regional assemblies to address local challenges and strengthen community bonds." }, "training": { "title": "Training Programs", "description": "Skill development workshops ensuring businesses stay ahead with modern practices and equipment." }, "support": { "title": "Industry Support", "description": "Advocating for members' rights, providing legal guidance, and establishing fair business guidelines." } } },
+        "gallery": { "eyebrow": "Visuals", "title": "Photo Gallery", "description": "Moments from our meetings, events, and community support programs.", "viewAll": "View Complete Gallery", "cardTitle": "Event Highlights", "cardDescription": "KSHGOA Gathering", "imageAlt": "Gallery Image {number}" },
+        "contact": { "eyebrow": "Get in Touch", "title": "Contact Us", "description": "Reach out to our state office for queries, membership, or general info.", "stateOffice": "State Office", "address": "Kerala Hire Goods Owners Association (KSHGOA)<br>K.S.H.G.O.A Building, Francis Road<br>Idiyangara, Kuttichira<br>Kozhikode, Kerala 673003", "phoneNumber": "Phone Number" },
+        "form": { "title": "Send a Message", "fullName": "Full Name", "phoneNumber": "Phone Number", "message": "Message", "namePlaceholder": "John Doe", "phonePlaceholder": "+91 98765 43210", "messagePlaceholder": "How can we help you?", "submit": "Send Message" },
+        "footer": { "badge": "Statewide Association", "description": "The ultimate voice for hire goods businesses in Kerala. Connecting districts, supporting owners, and building a stronger community.", "quickLinks": "Quick Links", "aboutLink": "About KSHGOA", "galleryLink": "Photo Gallery", "topDistricts": "Top Districts", "contactDetails": "Contact Details", "copyright": "Kerala Hire Goods Owners Association. All Rights Reserved.", "privacy": "Privacy Policy", "terms": "Terms of Service" },
+        "labels": { "positions": { "president": "President", "generalSecretary": "General Secretary", "vicePresident": "Vice President", "chairman": "Chairman", "treasurer": "Treasurer", "executiveMember": "Executive Member", "secretary": "Secretary" } },
+        "districtNames": { "thiruvananthapuram": "Thiruvananthapuram", "kollam": "Kollam", "pathanamthitta": "Pathanamthitta", "alappuzha": "Alappuzha", "kottayam": "Kottayam", "idukki": "Idukki", "ernakulam": "Ernakulam", "thrissur": "Thrissur", "palakkad": "Palakkad", "malappuram": "Malappuram", "kozhikode": "Kozhikode", "wayanad": "Wayanad", "kannur": "Kannur", "kasaragod": "Kasaragod" },
+        "committee": {
+            "state": { "ahamedKoya": "A. P. Ahamed Koya", "balan": "T. V. Balan", "shamsudheen": "P. Shamsudheen" },
+            "districts": {
+                "thiruvananthapuram": { "title": "Thiruvananthapuram District Committee", "president": { "name": "V. Vijayakumar", "shop": "SV Hire service and Decorations", "place": "", "phone": "+91 9447167070" }, "secretary": { "name": "Alavudin. S", "shop": "Event Rentals TVM", "place": "", "phone": "+91 9745926777" }, "treasurer": { "name": "Pradeep M", "shop": "Vinayaka stage decorations & hire services", "place": "", "phone": "+91 9746128880" } },
+                // "kollam": { "title": "Kollam District Committee", "president": { "name": "A. C. Babu", "shop": "Kollam Rentals", "place": "Kollam", "phone": "" }, "secretary": { "name": "N. Prakash", "shop": "Events Plus", "place": "Kollam", "phone": "" }, "treasurer": { "name": "S. K. Unni", "shop": "Heritage Events", "place": "Kollam", "phone": "" } },
+                // "pathanamthitta": { "title": "Pathanamthitta District Committee", "president": { "name": "J. K. Anto", "shop": "Divine Events", "place": "Pathanamthitta", "phone": "" }, "secretary": { "name": "R. G. Ravi", "shop": "Celebrations", "place": "Pathanamthitta", "phone": "" }, "treasurer": { "name": "C. M. Sajan", "shop": "Royal Rentals", "place": "Pathanamthitta", "phone": "" } },
+                "alappuzha": { "title": "Alappuzha District Committee", "president": { "name": "Sunil karukathara", "place": "Kayamkulam", "address1": "Karukatharayil house", "address2": "Pullikkanakku Po", "address3": "690537", "phone": "" }, "generalSecretary": { "name": "Sajikumar Peralasseril", "place": "Kayamkulam", "address1": "Malathinivas", "address2": "Kareelakulangara Po", "address3": "690572", "phone": "+91 8075707566" }, "treasurer": { "name": "Rajesh Nalamadam", "place": "Avalookkunnu", "address1": "Nalamadam house", "address2": "South Aryadu Po", "address3": "Alapuzha", "phone": "+91 94952 10801" } },
+                "kottayam": { "title": "Kottayam District Committee", "president": { "name": "KUNJUMON K.M", "shop": "ST: PAULS DECORATION", "place": "VETTI MUKAL P.O", "phone": "" }, "generalSecretary": { "name": "MADHUSUDHANAN NAIR", "shop": "MADHURIMA", "place": "S.H MOUNT P.O", "phone": "" }, "treasurer": { "name": "K.C. SURESH", "shop": "ASIAN DECORATION", "place": "KARUVALLITHARA", "phone": "" } },
+                // "idukki": { "title": "Idukki District Committee", "president": { "name": "S. P. Haridas", "shop": "Mountain Events", "place": "Idukki", "phone": "" }, "secretary": { "name": "K. J. Ali", "shop": "Alpine Rentals", "place": "Idukki", "phone": "" }, "treasurer": { "name": "P. K. Manoj", "shop": "Valley Events", "place": "Idukki", "phone": "" } },
+                // "ernakulam": { "title": "Ernakulam District Committee", "president": { "name": "B. R. Mohanan", "shop": "Ernakulam Hire", "place": "Ernakulam", "phone": "" }, "secretary": { "name": "T. K. Prem", "shop": "Metro Events", "place": "Ernakulam", "phone": "" }, "treasurer": { "name": "N. P. Anil", "shop": "Urban Celebrations", "place": "Ernakulam", "phone": "" } },
+                "thrissur": { "title": "Thrissur District Committee", "president": { "name": "Manikanda Das. P.P", "shop": "Shreyas Sound", "place": "Killimangalam", "phone": "+91 9447615524" }, "secretary": { "name": "Jyothish K B", "shop": "Classical Events", "place": "Chelakkara", "phone": "+91 9447912650" }, "treasurer": { "name": "Shamsudheen CKM", "shop": "CKM Events", "place": "Mullurkkara", "phone": "+91 9847407572" } },
+                // "palakkad": { "title": "Palakkad District Committee", "president": { "name": "C. K. Gopal", "shop": "Palakkad Hire", "place": "Palakkad", "phone": "" }, "secretary": { "name": "K. V. Jayan", "shop": "Gateway Events", "place": "Palakkad", "phone": "" }, "treasurer": { "name": "P. N. Saju", "shop": "Plains Events", "place": "Palakkad", "phone": "" } },
+                // "malappuram": { "title": "Malappuram District Committee", "president": { "name": "M. K. Hamsa", "shop": "Malappuram Rentals", "place": "Malappuram", "phone": "" }, "secretary": { "name": "A. P. Saif", "shop": "Grand Events", "place": "Malappuram", "phone": "" }, "treasurer": { "name": "U. K. Rashid", "shop": "Celebration Station", "place": "Malappuram", "phone": "" } },
+                // "kozhikode": { "title": "Kozhikode District Committee", "president": { "name": "A. P. Ahamed Koya", "shop": "Kozhikode Events", "place": "Kozhikode", "phone": "" }, "secretary": { "name": "T. V. Balan", "shop": "Coast Rentals", "place": "Kozhikode", "phone": "" }, "treasurer": { "name": "P. Shamsudheen", "shop": "Premier Celebrations", "place": "Kozhikode", "phone": "" } },
+                "wayanad": { "title": "Wayanad District Committee", "president": { "name": "SHIBU KARANI", "phone": "" }, "secretary": { "name": "MANAF PIDANGOD", "phone": "" }, "treasurer": { "name": "RAJU MASS", "phone": "" } },
+                "kannur": { "title": "Kannur District Committee", "president": { "name": "E. K. Nair", "phone": "" }, "secretary": { "name": "M. N. Sasi", "phone": "" }, "treasurer": { "name": "N. A. Kishan", "phone": "" } },
+                // "kasaragod": { "title": "Kasaragod District Committee", "president": { "name": "X. K. Hassan", "shop": "Kasaragod Hire", "place": "Kasaragod", "phone": "" }, "secretary": { "name": "P. M. Ibrahim", "shop": "Border Events", "place": "Kasaragod", "phone": "" }, "treasurer": { "name": "K. P. Mustafa", "shop": "Northern Star Events", "place": "Kasaragod", "phone": "" } }
             }
-        },
-        stats: { districtCommittees: "District Committees", registeredMembers: "Owners United", yearsOfService: "Years of Service", eventsSupported: "Workers Supported" },
-        stateCommittee: { eyebrow: "Leadership", title: "State Committee", description: "Guiding the association with vision and dedication to support the hire goods community across Kerala.", coreTag: "Core Team", profileLink: "View Profile" },
-        districtSection: { eyebrow: "Statewide Network", title: "District Committees", description: "Explore our 14 active district committees facilitating local support and collaboration." },
-        activities: {
-            eyebrow: "Our Operations",
-            title: "Key Activities",
-            description: "Driving growth and establishing standards across the hire goods industry.",
-            cards: {
-                conference: { title: "Annual State Conference", description: "Gathering statewide members to discuss industry trends, elect committees, and set future goals." },
-                meetings: { title: "District Meetings", description: "Regular regional assemblies to address local challenges and strengthen community bonds." },
-                training: { title: "Training Programs", description: "Skill development workshops ensuring businesses stay ahead with modern practices and equipment." },
-                support: { title: "Industry Support", description: "Advocating for members' rights, providing legal guidance, and establishing fair business guidelines." }
-            }
-        },
-        gallery: {
-            eyebrow: "Visuals",
-            title: "Photo Gallery",
-            description: "Moments from our meetings, events, and community support programs.",
-            viewAll: "View Complete Gallery",
-            cardTitle: "Event Highlights",
-            cardDescription: "KSHGOA Gathering",
-            imageAlt: "Gallery Image {number}"
-        },
-        contact: {
-            eyebrow: "Get in Touch",
-            title: "Contact Us",
-            description: "Reach out to our state office for queries, membership, or general info.",
-            stateOffice: "State Office",
-            address: "Kerala Hire Goods Owners Association (KSHGOA)<br>K.S.H.G.O.A Building, Francis Road<br>Idiyangara, Kuttichira<br>Kozhikode, Kerala 673003",
-            phoneNumber: "Phone Number"
-        },
-        form: {
-            title: "Send a Message",
-            fullName: "Full Name",
-            phoneNumber: "Phone Number",
-            message: "Message",
-            namePlaceholder: "John Doe",
-            phonePlaceholder: "+91 98765 43210",
-            messagePlaceholder: "How can we help you?",
-            submit: "Send Message"
-        },
-        footer: {
-            badge: "Statewide Association",
-            description: "The ultimate voice for hire goods businesses in Kerala. Connecting districts, supporting owners, and building a stronger community.",
-            quickLinks: "Quick Links",
-            aboutLink: "About KSHGOA",
-            galleryLink: "Photo Gallery",
-            topDistricts: "Top Districts",
-            contactDetails: "Contact Details",
-            copyright: "Kerala Hire Goods Owners Association. All Rights Reserved.",
-            privacy: "Privacy Policy",
-            terms: "Terms of Service"
-        },
-        labels: {
-            positions: {
-                president: "President",
-                generalSecretary: "General Secretary",
-                vicePresident: "Vice President",
-                chairman: "Chairman",
-                treasurer: "Treasurer",
-                executiveMember: "Executive Member",
-                secretary: "Secretary"
-            }
-        },
-        districtNames: {
-            thiruvananthapuram: "Thiruvananthapuram",
-            kollam: "Kollam",
-            pathanamthitta: "Pathanamthitta",
-            alappuzha: "Alappuzha",
-            kottayam: "Kottayam",
-            idukki: "Idukki",
-            ernakulam: "Ernakulam",
-            thrissur: "Thrissur",
-            palakkad: "Palakkad",
-            malappuram: "Malappuram",
-            kozhikode: "Kozhikode",
-            wayanad: "Wayanad",
-            kannur: "Kannur",
-            kasaragod: "Kasaragod"
         }
     },
     ml: {
-        meta: {
-            title: "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)",
-            description: "കേരളമൊട്ടാകെയുള്ള ഹയർ ഗുഡ്സ് സ്ഥാപനങ്ങൾക്ക് പിന്തുണ നൽകുന്ന സംസ്ഥാനതല സംഘടനയാണ് KSHGOA."
+        "meta": { "title": "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)", "description": "കേരളമെമ്പാടുമുള്ള ഹയർ ഗുഡ്സ് സ്ഥാപനങ്ങൾക്ക് പിന്തുണ നൽകുന്ന സംസ്ഥാനതല സംഘടനയാണ് KSHGOA." },
+        "controls": { "theme": { "dark": "ഡാർക്ക് തീം ഓൺ ചെയ്യുക", "light": "ലൈറ്റ് തീം ഓൺ ചെയ്യുക" } },
+        "brand": { "subtitle": "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ" },
+        "nav": { "home": "ഹോം", "about": "അസോസിയേഷൻ", "stateCommittee": "സംസ്ഥാന കമ്മിറ്റി", "districtCommittees": "ജില്ലാ കമ്മിറ്റി", "gallery": "ഗാലറി", "contact": "ബന്ധപ്പെടുക" },
+        "mobile": { "getInTouch": "ഞങ്ങളുമായി ബന്ധപ്പെടുക" },
+        "hero": { "badge": "സംസ്ഥാനതല സംഘടന", "title": "കേരള ഹയർ ഗുഡ്സ് <br class=\"hidden sm:block\" /> ഓണേഴ്സ് അസോസിയേഷൻ", "description": "കേരളമെമ്പാടുമുള്ള ഹയർ ഗുഡ്സ് സ്ഥാപനങ്ങളെ ബന്ധിപ്പിച്ച്, കൂട്ടായ്മ ശക്തിപ്പെടുത്തി, സംസ്ഥാനതല സഹകരണത്തിലൂടെ മുന്നോട്ട് നയിക്കുന്നു.", "primaryCta": "സംസ്ഥാന കമ്മിറ്റി കാണുക", "secondaryCta": "ജില്ലാ കമ്മിറ്റികൾ കാണുക", "scroll": "താഴേക്ക് പോകുക" },
+        "about": {
+            "eyebrow": "ഞങ്ങളേക്കുറിച്ച്", "title": "കേരള സ്റ്റേറ്റ് ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)",
+            "paragraphOne": "<strong class=\"text-gray-800\">കേരള സ്റ്റേറ്റ് ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)</strong> കേരളത്തിലെ പന്തൽ, ഡെക്കറേഷൻ, ലൈറ്റ് & സൗണ്ട് മേഖലകളിലെ ഉടമകളുടെയും തൊഴിലാളികളുടെയും ക്ഷേമത്തിനും ശക്തീകരണത്തിനുമായി പ്രവർത്തിക്കുന്ന പ്രമുഖ സംഘടനയാണ്. മൂന്ന് പതിറ്റാണ്ടിനും അരയ്ക്കും മേൽക്കാലമായി അംഗങ്ങളുടെ അവകാശങ്ങൾക്കായി പ്രവർത്തിച്ചുകൊണ്ട് അവരുടെ സാമൂഹ്യ-സാമ്പത്തിക സുരക്ഷ ഉറപ്പാക്കുന്നതിൽ KSHGOA മുന്നണിയിലുണ്ട്.",
+            "paragraphTwo": "ഇന്ന് അസോസിയേഷൻ കേരളത്തിലെ എല്ലാ 14 ജില്ലകളിലും ശക്തമായ സാന്നിധ്യമുള്ള ഒരു പ്രസ്ഥാനമായി വളർന്നു, സജീവ ജില്ലാകമ്മിറ്റികളും വലിയ അംഗബലവും അതിന്റെ ശക്തിയാണ്.",
+            "highlight": "സംസ്ഥാനതല ക്ഷേമവും അവകാശസംരക്ഷണവും സാമൂഹ്യ-സാമ്പത്തിക സുരക്ഷയും",
+            "history": { "label": "പാരമ്പര്യം", "title": "ചരിത്രവും വളർച്ചയും", "item1": "<strong class=\"text-gray-800\">സ്ഥാപനം:</strong> കോഴിക്കോട് ഒൻപത് ദൂരദർശികളായ വ്യക്തികളുടെ തീരുമാനത്തിലൂടെയാണ് 37 വർഷങ്ങൾക്ക് മുമ്പ് ഈ യാത്ര ആരംഭിച്ചത്. തുടർന്ന് ഈ സംഘടനാ മാതൃക തമിഴ്നാട്ടിലെ തമിഴ് അഴക സ്റ്റേറ്റ് ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷനെയും പ്രചോദിപ്പിച്ചു.", "item2": "<strong class=\"text-gray-800\">വിപുലീകരണം:</strong> ഇന്ന് കേരളത്തിലെ 14 ജില്ലകളിലുമുള്ള സജീവ കമ്മിറ്റികളുടെയും വലിയ അംഗപങ്കാളിത്തത്തിന്റെയും പിന്തുണയോടെ അസോസിയേഷൻ ശക്തമായി പ്രവർത്തിക്കുന്നു.", "item3": "<strong class=\"text-gray-800\">അടിസ്ഥാന സൗകര്യങ്ങൾ:</strong> സംസ്ഥാന കമ്മിറ്റി ഇപ്പോൾ കോഴിക്കോട് ഫ്രാൻസിസ് റോഡിലെ സ്വന്തം കെട്ടിടത്തിലാണ് പ്രവർത്തിക്കുന്നത്. കൂടാതെ കോഴിക്കോട് കല്ലായിക്ക് സമീപം 1.50 കോടി രൂപ വിലമതിക്കുന്ന സ്ഥലത്ത് പുതിയ ആസ്ഥാനമന്ദിരം നിർമ്മാണത്തിലുമാണ്. മലപ്പുറത്തും കണ്ണൂരിലും ജില്ല ഓഫിസുകളും പ്രവർത്തിക്കുന്നു." },
+            "objectives": { "label": "ലക്ഷ്യം", "title": "ഞങ്ങളുടെ ലക്ഷ്യങ്ങൾ", "item1": "<strong class=\"text-gray-800\">*</strong> വ്യവസായത്തിലെ ഉടമകളുടെയും ജീവനക്കാരുടെയും ജീവിതനിലവാരം ഉയർത്തുക.", "item2": "<strong class=\"text-gray-800\">*</strong> തൊഴിൽപരമായ പ്രശ്നങ്ങളിൽ ഇടപെട്ട് അംഗങ്ങൾക്ക് സമഗ്രമായ നിയമ-പ്രായോഗിക പിന്തുണ നൽകുക.", "item3": "<strong class=\"text-gray-800\">*</strong> അംഗങ്ങളെയും സർക്കാരിനെയും ബന്ധിപ്പിച്ച് അവർക്കുള്ള എല്ലാ അവകാശങ്ങളും ആനുകൂല്യങ്ങളും ഉറപ്പാക്കുക." },
+            "welfare": { "label": "അംഗക്ഷേമം", "title": "ക്ഷേമപദ്ധതികളും നേട്ടങ്ങളും", "item1": "അംഗങ്ങളുടെയും അവരുടെ കുടുംബങ്ങളുടെയും സുരക്ഷയും സ്ഥിരതയും ഉറപ്പാക്കുന്നതിനായി KSHGOA വിപുലമായ ക്ഷേമപദ്ധതികൾ നടപ്പിലാക്കുന്നു.", "item2": "<strong class=\"text-gray-800\">കോ-ഓപ്പറേറ്റീവ് ബാങ്കിംഗ്:</strong> കണ്ണൂർ, പാലക്കാട് ജില്ലകളിൽ പ്രത്യേക സഹകരണ ബാങ്കിംഗ് സംവിധാനം വിജയകരമായി പ്രവർത്തിക്കുന്നു.", "item3": "<strong class=\"text-gray-800\">HIGOS:</strong> അഞ്ച് ജില്ലകളിൽ പ്രവർത്തിക്കുന്ന ഹിഗോസ് സഹകരണ സമാഹരണ രീതിയിലൂടെ ആവശ്യമായ വ്യവസായ ഉൽപ്പന്നങ്ങൾ അംഗങ്ങൾക്ക് സബ്സിഡി നിരക്കിൽ ലഭ്യമാക്കുന്നു.", "item4": "<strong class=\"text-gray-800\">സാമ്പത്തിക സുരക്ഷ:</strong> പല ജില്ലകളിലും മരണാനന്തര സഹായ പദ്ധതിയിലൂടെ അംഗങ്ങളുടെ കുടുംബങ്ങൾക്ക് 5 ലക്ഷം രൂപ വരെ ലഭ്യമാക്കുന്നു. കൂടാതെ HOWACT പദ്ധതിയിലൂടെ സംസ്ഥാന കമ്മിറ്റി അടിയന്തരമായി 50,000 രൂപയും നൽകുന്നു." },
+            "philanthropy": { "label": "മാനവീയ സേവനം", "title": "സാമൂഹിക ഉത്തരവാദിത്തവും പരോപകാര പ്രവർത്തനങ്ങളും", "item1": "മാനവീയ ഇടപെടലുകൾക്കും സമൂഹ പിന്തുണയ്ക്കും KSHGOA ആഴത്തിലുള്ള പ്രതിബദ്ധത പുലർത്തുന്നു.", "item2": "<strong class=\"text-gray-800\">ദുരന്താശ്വാസം:</strong> വയനാട്ടിലെ ചൂരൽമല ദുരന്തത്തെ തുടർന്ന് സംസ്ഥാന കമ്മിറ്റി മുഖ്യമന്ത്രിയുടെ ദുരിതാശ്വാസ നിധിയിലേക്ക് ഏകദേശം 20 ലക്ഷം രൂപ നൽകി. നിലമ്പൂർ കാവലപ്പാറ വെള്ളപ്പൊക്കബാധിതർക്കായി മലപ്പുറം ജില്ലാ കമ്മിറ്റി 20 ലക്ഷം രൂപ വിലമതിക്കുന്ന ഗൃഹോപകരണങ്ങളും അവശ്യവസ്തുക്കളും വിതരണം ചെയ്തു.", "item3": "<strong class=\"text-gray-800\">കരുണാപൂർണ്ണ സേവനം:</strong> ജോലി സ്ഥലത്തെ അപകടങ്ങളിൽ അടിയന്തര സഹായം നൽകുന്നതിന് പുറമെ, വയനാട്ടിലെ സാമ്പത്തികമായി ബുദ്ധിമുട്ടുന്ന അംഗത്തിന് വീട് നിർമിച്ചു നൽകുന്നതുപോലുള്ള പദ്ധതികളും അസോസിയേഷൻ നടപ്പിലാക്കിയിട്ടുണ്ട്." },
+            "standing": { "label": "അംഗീകാരം", "title": "സാമൂഹികവും തൊഴിൽപരവുമായ നിലപാട്", "item1": "കേരളത്തിന്റെ സാംസ്കാരിക ഘടനയുടെ അഭിഭാജ്യ ഘടകമായി KSHGOAയെ കേരള സർക്കാർ അംഗീകരിക്കുന്നു. അതിന്റെ സ്വാധീനത്തിന്റെ ഭാഗമായി കേരള സ്റ്റേറ്റ് കൾച്ചറൽ വെൽഫെയർ ഫണ്ട് ബോർഡിൽ അംഗത്വവും ലഭിച്ചിട്ടുണ്ട്.", "item2": "ഇപ്പോൾ വ്യവസായത്തിലെ 90 ശതമാനത്തിലധികം, അതായത് 11,000 ഉടമകളിൽ 9,000ത്തിലധികം പേർ KSHGOAയുടെ കീഴിൽ ഒന്നിച്ചിരിക്കുന്നു. ഈ വലിയ കുടുംബം കേരളമെമ്പാടുമുള്ള ഏകദേശം 4 ലക്ഷം തൊഴിലാളികളുടെ ഉപജീവനത്തെയും പിന്തുണക്കുന്നു." }
         },
-        controls: { theme: { dark: "ഡാർക്ക് തീം ഓൺ ചെയ്യുക", light: "ലൈറ്റ് തീം ഓൺ ചെയ്യുക" } },
-        brand: { subtitle: "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ" },
-        nav: { home: "ഹോം", about: "അസോസിയേഷൻ", stateCommittee: "സംസ്ഥാന കമ്മിറ്റി", districtCommittees: "ജില്ലാ കമ്മിറ്റികൾ", gallery: "ഗാലറി", contact: "ബന്ധപ്പെടുക" },
-        mobile: { getInTouch: "ഞങ്ങളെ സമീപിക്കുക" },
-        hero: {
-            badge: "സംസ്ഥാനതല സംഘടന",
-            title: "കേരള ഹയർ ഗുഡ്സ് <br class=\"hidden sm:block\" /> ഓണേഴ്സ് അസോസിയേഷൻ",
-            description: "കേരളമൊട്ടാകെ ഹയർ ഗുഡ്സ് സ്ഥാപനങ്ങളെ ബന്ധിപ്പിച്ച്, കൂട്ടായ്മ ശക്തിപ്പെടുത്തി, സംസ്ഥാനതല സഹകരണത്തിലൂടെ മുന്നോട്ടുകൊണ്ടുപോകുന്നു.",
-            primaryCta: "സംസ്ഥാന കമ്മിറ്റി കാണുക",
-            secondaryCta: "ജില്ലാ കമ്മിറ്റികൾ കാണുക",
-            scroll: "താഴേക്ക് പോകുക"
-        },
-        about: {
-            eyebrow: "സംഘടനയെക്കുറിച്ച്",
-            title: "ജില്ലകളെ ഒന്നിപ്പിക്കുന്ന സഹകരണം",
-            paragraphOne: "<strong class=\"text-gray-800\">കേരള സ്റ്റേറ്റ് ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)</strong> കേരളത്തിലെ പന്തൽ, ഡെക്കറേഷൻ, ലൈറ്റ് & സൗണ്ട് മേഖലകളിലെ ഉടമകളുടെയും തൊഴിലാളികളുടെയും ക്ഷേമത്തിനും ശക്തീകരണത്തിനുമായി പ്രവർത്തിക്കുന്ന പ്രമുഖ സംഘടനയാണ്. മൂന്ന് പതിറ്റാണ്ടിനും അരയ്ക്കും മേൽക്കാലമായി അംഗങ്ങളുടെ അവകാശങ്ങൾക്കായി പ്രവർത്തിച്ചുകൊണ്ട് അവരുടെ സാമൂഹ്യ-സാമ്പത്തിക സുരക്ഷ ഉറപ്പാക്കുന്നതിൽ KSHGOA മുന്നണിയിലുണ്ട്.",
-            paragraphTwo: "ഇന്ന് അസോസിയേഷൻ കേരളത്തിലെ എല്ലാ 14 ജില്ലകളിലും ശക്തമായ സാന്നിധ്യമുള്ള ഒരു പ്രസ്ഥാനമായി വളർന്നു, സജീവ ജില്ലാകമ്മിറ്റികളും വലിയ അംഗബലവും അതിന്റെ ശക്തിയാണ്.",
-            highlight: "സംസ്ഥാനതല ക്ഷേമവും അവകാശസംരക്ഷണവും സാമൂഹ്യ-സാമ്പത്തിക സുരക്ഷയും",
-            history: {
-                label: "പാരമ്പര്യം",
-                title: "ചരിത്രവും വളർച്ചയും",
-                item1: "<strong class=\"text-gray-800\">സ്ഥാപനം:</strong> കോഴിക്കോട് ഒൻപത് ദൂരദർശികളായ വ്യക്തികളുടെ തീരുമാനത്തിലൂടെയാണ് 37 വർഷങ്ങൾക്ക് മുമ്പ് ഈ യാത്ര ആരംഭിച്ചത്. തുടർന്ന് ഈ സംഘടനാ മാതൃക തമിഴ്നാട്ടിലെ തമിഴ് അഴക സ്റ്റേറ്റ് ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷനെയും പ്രചോദിപ്പിച്ചു.",
-                item2: "<strong class=\"text-gray-800\">വിപുലീകരണം:</strong> ഇന്ന് കേരളത്തിലെ 14 ജില്ലകളിലുമുള്ള സജീവ കമ്മിറ്റികളുടെയും വലിയ അംഗപങ്കാളിത്തത്തിന്റെയും പിന്തുണയോടെ അസോസിയേഷൻ ശക്തമായി പ്രവർത്തിക്കുന്നു.",
-                item3: "<strong class=\"text-gray-800\">അടിസ്ഥാന സൗകര്യങ്ങൾ:</strong> സംസ്ഥാന കമ്മിറ്റി ഇപ്പോൾ കോഴിക്കോട് ഫ്രാൻസിസ് റോഡിലെ സ്വന്തം കെട്ടിടത്തിലാണ് പ്രവർത്തിക്കുന്നത്. കൂടാതെ കോഴിക്കോട് കല്ലായിക്ക് സമീപം 1.50 കോടി രൂപ വിലമതിക്കുന്ന സ്ഥലത്ത് പുതിയ ആസ്ഥാനമന്ദിരം നിർമ്മാണത്തിലുമാണ്. മലപ്പുറത്തും കണ്ണൂരിലും ജില്ല ഓഫിസുകളും പ്രവർത്തിക്കുന്നു."
-            },
-            objectives: {
-                label: "ലക്ഷ്യം",
-                title: "ഞങ്ങളുടെ ലക്ഷ്യങ്ങൾ",
-                item1: "<strong class=\"text-gray-800\">*</strong> വ്യവസായത്തിലെ ഉടമകളുടെയും ജീവനക്കാരുടെയും ജീവിതനിലവാരം ഉയർത്തുക.",
-                item2: "<strong class=\"text-gray-800\">*</strong> തൊഴിൽപരമായ പ്രശ്നങ്ങളിൽ ഇടപെട്ട് അംഗങ്ങൾക്ക് സമഗ്രമായ നിയമ-പ്രായോഗിക പിന്തുണ നൽകുക.",
-                item3: "<strong class=\"text-gray-800\">*</strong> അംഗങ്ങളെയും സർക്കാരിനെയും ബന്ധിപ്പിച്ച് അവർക്കുള്ള എല്ലാ അവകാശങ്ങളും ആനുകൂല്യങ്ങളും ഉറപ്പാക്കുക."
-            },
-            welfare: {
-                label: "അംഗക്ഷേമം",
-                title: "ക്ഷേമപദ്ധതികളും നേട്ടങ്ങളും",
-                item1: "അംഗങ്ങളുടെയും അവരുടെ കുടുംബങ്ങളുടെയും സുരക്ഷയും സ്ഥിരതയും ഉറപ്പാക്കുന്നതിനായി KSHGOA വിപുലമായ ക്ഷേമപദ്ധതികൾ നടപ്പിലാക്കുന്നു.",
-                item2: "<strong class=\"text-gray-800\">കോ-ഓപ്പറേറ്റീവ് ബാങ്കിംഗ്:</strong> കണ്ണൂർ, പാലക്കാട് ജില്ലകളിൽ പ്രത്യേക സഹകരണ ബാങ്കിംഗ് സംവിധാനം വിജയകരമായി പ്രവർത്തിക്കുന്നു.",
-                item3: "<strong class=\"text-gray-800\">HIGOS:</strong> അഞ്ച് ജില്ലകളിൽ പ്രവർത്തിക്കുന്ന ഹിഗോസ് സഹകരണ സമാഹരണ രീതിയിലൂടെ ആവശ്യമായ വ്യവസായ ഉൽപ്പന്നങ്ങൾ അംഗങ്ങൾക്ക് സബ്സിഡി നിരക്കിൽ ലഭ്യമാക്കുന്നു.",
-                item4: "<strong class=\"text-gray-800\">സാമ്പത്തിക സുരക്ഷ:</strong> പല ജില്ലകളിലും മരണാനന്തര സഹായ പദ്ധതിയിലൂടെ അംഗങ്ങളുടെ കുടുംബങ്ങൾക്ക് 5 ലക്ഷം രൂപ വരെ ലഭ്യമാക്കുന്നു. കൂടാതെ HOWACT പദ്ധതിയിലൂടെ സംസ്ഥാന കമ്മിറ്റി അടിയന്തരമായി 50,000 രൂപയും നൽകുന്നു."
-            },
-            philanthropy: {
-                label: "മാനവീയ സേവനം",
-                title: "സാമൂഹിക ഉത്തരവാദിത്തവും പരോപകാര പ്രവർത്തനങ്ങളും",
-                item1: "മാനവീയ ഇടപെടലുകൾക്കും സമൂഹ പിന്തുണയ്ക്കും KSHGOA ആഴത്തിലുള്ള പ്രതിബദ്ധത പുലർത്തുന്നു.",
-                item2: "<strong class=\"text-gray-800\">ദുരന്താശ്വാസം:</strong> വയനാട്ടിലെ ചൂരൽമല ദുരന്തത്തെ തുടർന്ന് സംസ്ഥാന കമ്മിറ്റി മുഖ്യമന്ത്രിയുടെ ദുരിതാശ്വാസ നിധിയിലേക്ക് ഏകദേശം 20 ലക്ഷം രൂപ നൽകി. നിലമ്പൂർ കാവലപ്പാറ വെള്ളപ്പൊക്കബാധിതർക്കായി മലപ്പുറം ജില്ലാ കമ്മിറ്റി 20 ലക്ഷം രൂപ വിലമതിക്കുന്ന ഗൃഹോപകരണങ്ങളും അവശ്യവസ്തുക്കളും വിതരണം ചെയ്തു.",
-                item3: "<strong class=\"text-gray-800\">കരുണാപൂർണ്ണ സേവനം:</strong> ജോലി സ്ഥലത്തെ അപകടങ്ങളിൽ അടിയന്തര സഹായം നൽകുന്നതിന് പുറമെ, വയനാട്ടിലെ സാമ്പത്തികമായി ബുദ്ധിമുട്ടുന്ന അംഗത്തിന് വീട് നിർമിച്ചു നൽകുന്നതുപോലുള്ള പദ്ധതികളും അസോസിയേഷൻ നടപ്പിലാക്കിയിട്ടുണ്ട്."
-            },
-            standing: {
-                label: "അംഗീകാരം",
-                title: "സാമൂഹികവും തൊഴിൽപരവുമായ നിലപാട്",
-                item1: "കേരളത്തിന്റെ സാംസ്കാരിക ഘടനയുടെ അഭിഭാജ്യ ഘടകമായി KSHGOAയെ കേരള സർക്കാർ അംഗീകരിക്കുന്നു. അതിന്റെ സ്വാധീനത്തിന്റെ ഭാഗമായി കേരള സ്റ്റേറ്റ് കൾച്ചറൽ വെൽഫെയർ ഫണ്ട് ബോർഡിൽ അംഗത്വവും ലഭിച്ചിട്ടുണ്ട്.",
-                item2: "ഇപ്പോൾ വ്യവസായത്തിലെ 90 ശതമാനത്തിലധികം, അതായത് 11,000 ഉടമകളിൽ 9,000ത്തിലധികം പേർ KSHGOAയുടെ കീഴിൽ ഒന്നിച്ചിരിക്കുന്നു. ഈ വലിയ കുടുംബം കേരളമെമ്പാടുമുള്ള ഏകദേശം 4 ലക്ഷം തൊഴിലാളികളുടെ ഉപജീവനത്തെയും പിന്തുണക്കുന്നു."
+        "stats": { "districtCommittees": "ജില്ലാ കമ്മിറ്റികൾ", "registeredMembers": "ഒന്നിച്ചിരിക്കുന്ന ഉടമകൾ", "yearsOfService": "സേവന വർഷങ്ങൾ", "eventsSupported": "പിന്തുണക്കുന്ന തൊഴിലാളികൾ" },
+        "stateCommittee": { "eyebrow": "നേതൃത്വം", "title": "സംസ്ഥാന കമ്മിറ്റി", "description": "കേരളമെമ്പാടുമുള്ള ഹയർ ഗുഡ്സ് സമൂഹത്തെ പിന്തുണയ്ക്കാൻ ദൂരദർശനത്തോടെയും പ്രതിബദ്ധതയോടെയും പ്രവർത്തിക്കുന്ന നേതൃത്വം." },
+        "districtSection": { "eyebrow": "സംസ്ഥാന വ്യാപക ശൃംഖല", "title": "ജില്ലാ കമ്മിറ്റികൾ", "description": "പ്രാദേശിക പിന്തുണയും സഹകരണവും ഉറപ്പാക്കുന്ന ഞങ്ങളുടെ 14 സജീവ ജില്ലാ കമ്മിറ്റികളെ പരിചയപ്പെടുക." },
+        "activities": { "eyebrow": "ഞങ്ങളുടെ പ്രവർത്തനം", "title": "പ്രധാന പ്രവർത്തനങ്ങൾ", "description": "ഹയർ ഗുഡ്സ് മേഖലയിലെ വളർച്ചയും മാനദണ്ഡങ്ങളും ശക്തിപ്പെടുത്തുന്ന ഇടപെടലുകൾ.", "cards": { "conference": { "title": "വാർഷിക സംസ്ഥാന സമ്മേളനം", "description": "മേഖലയിലെ പ്രവണതകൾ ചർച്ച ചെയ്യാനും, കമ്മിറ്റികളെ തിരഞ്ഞെടുക്കാനും, ഭാവി പദ്ധതികൾ നിശ്ചയിക്കാനും സംസ്ഥാനതല അംഗങ്ങളെ ഒന്നിക്കുന്നു." }, "meetings": { "title": "ജില്ലാ യോഗങ്ങൾ", "description": "പ്രാദേശിക പ്രശ്നങ്ങൾ പരിഹരിക്കാനും കൂട്ടായ്മ ഉറപ്പാക്കാനും പതിവായി നടക്കുന്ന മേഖലാ യോഗങ്ങൾ." }, "training": { "title": "പരിശീലന പരിപാടികൾ", "description": "ആധുനിക രീതികളും ഉപകരണങ്ങളും ഉപയോഗിച്ച് സ്ഥാപനങ്ങൾ മുന്നിൽ നിൽക്കാൻ സഹായിക്കുന്ന പരിശീലന ശില്പശാലകൾ." }, "support": { "title": "വ്യവസായ പിന്തുണ", "description": "അംഗങ്ങളുടെ അവകാശങ്ങൾക്കായി വാദിക്കുകയും, നിയമോപദേശം നൽകുകയും, നീതിയുള്ള വ്യാപാര മാർഗ്ഗരേഖകൾ രൂപപ്പെടുത്തുകയും ചെയ്യുന്നു." } } },
+        "gallery": { "eyebrow": "ദൃശ്യങ്ങൾ", "title": "ഫോട്ടോ ഗാലറി", "description": "യോഗങ്ങൾ, പരിപാടികൾ, സമൂഹസഹായ പ്രവർത്തനങ്ങൾ എന്നിവയിലെ നിമിഷങ്ങൾ.", "viewAll": "മുഴുവൻ ഗാലറി കാണുക", "cardTitle": "പരിപാടി ഹൈലൈറ്റുകൾ", "cardDescription": "KSHGOA സംഗമം", "imageAlt": "ഗാലറി ചിത്രം {number}" },
+        "contact": { "eyebrow": "ബന്ധപ്പെടുക", "title": "ഞങ്ങളുമായി ബന്ധപ്പെടുക", "description": "ചോദ്യങ്ങൾക്കും, അംഗത്വത്തിനും, പൊതുവിവരങ്ങൾക്കും ഞങ്ങളുടെ സംസ്ഥാന ഓഫീസുമായി ബന്ധപ്പെടുക.", "stateOffice": "സംസ്ഥാന ഓഫീസ്", "address": "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)<br>K.S.H.G.O.A ബിൽഡിംഗ്, ഫ്രാൻസിസ് റോഡ്<br>ഇടിയങ്ങര, കുട്ടിച്ചിറ<br>കോഴിക്കോട്, കേരള 673003", "phoneNumber": "ഫോൺ നമ്പർ" },
+        "form": { "title": "ഒരു സന്ദേശം അയയ്ക്കുക", "fullName": "പൂർണ്ണ പേര്", "phoneNumber": "ഫോൺ നമ്പർ", "message": "സന്ദേശം", "namePlaceholder": "നിങ്ങളുടെ പേര്", "phonePlaceholder": "+91 98765 43210", "messagePlaceholder": "ഞങ്ങൾ എങ്ങനെ സഹായിക്കാം?", "submit": "സന്ദേശം അയയ്ക്കുക" },
+        "footer": { "badge": "സംസ്ഥാനതല സംഘടന", "description": "കേരളത്തിലെ ഹയർ ഗുഡ്സ് സ്ഥാപനങ്ങളുടെ ഒരുമിച്ചുള്ള ശബ്ദം. ജില്ലകളെ ബന്ധിപ്പിച്ച്, ഉടമകളെ പിന്തുണച്ച്, ശക്തമായ സമൂഹം നിർമ്മിക്കുന്നു.", "quickLinks": "ദ്രുത ലിങ്കുകൾ", "aboutLink": "KSHGOAയെക്കുറിച്ച്", "galleryLink": "ഫോട്ടോ ഗാലറി", "topDistricts": "പ്രധാന ജില്ലകൾ", "contactDetails": "ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ", "copyright": "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ. എല്ലാ അവകാശങ്ങളും സംരക്ഷിതമാണ്.", "privacy": "സ്വകാര്യതാ നയം", "terms": "സേവന നിബന്ധനകൾ" },
+        "labels": { "positions": { "president": "പ്രസിഡന്റ്", "generalSecretary": "ജനറൽ സെക്രട്ടറി", "vicePresident": "വൈസ് പ്രസിഡന്റ്", "chairman": "ചെയർമാൻ", "treasurer": "ട്രഷറർ", "executiveMember": "എക്സിക്യൂട്ടീവ് അംഗം", "secretary": "സെക്രട്ടറി" } },
+        "districtNames": { "thiruvananthapuram": "തിരുവനന്തപുരം", "kollam": "കൊല്ലം", "pathanamthitta": "പത്തനംതിട്ട", "alappuzha": "ആലപ്പുഴ", "kottayam": "കോട്ടയം", "idukki": "ഇടുക്കി", "ernakulam": "എറണാകുളം", "thrissur": "തൃശ്ശൂർ", "palakkad": "പാലക്കാട്", "malappuram": "മലപ്പുറം", "kozhikode": "കോഴിക്കോട്", "wayanad": "വയനാട്", "kannur": "കണ്ണൂർ", "kasaragod": "കാസർഗോഡ്" },
+        "committee": {
+            "state": { "ahamedKoya": "എ. പി. അഹമ്മദ് കോയ", "balan": "ടി. വി. ബാലൻ", "shamsudheen": "പി. ഷംസുദ്ദീൻ" },
+            "districts": {
+                "thiruvananthapuram": { "title": "തിരുവനന്തപുരം ജില്ലാ കമ്മിറ്റി", "president": { "name": "വി. വിജയകുമാർ", "shop": "എസ്.വി ഹയർ സർവീസ് ആൻഡ് ഡെക്കറേഷൻസ്", "place": "", "phone": "+91 9447167070" }, "secretary": { "name": "അലാവുദ്ദീൻ എസ്.", "shop": "ഇവന്റ് റെന്റൽസ് ടി.വി.എം", "place": "", "phone": "+91 9745926777" }, "treasurer": { "name": "പ്രദീപ് എം.", "shop": "വിനായക സ്റ്റേജ് ഡെക്കറേഷൻസ് & ഹയർ സർവീസസ്", "place": "", "phone": "+91 9746128880" } },
+                // "kollam": { "title": "കൊല്ലം ജില്ലാ കമ്മിറ്റി", "president": { "name": "എ. സി. ബാബു", "shop": "കൊല്ലം റെന്റൽസ്", "place": "കൊല്ലം", "phone": "" }, "secretary": { "name": "എൻ. പ്രകാശ്", "shop": "ഇവന്റ്സ് പ്ലസ്", "place": "കൊല്ലം", "phone": "" }, "treasurer": { "name": "എസ്. കെ. ഉണ്ണി", "shop": "ഹെറിറ്റേജ് ഇവന്റ്സ്", "place": "കൊല്ലം", "phone": "" } },
+                // "pathanamthitta": { "title": "പത്തനംതിട്ട ജില്ലാ കമ്മിറ്റി", "president": { "name": "ജെ. കെ. ആന്റോ", "shop": "ഡിവൈൻ ഇവന്റ്സ്", "place": "പത്തനംതിട്ട", "phone": "" }, "secretary": { "name": "ആർ. ജി. രവി", "shop": "സെലിബ്രേഷൻസ്", "place": "പത്തനംതിട്ട", "phone": "" }, "treasurer": { "name": "സി. എം. സാജൻ", "shop": "റോയൽ റെന്റൽസ്", "place": "പത്തനംതിട്ട", "phone": "" } },
+                "alappuzha": { "title": "ആലപ്പുഴ ജില്ലാ കമ്മിറ്റി", "president": { "name": "സുനിൽ കാരുക്കാത്ര", "place": "കായംകുളം", "address1": "കാരുക്കാത്രയിൽ ഹൗസ്", "address2": "പുള്ളിക്കണക്ക് പി.ഒ", "address3": "690537", "phone": "" }, "generalSecretary": { "name": "സജി കുമാർ പെരളശ്ശേരിൽ", "place": "കായംകുളം", "address1": "മാലതി നിവാസ്", "address2": "കരീലകുളങ്ങര പി.ഒ", "address3": "690572", "phone": "+91 8075707566" }, "treasurer": { "name": "രാജേഷ് നാലുമാടം", "place": "അവലൂക്കുന്ന്", "address1": "നാലുമാടം ഹൗസ്", "address2": "സൗത്ത് ആര്യാട് പി.ഒ", "address3": "ആലപ്പുഴ", "phone": "+91 94952 10801" } },
+                "kottayam": { "title": "കോട്ടയം ജില്ലാ കമ്മിറ്റി", "president": { "name": "കുഞ്ഞുമോൻ കെ.എം", "shop": "സെന്റ് പോൾസ് ഡെക്കറേഷൻ", "place": "വെട്ടിമുകൾ പി.ഒ", "phone": "" }, "generalSecretary": { "name": "മധുസൂദനൻ നായർ", "shop": "മധുരിമ", "place": "എസ്.എച്ച് മൗണ്ട് പി.ഒ", "phone": "" }, "treasurer": { "name": "കെ.സി. സുരേഷ്", "shop": "ഏഷ്യൻ ഡെക്കറേഷൻ", "place": "കരുവള്ളിത്തറ", "phone": "" } },
+                // "idukki": { "title": "ഇടുക്കി ജില്ലാ കമ്മിറ്റി", "president": { "name": "എസ്. പി. ഹരിദാസ്", "shop": "മൗണ്ടൻ ഇവന്റ്സ്", "place": "ഇടുക്കി", "phone": "" }, "secretary": { "name": "കെ. ജെ. അലി", "shop": "ആൽപൈൻ റെന്റൽസ്", "place": "ഇടുക്കി", "phone": "" }, "treasurer": { "name": "പി. കെ. മനോജ്", "shop": "വാലി ഇവന്റ്സ്", "place": "ഇടുക്കി", "phone": "" } },
+                // "ernakulam": { "title": "എറണാകുളം ജില്ലാ കമ്മിറ്റി", "president": { "name": "ബി. ആർ. മോഹനൻ", "shop": "എറണാകുളം ഹയർ", "place": "എറണാകുളം", "phone": "" }, "secretary": { "name": "ടി. കെ. പ്രേം", "shop": "മെട്രോ ഇവന്റ്സ്", "place": "എറണാകുളം", "phone": "" }, "treasurer": { "name": "എൻ. പി. അനിൽ", "shop": "അർബൻ സെലിബ്രേഷൻസ്", "place": "എറണാകുളം", "phone": "" } },
+                "thrissur": { "title": "തൃശ്ശൂർ ജില്ലാ കമ്മിറ്റി", "president": { "name": "മണികണ്ഠദാസ് പി പി", "shop": "ശ്രേയസ് സൗണ്ട്", "place": "കിള്ളിമംഗലം", "phone": "+91 9447615524" }, "secretary": { "name": "ജ്യോതിഷ് ബാബു", "shop": "ക്ലാസികൽ ഇവൻ്റ്സ്", "place": "ചേലക്കര", "phone": "+91 9447912650" }, "treasurer": { "name": "ഷംസുദ്ദീൻ സി കെ എം", "shop": "സി കെ എം ഇവൻ്റ്", "place": "മുള്ളൂർക്കര", "phone": "+91 9847407572" } },
+                // "palakkad": { "title": "പാലക്കാട് ജില്ലാ കമ്മിറ്റി", "president": { "name": "സി. കെ. ഗോപാൽ", "shop": "പാലക്കാട് ഹയർ", "place": "പാലക്കാട്", "phone": "" }, "secretary": { "name": "കെ. വി. ജയൻ", "shop": "ഗേറ്റ്‌വേ ഇവന്റ്സ്", "place": "പാലക്കാട്", "phone": "" }, "treasurer": { "name": "പി. എൻ. സാജു", "shop": "പ്ലെയിൻസ് ഇവന്റ്സ്", "place": "പാലക്കാട്", "phone": "" } },
+                // "malappuram": { "title": "മലപ്പുറം ജില്ലാ കമ്മിറ്റി", "president": { "name": "എം. കെ. ഹംസ", "shop": "മലപ്പുറം റെന്റൽസ്", "place": "മലപ്പുറം", "phone": "" }, "secretary": { "name": "എ. പി. സൈഫ്", "shop": "ഗ്രാൻഡ് ഇവന്റ്സ്", "place": "മലപ്പുറം", "phone": "" }, "treasurer": { "name": "യു. കെ. റഷീദ്", "shop": "സെലിബ്രേഷൻ സ്റ്റേഷൻ", "place": "മലപ്പുറം", "phone": "" } },
+                // "kozhikode": { "title": "കോഴിക്കോട് ജില്ലാ കമ്മിറ്റി", "president": { "name": "എ. പി. അഹമ്മദ് കോയ", "shop": "കോഴിക്കോട് ഇവന്റ്സ്", "place": "കോഴിക്കോട്", "phone": "" }, "secretary": { "name": "ടി. വി. ബാലൻ", "shop": "കോസ്റ്റ് റെന്റൽസ്", "place": "കോഴിക്കോട്", "phone": "" }, "treasurer": { "name": "പി. ഷംസുദ്ദീൻ", "shop": "പ്രീമിയർ സെലിബ്രേഷൻസ്", "place": "കോഴിക്കോട്", "phone": "" } },
+                "wayanad": { "title": "വയനാട് ജില്ലാ കമ്മിറ്റി", "president": { "name": "ഷിബു കാരാണി", "phone": "" }, "secretary": { "name": "മനാഫ് പിടങ്ങാട്", "phone": "" }, "treasurer": { "name": "രാജു മാസ്", "phone": "" } },
+                "kannur": { "title": "കണ്ണൂർ ജില്ലാ കമ്മിറ്റി", "president": { "name": "ഇ. കെ. നായർ", "phone": "" }, "secretary": { "name": "എം. എൻ. ശശി", "phone": "" }, "treasurer": { "name": "എൻ. എ. കിഷൻ", "phone": "" } },
+                // "kasaragod": { "title": "കാസർഗോഡ് ജില്ലാ കമ്മിറ്റി", "president": { "name": "എക്സ്. കെ. ഹസ്സൻ", "shop": "കാസർഗോഡ് ഹയർ", "place": "കാസർഗോഡ്", "phone": "" }, "secretary": { "name": "പി. എം. ഇബ്രാഹിം", "shop": "ബോർഡർ ഇവന്റ്സ്", "place": "കാസർഗോഡ്", "phone": "" }, "treasurer": { "name": "കെ. പി. മുസ്തഫ", "shop": "നോർത്തേൺ സ്റ്റാർ ഇവന്റ്സ്", "place": "കാസർഗോഡ്", "phone": "" } }
             }
-        },
-        stats: { districtCommittees: "ജില്ലാ കമ്മിറ്റികൾ", registeredMembers: "രജിസ്റ്റർ ചെയ്ത അംഗങ്ങൾ", yearsOfService: "സേവനവർഷങ്ങൾ", eventsSupported: "പിന്തുണച്ച പരിപാടികൾ" },
-        stateCommittee: { eyebrow: "നേതൃത്വം", title: "സംസ്ഥാന കമ്മിറ്റി", description: "കേരളമൊട്ടാകെയുള്ള ഹയർ ഗുഡ്സ് സമൂഹത്തെ പിന്തുണയ്ക്കാൻ ദൂരദർശനത്തോടെയും പ്രതിബദ്ധതയോടെയും പ്രവർത്തിക്കുന്ന നേതൃത്വം.", coreTag: "പ്രധാന സംഘം", profileLink: "കൂടുതൽ കാണുക" },
-        districtSection: { eyebrow: "സംസ്ഥാന വ്യാപക ശൃംഖല", title: "ജില്ലാ കമ്മിറ്റികൾ", description: "പ്രാദേശിക പിന്തുണയും സഹകരണവും ഉറപ്പാക്കുന്ന ഞങ്ങളുടെ 14 സജീവ ജില്ലാ കമ്മിറ്റികളെ പരിചയപ്പെടുക." },
-        activities: {
-            eyebrow: "ഞങ്ങളുടെ പ്രവർത്തനം",
-            title: "പ്രധാന പ്രവർത്തനങ്ങൾ",
-            description: "ഹയർ ഗുഡ്സ് മേഖലയിലെ വളർച്ചയും മാനദണ്ഡങ്ങളും ശക്തിപ്പെടുത്തുന്ന ഇടപെടലുകൾ.",
-            cards: {
-                conference: { title: "വാർഷിക സംസ്ഥാന സമ്മേളനം", description: "മേഖലയിലെ പ്രവണതകൾ ചർച്ച ചെയ്യാനും, കമ്മിറ്റികളെ തിരഞ്ഞെടുക്കാനും, ഭാവി പദ്ധതികൾ നിശ്ചയിക്കാനും സംസ്ഥാനതല അംഗങ്ങളെ ഒന്നിക്കുന്നു." },
-                meetings: { title: "ജില്ലാ യോഗങ്ങൾ", description: "പ്രാദേശിക പ്രശ്നങ്ങൾ പരിഹരിക്കാനും കൂട്ടായ്മ ഉറപ്പാക്കാനും പതിവായി നടക്കുന്ന മേഖലാ യോഗങ്ങൾ." },
-                training: { title: "പരിശീലന പരിപാടികൾ", description: "ആധുനിക രീതികളും ഉപകരണങ്ങളും ഉപയോഗിച്ച് സ്ഥാപനങ്ങൾ മുന്നിൽ നിൽക്കാൻ സഹായിക്കുന്ന പരിശീലന ശില്പശാലകൾ." },
-                support: { title: "വ്യവസായ പിന്തുണ", description: "അംഗങ്ങളുടെ അവകാശങ്ങൾക്കായി വാദിക്കുകയും, നിയമോപദേശം നൽകുകയും, നീതിയുള്ള വ്യാപാര മാർഗ്ഗരേഖകൾ രൂപപ്പെടുത്തുകയും ചെയ്യുന്നു." }
-            }
-        },
-        gallery: {
-            eyebrow: "ദൃശ്യങ്ങൾ",
-            title: "ഫോട്ടോ ഗാലറി",
-            description: "യോഗങ്ങൾ, പരിപാടികൾ, സമൂഹസഹായ പ്രവർത്തനങ്ങൾ എന്നിവയിലെ നിമിഷങ്ങൾ.",
-            viewAll: "മുഴുവൻ ഗാലറി കാണുക",
-            cardTitle: "പരിപാടി ഹൈലൈറ്റുകൾ",
-            cardDescription: "KSHGOA സംഗമം",
-            imageAlt: "ഗാലറി ചിത്രം {number}"
-        },
-        contact: {
-            eyebrow: "ബന്ധപ്പെടുക",
-            title: "ഞങ്ങളെ സമീപിക്കുക",
-            description: "ചോദ്യങ്ങൾക്കും അംഗത്വത്തിനും പൊതുവിവരങ്ങൾക്കും ഞങ്ങളുടെ സംസ്ഥാന ഓഫിസുമായി ബന്ധപ്പെടുക.",
-            stateOffice: "സംസ്ഥാന ഓഫീസ്",
-            address: "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ (KSHGOA)<br>K.S.H.G.O.A ബിൽഡിംഗ്, ഫ്രാൻസിസ് റോഡ്<br>ഇടിയങ്ങര, കുട്ടിച്ചിറ<br>കോഴിക്കോട്, കേരള 673003",
-            phoneNumber: "ഫോൺ നമ്പർ"
-        },
-        form: {
-            title: "ഒരു സന്ദേശം അയയ്ക്കുക",
-            fullName: "പൂർണ്ണ പേര്",
-            phoneNumber: "ഫോൺ നമ്പർ",
-            message: "സന്ദേശം",
-            namePlaceholder: "നിങ്ങളുടെ പേര്",
-            phonePlaceholder: "+91 98765 43210",
-            messagePlaceholder: "ഞങ്ങൾ എങ്ങനെ സഹായിക്കാം?",
-            submit: "സന്ദേശം അയയ്ക്കുക"
-        },
-        footer: {
-            badge: "സംസ്ഥാനതല സംഘടന",
-            description: "കേരളത്തിലെ ഹയർ ഗുഡ്സ് സ്ഥാപനങ്ങളുടെ ഒരുമിച്ചുള്ള ശബ്ദം. ജില്ലകളെ ബന്ധിപ്പിച്ച് ഉടമകളെ പിന്തുണച്ച് ശക്തമായ സമൂഹം നിർമ്മിക്കുന്നു.",
-            quickLinks: "ദ്രുത ലിങ്കുകൾ",
-            aboutLink: "KSHGOAയെക്കുറിച്ച്",
-            galleryLink: "ഫോട്ടോ ഗാലറി",
-            topDistricts: "പ്രധാന ജില്ലകൾ",
-            contactDetails: "ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ",
-            copyright: "കേരള ഹയർ ഗുഡ്സ് ഓണേഴ്സ് അസോസിയേഷൻ. എല്ലാ അവകാശങ്ങളും സംരക്ഷിതമാണ്.",
-            privacy: "സ്വകാര്യതാ നയം",
-            terms: "സേവന നിബന്ധനകൾ"
-        },
-        labels: {
-            positions: {
-                president: "പ്രസിഡന്റ്",
-                generalSecretary: "ജനറൽ സെക്രട്ടറി",
-                vicePresident: "വൈസ് പ്രസിഡന്റ്",
-                chairman: "ചെയർമാൻ",
-                treasurer: "ട്രഷറർ",
-                executiveMember: "എക്സിക്യൂട്ടീവ് അംഗം",
-                secretary: "സെക്രട്ടറി"
-            }
-        },
-        districtNames: {
-            thiruvananthapuram: "തിരുവനന്തപുരം",
-            kollam: "കൊല്ലം",
-            pathanamthitta: "പത്തനംതിട്ട",
-            alappuzha: "ആലപ്പുഴ",
-            kottayam: "കോട്ടയം",
-            idukki: "ഇടുക്കി",
-            ernakulam: "എറണാകുളം",
-            thrissur: "തൃശ്ശൂർ",
-            palakkad: "പാലക്കാട്",
-            malappuram: "മലപ്പുറം",
-            kozhikode: "കോഴിക്കോട്",
-            wayanad: "വയനാട്",
-            kannur: "കണ്ണൂർ",
-            kasaragod: "കാസർഗോഡ്"
         }
     }
 };
 
 const translationCache = {};
-let translations = fallbackTranslations.en;
+let translations = {};
 let currentLang = localStorage.getItem("kshgoa-language") || "en";
 let currentTheme = localStorage.getItem("kshgoa-theme") || "light";
 let gsapInitialized = false;
 let threeState = null;
 
-document.addEventListener("DOMContentLoaded", async () => {
+// Pre-populate cache from embedded data so fetch is never needed
+translationCache["en"] = TRANSLATIONS.en;
+translationCache["ml"] = TRANSLATIONS.ml;
+
+document.addEventListener("DOMContentLoaded", () => {
     setupMenu();
     setupThemeControls();
     setupLanguageControls();
 
-    translations = fallbackTranslations[currentLang] || fallbackTranslations.en;
     document.documentElement.lang = currentLang;
-
     setTheme(currentTheme, { persist: false });
 
-    try {
-        await setLanguage(currentLang, { skipRefresh: true, silent: true });
-    } catch (error) {
-        console.warn("Language file load failed, using fallback translations.", error);
-    }
+    setLanguage(currentLang, { skipRefresh: true, silent: true });
 
     initThreeJS();
     initGSAP();
 });
+
 
 function qs(selector) {
     return document.querySelector(selector);
@@ -957,18 +576,22 @@ function qsa(selector) {
     return Array.from(document.querySelectorAll(selector));
 }
 
-function getTranslation(path) {
-    return path.split(".").reduce((value, key) => (value && value[key] !== undefined ? value[key] : undefined), translations);
+function getTranslation(path, langData) {
+    if (!langData) return undefined;
+    return path.split(".").reduce((value, key) => (value && value[key] !== undefined ? value[key] : undefined), langData);
 }
 
 function t(path, replacements = {}) {
-    const value = getTranslation(path);
+    // Try current language
+    let value = getTranslation(path, translations);
+
+    // Fallback to English if current language is missing key and isn't English already
+    if (value === undefined && currentLang !== "en") {
+        value = getTranslation(path, translationCache["en"]);
+    }
+
     if (typeof value !== "string") {
-        // If the current language is missing a translation, fall back to English.
-        const fallbackValue = path
-            .split(".")
-            .reduce((val, key) => (val && val[key] !== undefined ? val[key] : undefined), fallbackTranslations.en);
-        return typeof fallbackValue === "string" ? fallbackValue : path;
+        return path;
     }
 
     return Object.entries(replacements).reduce((result, [key, replacement]) => {
@@ -976,36 +599,12 @@ function t(path, replacements = {}) {
     }, value);
 }
 
-async function loadTranslations(lang) {
-    if (translationCache[lang]) {
-        return translationCache[lang];
-    }
-
-    const langFile = lang;
-    const response = await fetch(`lang/${langFile}.json`);
-    if (!response.ok) {
-        throw new Error(`Failed to load translations for ${lang}`);
-    }
-
-    const data = await response.json();
-    translationCache[lang] = data;
-    return data;
-}
-
-async function setLanguage(lang, options = {}) {
+function setLanguage(lang, options = {}) {
     currentLang = lang;
+    translations = translationCache[lang] || translationCache["en"] || {};
     localStorage.setItem("kshgoa-language", lang);
 
-    try {
-        translations = await loadTranslations(lang);
-    } catch (error) {
-        translations = fallbackTranslations[lang] || fallbackTranslations.en;
-        if (!options.silent) {
-            console.warn(`Using fallback translations for ${lang}.`, error);
-        }
-    }
-
-    document.documentElement.lang = lang;
+    document.documentElement.lang = currentLang;
     updateLanguageButtons();
     applyStaticTranslations();
     renderDynamicContent();
@@ -1067,6 +666,7 @@ function setupMenu() {
 
     mobileMenuBtn.addEventListener("click", toggleMenu);
     mobileLinks.forEach((link) => link.addEventListener("click", () => isMenuOpen && toggleMenu()));
+
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && isMenuOpen) {
             toggleMenu();
@@ -1085,8 +685,8 @@ function setupThemeControls() {
 function setTheme(theme, options = {}) {
     currentTheme = theme;
     const isDark = theme === "dark";
-
     document.body.classList.toggle("dark-theme", isDark);
+
     qs('meta[name="theme-color"]')?.setAttribute("content", isDark ? "#081122" : "#12108F");
 
     qsa(".theme-toggle-btn").forEach((button) => {
@@ -1105,10 +705,10 @@ function setTheme(theme, options = {}) {
 
 function setupLanguageControls() {
     qsa(".lang-btn").forEach((button) => {
-        button.addEventListener("click", async () => {
+        button.addEventListener("click", () => {
             const nextLang = button.dataset.lang;
             if (!nextLang || nextLang === currentLang) return;
-            await setLanguage(nextLang);
+            setLanguage(nextLang);
         });
     });
 }
@@ -1147,6 +747,7 @@ function applyStaticTranslations() {
     const desktopNav = qsa("#navbar .hidden.lg\\:flex > a");
     const mobileNav = qsa("#mobile-menu .mobile-link");
     const footerQuickLinks = qsa("footer .grid > div:nth-child(2) a");
+
     const navKeys = ["nav.home", "nav.about", "nav.stateCommittee", "nav.districtCommittees", "nav.gallery", "nav.contact"];
     const footerKeys = ["nav.home", "footer.aboutLink", "nav.stateCommittee", "nav.districtCommittees", "footer.galleryLink", "nav.contact"];
 
@@ -1262,6 +863,7 @@ function applyStaticTranslations() {
         setText(labels[0], t("form.fullName"));
         setText(labels[1], t("form.phoneNumber"));
         setText(labels[2], t("form.message"));
+
         const nameInput = qs("#name");
         const phoneInput = qs("#phone");
         const messageInput = qs("#message");
@@ -1276,9 +878,11 @@ function applyStaticTranslations() {
         setText(footerColumns[0].querySelector("a span:last-child"), t("footer.badge"));
         setText(footerColumns[0].querySelector("p"), t("footer.description"));
     }
+
     if (footerColumns[1]) {
         setText(footerColumns[1].querySelector("h4"), t("footer.quickLinks"));
     }
+
     if (footerColumns[2]) {
         setText(footerColumns[2].querySelector("h4"), t("footer.topDistricts"));
         const topDistrictKeys = ["districtNames.kozhikode", "districtNames.ernakulam", "districtNames.thiruvananthapuram", "districtNames.thrissur", "districtNames.malappuram"];
@@ -1288,6 +892,7 @@ function applyStaticTranslations() {
             }
         });
     }
+
     if (footerColumns[3]) {
         setText(footerColumns[3].querySelector("h4"), t("footer.contactDetails"));
     }
@@ -1326,16 +931,12 @@ function renderStateCommittee() {
                 <div class="relative px-6 pt-10 pb-8 sm:px-8">
                      <div class="member-photo-frame mx-auto mb-7 h-44 w-44 sm:h-48 sm:w-48 rounded-full p-2 shadow-[0_25px_55px_-28px_rgba(18,16,143,0.45)] transition-all duration-500 group-hover:-translate-y-2">
                         <div class="h-full w-full overflow-hidden rounded-full border-[10px] border-white bg-slate-100 shadow-inner">
-                            <img src="${member.image}" alt="${member.name}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+                            <img src="${member.image}" alt="${t(member.nameKey)}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
                         </div>
                     </div>
-                    <h6 class="text-xl sm:text-2xl font-heading font-extrabold uppercase tracking-[0.06em] text-gray-900 transition-colors duration-300 group-hover:text-primary">${member.name}</h6>
+                    <h6 class="text-xl sm:text-2xl font-heading font-extrabold uppercase tracking-[0.06em] text-gray-900 transition-colors duration-300 group-hover:text-primary">${t(member.nameKey)}</h6>
                     <p class="member-role-label mt-3 text-sm sm:text-[0.95rem] font-extrabold uppercase tracking-[0.2em] text-lime-600">${t(member.positionKey)}</p>
                     <div class="member-card-line mx-auto mt-5 h-1.5 w-14 rounded-full bg-gradient-to-r from-primary via-accent to-primary transition-all duration-500 group-hover:w-24"></div>
-                    <!-- <div class="mt-6 inline-flex items-center gap-2 rounded-full border border-primary/10 bg-primary/5 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.24em] text-primary">
-                        <span class="h-2.5 w-2.5 rounded-full bg-accent animate-pulse"></span>
-                        ${t("stateCommittee.coreTag")}
-                    </div> -->
                 </div>
             </article>
         `;
@@ -1353,84 +954,89 @@ function renderDistricts() {
             t(firstDistrict.nameKey).localeCompare(t(secondDistrict.nameKey))
         ))
         .forEach((district) => {
-        const accordionItem = document.createElement("article");
-        accordionItem.className = "accordion-item rounded-2xl bg-white shadow-sm overflow-hidden active";
+            // Skip district if its translation data doesn't exist
+            const districtTitle = t(district.shopNameKey);
+            if (!districtTitle || districtTitle === district.shopNameKey) return;
 
-        const header = document.createElement("button");
-        header.className = "accordion-header flex items-center justify-between w-full px-5 py-4 sm:py-5 text-left bg-gray-50 rounded-t-2xl";
-        header.type = "button";
-        
-        const districtNameKey = district.nameKey;
-        const firstLetter = t(districtNameKey).charAt(0).toUpperCase();
-        
-        header.innerHTML = `
+            const accordionItem = document.createElement("article");
+            accordionItem.className = "accordion-item rounded-2xl bg-white shadow-sm overflow-hidden active";
+
+            const header = document.createElement("button");
+            header.className = "accordion-header flex items-center justify-between w-full px-5 py-4 sm:py-5 text-left bg-gray-50 rounded-t-2xl";
+            header.type = "button";
+
+            const firstLetter = t(district.nameKey).charAt(0).toUpperCase();
+
+            header.innerHTML = `
             <div class="flex items-center gap-4 flex-1">
                 <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-lg flex-shrink-0">
                     ${firstLetter}
                 </div>
                 <div>
-                    <h3 class="text-xl sm:text-2xl font-heading font-bold text-gray-900">${t(districtNameKey)}</h3>
-                    <p class="text-sm text-gray-600">${district.shopName}</p>
+                    <h3 class="text-xl sm:text-2xl font-heading font-bold text-gray-900">${t(district.nameKey)}</h3>
+                    <p class="text-sm text-gray-600">${t(district.shopNameKey)}</p>
                 </div>
             </div>
             <span class="accordion-icon w-5 h-5 text-primary flex-shrink-0"><i class="fa-solid fa-chevron-down"></i></span>
         `;
 
-        const content = document.createElement("div");
-        content.className = "accordion-content px-5 pb-5";
-        content.style.maxHeight = "0px";
+            const content = document.createElement("div");
+            content.className = "accordion-content px-5 pb-5";
+            content.style.maxHeight = "0px";
 
-        const positionsGrid = document.createElement("div");
-        positionsGrid.className = "district-positions-grid grid grid-cols-1 md:grid-cols-3 gap-4 pt-4";
+            const positionsGrid = document.createElement("div");
+            positionsGrid.className = "district-positions-grid grid grid-cols-1 md:grid-cols-3 gap-4 pt-4";
 
-        district.members.forEach((member) => {
-            const positionTitle = t(member.posKey);
-            const detailLines = [
-                member.place,
-                member.shopName,
-                member.phone,
-                member.address1,
-                member.address2,
-                member.address3,
-                member.address4
-            ].filter((value) => typeof value === "string" && value.trim() !== "");
+            district.members.forEach((member) => {
+                const detailLines = [
+                    member.placeKey ? t(member.placeKey) : "",
+                    member.shopNameKey ? t(member.shopNameKey) : "",
+                    member.phoneKey ? t(member.phoneKey) : (member.phone || ""),
+                    member.address1Key ? t(member.address1Key) : "",
+                    member.address2Key ? t(member.address2Key) : "",
+                    member.address3Key ? t(member.address3Key) : "",
+                    member.address4Key ? t(member.address4Key) : ""
+                ].filter((value) => typeof value === "string" && value.trim() !== "" && !value.includes("committee.districts"));
 
-            const positionBlock = document.createElement("div");
-            positionBlock.className = "district-position-item rounded-xl bg-white p-3 sm:p-4 flex flex-col items-center text-center gap-2";
-            positionBlock.innerHTML = `
+                const positionBlock = document.createElement("div");
+                positionBlock.className = "district-position-item rounded-xl bg-white p-3 sm:p-4 flex flex-col items-center text-center gap-2";
+
+                const memberName = member.nameKey ? t(member.nameKey) : (member.name || "");
+
+                positionBlock.innerHTML = `
                 <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-3 border-primary/20 shadow-md mx-auto">
-                    <img src="${member.photo}" alt="${member.name}" class="w-full h-full object-cover">
+                    <img src="${member.photo}" alt="${memberName}" class="w-full h-full object-cover">
                 </div>
-                <p class="text-xs text-primary font-bold uppercase tracking-widest">${positionTitle}</p>
-                <h4 class="text-sm sm:text-base font-bold text-gray-800">${member.name}</h4>
+                <p class="text-xs text-primary font-bold uppercase tracking-widest">${t(member.posKey)}</p>
+                <h4 class="text-sm sm:text-base font-bold text-gray-800">${memberName}</h4>
                 ${detailLines.map((line, index) => `
                     <p class="text-xs ${index === 1 ? "text-gray-500 uppercase tracking-wide" : "text-gray-600"}">${line}</p>
                 `).join("")}
             `;
 
-            positionsGrid.appendChild(positionBlock);
+                positionsGrid.appendChild(positionBlock);
+            });
+
+            content.appendChild(positionsGrid);
+            accordionItem.appendChild(header);
+            accordionItem.appendChild(content);
+            districtGrid.appendChild(accordionItem);
+
+            header.addEventListener("click", () => {
+                const isExpanded = accordionItem.classList.toggle("active");
+                const maxHeight = isExpanded ? `${content.scrollHeight + 30}px` : "0px";
+                content.style.maxHeight = maxHeight;
+
+                const icon = header.querySelector(".accordion-icon i");
+                if (icon) icon.className = isExpanded ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down";
+            });
+
+            setTimeout(() => {
+                if (accordionItem.classList.contains("active")) {
+                    content.style.maxHeight = `${content.scrollHeight + 30}px`;
+                }
+            }, 20);
         });
-
-        content.appendChild(positionsGrid);
-        accordionItem.appendChild(header);
-        accordionItem.appendChild(content);
-        districtGrid.appendChild(accordionItem);
-
-        header.addEventListener("click", () => {
-            const isExpanded = accordionItem.classList.toggle("active");
-            const maxHeight = isExpanded ? `${content.scrollHeight + 30}px` : "0px";
-            content.style.maxHeight = maxHeight;
-
-            const icon = header.querySelector(".accordion-icon i");
-            if (icon) icon.className = isExpanded ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down";
-        });
-
-        setTimeout(() => {
-            if (accordionItem.classList.contains("active")) {
-                content.style.maxHeight = `${content.scrollHeight + 30}px`;
-            }
-        }, 20);
-    });
 }
 
 function renderActivities() {
