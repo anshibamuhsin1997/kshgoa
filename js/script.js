@@ -1,7 +1,38 @@
 const stateCommittee = [
-    { nameKey: "committee.state.ahamedKoya", positionKey: "labels.positions.president", image: "img/state_committee/president.jpeg" },
-    { nameKey: "committee.state.balan", positionKey: "labels.positions.generalSecretary", image: "img/state_committee/general_secretry.jpeg" },
-    { nameKey: "committee.state.shamsudheen", positionKey: "labels.positions.treasurer", image: "img/state_committee/tresurer.jpeg" },
+    {
+        positionKey: "labels.positions.president", people: [
+            { name: "A. P. Ahamed Koya", image: "img/state_committee/president.jpeg" }
+        ]
+    },
+    {
+        positionKey: "labels.positions.generalSecretary", people: [
+            { name: "T. V. Balan", image: "img/state_committee/general_secretry.jpeg" }
+        ]
+    },
+    {
+        positionKey: "labels.positions.treasurer", people: [
+            { name: "P. Shamsudheen", image: "img/state_committee/tresurer.jpeg" }
+        ]
+    },
+    {
+        positionKey: "labels.positions.vicePresident", people: [
+            { name: "George", image: "img/state_committee/vicePresident.jpeg" },
+            { name: "Raveendran P", image: "img/state_committee/vicePresident02.png" }
+        ]
+    },
+    {
+        positionKey: "labels.positions.secretary", people: [
+            { name: "Saleem Murukkummudu", image: "img/state_committee/secretary01.png" },
+            { name: "Santhosh kumar", image: "img/state_committee/secretary02.jpeg" },
+        ]
+    },
+    {
+        positionKey: "labels.positions.secretaryMember", people: [
+            { name: "N Radhakrishnan", image: "img/state_committee/secretaryMember01.png" },
+            { name: "Santhosh G", image: "img/state_committee/secretaryMember02.png" },
+        ]
+    },
+    
 ];
 
 const districts = [
@@ -470,10 +501,25 @@ const TRANSLATIONS = {
         "contact": { "eyebrow": "Get in Touch", "title": "Contact Us", "description": "Reach out to our state office for queries, membership, or general info.", "stateOffice": "State Office", "address": "Kerala State Hire Goods Owners Association (KSHGOA)<br>K.S.H.G.O.A Building, Francis Road<br>Idiyangara, Kuttichira<br>Kozhikode, Kerala 673003", "phoneNumber": "Phone Number" },
         "form": { "title": "Send a Message", "fullName": "Full Name", "phoneNumber": "Phone Number", "message": "Message", "namePlaceholder": "John Doe", "phonePlaceholder": "+91 98765 43210", "messagePlaceholder": "How can we help you?", "submit": "Send Message" },
         "footer": { "badge": "Statewide Association", "description": "The ultimate voice for hire goods businesses in Kerala. Connecting districts, supporting owners, and building a stronger community.", "quickLinks": "Quick Links", "aboutLink": "About KSHGOA", "galleryLink": "Photo Gallery", "topDistricts": "Top Districts", "contactDetails": "Contact Details", "copyright": "Kerala State Hire Goods Owners Association. All Rights Reserved.", "privacy": "Privacy Policy", "terms": "Terms of Service" },
-        "labels": { "positions": { "president": "President", "generalSecretary": "General Secretary", "vicePresident": "Vice President", "chairman": "Chairman", "treasurer": "Treasurer", "executiveMember": "Executive Member", "secretary": "Secretary" } },
+        "labels": {
+            "positions": {
+                "president": "President",
+                "generalSecretary": "General Secretary",
+                "secretary": "Secretary",
+                "vicePresident": "Vice President",
+                "chairman": "Chairman",
+                "treasurer": "Treasurer",
+                "secretaryMember": "Secretariat Member",
+            }
+        },
         "districtNames": { "thiruvananthapuram": "Thiruvananthapuram", "kollam": "Kollam", "pathanamthitta": "Pathanamthitta", "alappuzha": "Alappuzha", "kottayam": "Kottayam", "idukki": "Idukki", "ernakulam": "Ernakulam", "thrissur": "Thrissur", "palakkad": "Palakkad", "malappuram": "Malappuram", "kozhikode": "Kozhikode", "wayanad": "Wayanad", "kannur": "Kannur", "kasaragod": "Kasaragod" },
         "committee": {
-            "state": { "ahamedKoya": "A. P. Ahamed Koya", "balan": "T. V. Balan", "shamsudheen": "P. Shamsudheen" },
+            "state": {
+                "president": "A. P. Ahamed Koya",
+                "generalSecretary": "T. V. Balan",
+                "treasurer": "P. Shamsudheen",
+                "vicePresident": "George",
+            },
             "districts": {
                 "thiruvananthapuram": { "title": "Thiruvananthapuram District Committee", "president": { "name": "V. Vijayakumar", "shop": "SV Hire service and Decorations", "place": "", "phone": "+91 9447167070" }, "secretary": { "name": "Alavudin. S", "shop": "Event Rentals TVM", "place": "", "phone": "+91 9745926777" }, "treasurer": { "name": "Pradeep M", "shop": "Vinayaka stage decorations & hire services", "place": "", "phone": "+91 9746128880" } },
                 // "kollam": { "title": "Kollam District Committee", "president": { "name": "A. C. Babu", "shop": "Kollam Rentals", "place": "Kollam", "phone": "" }, "secretary": { "name": "N. Prakash", "shop": "Events Plus", "place": "Kollam", "phone": "" }, "treasurer": { "name": "S. K. Unni", "shop": "Heritage Events", "place": "Kollam", "phone": "" } },
@@ -521,7 +567,7 @@ const TRANSLATIONS = {
         "labels": { "positions": { "president": "പ്രസിഡന്റ്", "generalSecretary": "ജനറൽ സെക്രട്ടറി", "vicePresident": "വൈസ് പ്രസിഡന്റ്", "chairman": "ചെയർമാൻ", "treasurer": "ട്രഷറർ", "executiveMember": "എക്സിക്യൂട്ടീവ് അംഗം", "secretary": "സെക്രട്ടറി" } },
         "districtNames": { "thiruvananthapuram": "തിരുവനന്തപുരം", "kollam": "കൊല്ലം", "pathanamthitta": "പത്തനംതിട്ട", "alappuzha": "ആലപ്പുഴ", "kottayam": "കോട്ടയം", "idukki": "ഇടുക്കി", "ernakulam": "എറണാകുളം", "thrissur": "തൃശ്ശൂർ", "palakkad": "പാലക്കാട്", "malappuram": "മലപ്പുറം", "kozhikode": "കോഴിക്കോട്", "wayanad": "വയനാട്", "kannur": "കണ്ണൂർ", "kasaragod": "കാസർഗോഡ്" },
         "committee": {
-            "state": { "ahamedKoya": "എ. പി. അഹമ്മദ് കോയ", "balan": "ടി. വി. ബാലൻ", "shamsudheen": "പി. ഷംസുദ്ദീൻ" },
+            "state": { "president": "എ. പി. അഹമ്മദ് കോയ", "generalSecretary": "ടി. വി. ബാലൻ", "treasurer": "പി. ഷംസുദ്ദീൻ", "vicePresident": "ജോർജ്ജ്" },
             "districts": {
                 "thiruvananthapuram": { "title": "തിരുവനന്തപുരം ജില്ലാ കമ്മിറ്റി", "president": { "name": "വി. വിജയകുമാർ", "shop": "എസ്.വി ഹയർ സർവീസ് ആൻഡ് ഡെക്കറേഷൻസ്", "place": "", "phone": "+91 9447167070" }, "secretary": { "name": "അലാവുദ്ദീൻ എസ്.", "shop": "ഇവന്റ് റെന്റൽസ് ടി.വി.എം", "place": "", "phone": "+91 9745926777" }, "treasurer": { "name": "പ്രദീപ് എം.", "shop": "വിനായക സ്റ്റേജ് ഡെക്കറേഷൻസ് & ഹയർ സർവീസസ്", "place": "", "phone": "+91 9746128880" } },
                 // "kollam": { "title": "കൊല്ലം ജില്ലാ കമ്മിറ്റി", "president": { "name": "എ. സി. ബാബു", "shop": "കൊല്ലം റെന്റൽസ്", "place": "കൊല്ലം", "phone": "" }, "secretary": { "name": "എൻ. പ്രകാശ്", "shop": "ഇവന്റ്സ് പ്ലസ്", "place": "കൊല്ലം", "phone": "" }, "treasurer": { "name": "എസ്. കെ. ഉണ്ണി", "shop": "ഹെറിറ്റേജ് ഇവന്റ്സ്", "place": "കൊല്ലം", "phone": "" } },
@@ -923,23 +969,27 @@ function renderStateCommittee() {
     if (!container) return;
 
     container.innerHTML = "";
-    stateCommittee.forEach((member, index) => {
-        const delay = (index % 3) * 0.1;
-        container.innerHTML += `
-            <article class="member-card member-card-premium relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 text-center shadow-premium transition-all duration-500 group gsap-stagger-up" data-delay="${delay}">
-                <div class="member-card-glow absolute inset-x-8 top-8 h-24 rounded-full bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 blur-2xl pointer-events-none"></div>
-                <div class="relative px-6 pt-10 pb-8 sm:px-8">
-                     <div class="member-photo-frame mx-auto mb-7 h-44 w-44 sm:h-48 sm:w-48 rounded-full p-2 shadow-[0_25px_55px_-28px_rgba(18,16,143,0.45)] transition-all duration-500 group-hover:-translate-y-2">
-                        <div class="h-full w-full overflow-hidden rounded-full border-[10px] border-white bg-slate-100 shadow-inner">
-                            <img src="${member.image}" alt="${t(member.nameKey)}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+    let cardIndex = 0;
+    stateCommittee.forEach((position) => {
+        position.people.forEach((person) => {
+            const delay = (cardIndex % 3) * 0.1;
+            container.innerHTML += `
+                <article class="member-card member-card-premium relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 text-center shadow-premium transition-all duration-500 group gsap-stagger-up" data-delay="${delay}">
+                    <div class="member-card-glow absolute inset-x-8 top-8 h-24 rounded-full bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 blur-2xl pointer-events-none"></div>
+                    <div class="relative px-6 pt-10 pb-8 sm:px-8">
+                         <div class="member-photo-frame mx-auto mb-7 h-44 w-44 sm:h-48 sm:w-48 rounded-full p-2 shadow-[0_25px_55px_-28px_rgba(18,16,143,0.45)] transition-all duration-500 group-hover:-translate-y-2">
+                            <div class="h-full w-full overflow-hidden rounded-full border-[10px] border-white bg-slate-100 shadow-inner">
+                                <img src="${person.image}" alt="${person.name}" class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+                            </div>
                         </div>
+                        <h6 class="text-xl sm:text-2xl font-heading font-extrabold uppercase tracking-[0.06em] text-gray-900 transition-colors duration-300 group-hover:text-primary">${person.name}</h6>
+                        <p class="member-role-label mt-3 text-sm sm:text-[0.95rem] font-extrabold uppercase tracking-[0.2em] text-lime-600">${t(position.positionKey)}</p>
+                        <div class="member-card-line mx-auto mt-5 h-1.5 w-14 rounded-full bg-gradient-to-r from-primary via-accent to-primary transition-all duration-500 group-hover:w-24"></div>
                     </div>
-                    <h6 class="text-xl sm:text-2xl font-heading font-extrabold uppercase tracking-[0.06em] text-gray-900 transition-colors duration-300 group-hover:text-primary">${t(member.nameKey)}</h6>
-                    <p class="member-role-label mt-3 text-sm sm:text-[0.95rem] font-extrabold uppercase tracking-[0.2em] text-lime-600">${t(member.positionKey)}</p>
-                    <div class="member-card-line mx-auto mt-5 h-1.5 w-14 rounded-full bg-gradient-to-r from-primary via-accent to-primary transition-all duration-500 group-hover:w-24"></div>
-                </div>
-            </article>
-        `;
+                </article>
+            `;
+            cardIndex++;
+        });
     });
 }
 
