@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Kerala Hire Goods Owners Association (KSHGOA)",
+    "title": "Kerala State Hire Goods Owners Association (KSHGOA)",
     "description": "KSHGOA is a statewide association supporting hire goods businesses across Kerala."
   },
   "controls": {
@@ -10,7 +10,7 @@
     }
   },
   "brand": {
-    "subtitle": "Kerala Hire Goods Owners Association"
+    "subtitle": "Kerala State Hire Goods Owners Association"
   },
   "nav": {
     "home": "Home",
@@ -25,7 +25,7 @@
   },
   "hero": {
     "badge": "Statewide Organization",
-    "title": "Kerala Hire Goods <br class=\"hidden sm:block\" /> Owners Association",
+    "title": "Kerala State Hire Goods <br class=\"hidden sm:block\" /> Owners Association",
     "description": "Empowering Hire Goods Businesses Across Kerala through connectivity, community, and statewide collaboration.",
     "primaryCta": "View State Committee",
     "secondaryCta": "Explore District Committees",
@@ -126,7 +126,7 @@
     "title": "Contact Us",
     "description": "Reach out to our state office for queries, membership, or general info.",
     "stateOffice": "State Office",
-    "address": "Kerala Hire Goods Owners Association (KSHGOA)<br>K.S.H.G.O.A Building, Francis Road<br>Idiyangara, Kuttichira<br>Kozhikode, Kerala 673003",
+    "address": "Kerala State Hire Goods Owners Association (KSHGOA)<br>K.S.H.G.O.A Building, Francis Road<br>Idiyangara, Kuttichira<br>Kozhikode, Kerala 673003",
     "phoneNumber": "Phone Number"
   },
   "form": {
@@ -147,7 +147,7 @@
     "galleryLink": "Photo Gallery",
     "topDistricts": "Top Districts",
     "contactDetails": "Contact Details",
-    "copyright": "Kerala Hire Goods Owners Association. All Rights Reserved.",
+    "copyright": "Kerala State Hire Goods Owners Association. All Rights Reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
