@@ -24,6 +24,7 @@ const stateCommittee = [
         positionKey: "labels.positions.secretary", people: [
             { name: "Saleem Murukkummudu", image: "img/state_committee/secretary01.png" },
             { name: "Santhosh kumar", image: "img/state_committee/secretary02.jpeg" },
+            { name: "B Prasad Kumar", image: "img/state_committee/secretary03.jpeg" },
         ]
     },
     {
