@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "title": "Kerala State Hire Goods Owners Association (KSHGOA)",
+    "description": "KSHGOA is a statewide association supporting hire goods businesses across Kerala."
+  },
+  "controls": {
+    "theme": {
+      "dark": "Enable dark theme",
+      "light": "Enable light theme"
+    }
+  },
+  "brand": {
+    "subtitle": "Kerala State Hire Goods Owners Association"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "stateCommittee": "State Committee",
+    "districtCommittees": "District Committees",
+    "gallery": "Gallery",
+    "contact": "Contact Us"
+  },
+  "mobile": {
+    "getInTouch": "Get in touch"
+  },
+  "hero": {
+    "badge": "Statewide Organization",
+    "title": "Kerala State Hire Goods <br class=\"hidden sm:block\" /> Owners Association",
+    "description": "Empowering Hire Goods Businesses Across Kerala through connectivity, community, and statewide collaboration.",
+    "primaryCta": "View State Committee",
+    "secondaryCta": "Explore District Committees",
+    "scroll": "Scroll Target"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Kerala State Hire Goods Owners Association (KSHGOA)",
+    "paragraphOne": "<strong class=\"text-gray-800\">Kerala State Hire Goods Owners Association (KSHGOA)</strong> is the premier organization dedicated to the empowerment and welfare of owners and workers in Kerala's Pandhal, Decoration, and Light & Sound sectors. For over three and a half decades, KSHGOA has been at the forefront of advocating for the rights of its members and ensuring their socio-economic security.",
+    "paragraphTwo": "Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
+    "highlight": "Statewide welfare, advocacy, and socio-economic security",
+    "history": {
+      "label": "Legacy",
+      "title": "History & Evolution",
+      "item1": "<strong class=\"text-gray-800\">Foundation:</strong> The journey began 37 years ago in Kozhikode, born from the visionary decision of nine pioneering individuals. This organizational model has since become a benchmark, inspiring the formation and active functioning of the Tamil Azhaga State Hire Goods Owners Association in Tamil Nadu.",
+      "item2": "<strong class=\"text-gray-800\">Expansion:</strong> Today, the association has a powerful presence across all 14 districts of Kerala, supported by robust committees and a highly active membership base.",
+      "item3": "<strong class=\"text-gray-800\">Infrastructure:</strong> While the State Committee currently operates from its own building on Francis Road, Kozhikode, the organization is entering a new era of growth. Construction has commenced for a state-of-the-art headquarters near Kallai, Kozhikode, on land acquired for Rs. 1.50 crores. We also maintain dedicated district offices in Malappuram and Kannur."
+    },
+    "objectives": {
+      "label": "Purpose",
+      "title": "Our Objectives",
+      "item1": "<strong class=\"text-gray-800\">*</strong> To elevate the living standards of owners and employees within the industry.",
+      "item2": "<strong class=\"text-gray-800\">*</strong> To proactively intervene in professional challenges and provide members with comprehensive legal and practical support.",
+      "item3": "<strong class=\"text-gray-800\">*</strong> To bridge the gap between our members and the government, ensuring all entitled benefits and rights are secured."
+    },
+    "welfare": {
+      "label": "Member Welfare",
+      "title": "Welfare Schemes & Achievements",
+      "item1": "KSHGOA implements extensive welfare programs to ensure the safety and stability of our members and their families.",
+      "item2": "<strong class=\"text-gray-800\">Cooperative Banking:</strong> We successfully operate dedicated cooperative banking systems in the Kannur and Palakkad districts.",
+      "item3": "<strong class=\"text-gray-800\">HIGOS:</strong> Operating in five districts, HIGOS provides essential industry products to members at subsidized rates through a cooperative procurement model.",
+      "item4": "<strong class=\"text-gray-800\">Financial Security:</strong> Most districts offer death benefit schemes providing up to Rs. 5 lakhs to the families of deceased members. Additionally, the State Committee's HOWACT project provides an additional Rs. 50,000 in immediate financial assistance."
+    },
+    "philanthropy": {
+      "label": "Humanitarian Work",
+      "title": "Social Responsibility & Philanthropy",
+      "item1": "KSHGOA is deeply committed to humanitarian causes and community support.",
+      "item2": "<strong class=\"text-gray-800\">Disaster Relief:</strong> In response to the Chooralmala disaster in Wayanad, the State Committee contributed approximately Rs. 20 lakhs to the Chief Minister's Distress Relief Fund. Furthermore, the Malappuram District Committee distributed household appliances and essentials worth Rs. 20 lakhs to those affected by the Nilambur Kavalappara floods.",
+      "item3": "<strong class=\"text-gray-800\">Compassionate Care:</strong> Beyond emergency aid for workplace accidents, the association has also undertaken projects like constructing a home for a financially distressed member in Wayanad."
+    },
+    "standing": {
+      "label": "Recognition",
+      "title": "Social & Professional Standing",
+      "item1": "The Government of Kerala recognizes KSHGOA as an integral part of the state's cultural fabric. As a testament to our impact, the association has been granted membership in the Kerala State Cultural Welfare Fund Board.",
+      "item2": "Currently, over 90% of the industry, more than 9,000 out of 11,000 owners, is united under the KSHGOA banner. This vast family also supports the livelihoods of approximately 4 lakh workers across Kerala."
+    }
+  },
+  "stats": {
+    "districtCommittees": "District Committees",
+    "registeredMembers": "Owners United",
+    "yearsOfService": "Years of Service",
+    "eventsSupported": "Workers Supported"
+  },
+  "stateCommittee": {
+    "eyebrow": "Leadership",
+    "title": "State Committee",
+    "description": "Guiding the association with vision and dedication to support the hire goods community across Kerala."
+  },
+  "districtSection": {
+    "eyebrow": "Statewide Network",
+    "title": "District Committees",
+    "description": "Explore our 14 active district committees facilitating local support and collaboration."
+  },
+  "activities": {
+    "eyebrow": "Our Operations",
+    "title": "Key Activities",
+    "description": "Driving growth and establishing standards across the hire goods industry.",
+    "cards": {
+      "conference": {
+        "title": "Annual State Conference",
+        "description": "Gathering statewide members to discuss industry trends, elect committees, and set future goals."
+      },
+      "meetings": {
+        "title": "District Meetings",
+        "description": "Regular regional assemblies to address local challenges and strengthen community bonds."
+      },
+      "training": {
+        "title": "Training Programs",
+        "description": "Skill development workshops ensuring businesses stay ahead with modern practices and equipment."
+      },
+      "support": {
+        "title": "Industry Support",
+        "description": "Advocating for members' rights, providing legal guidance, and establishing fair business guidelines."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Visuals",
+    "title": "Photo Gallery",
+    "description": "Moments from our meetings, events, and community support programs.",
+    "viewAll": "View Complete Gallery",
+    "cardTitle": "Event Highlights",
+    "cardDescription": "KSHGOA Gathering",
+    "imageAlt": "Gallery Image {number}"
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "title": "Contact Us",
+    "description": "Reach out to our state office for queries, membership, or general info.",
+    "stateOffice": "State Office",
+    "address": "Kerala State Hire Goods Owners Association (KSHGOA)<br>K.S.H.G.O.A Building, Francis Road<br>Idiyangara, Kuttichira<br>Kozhikode, Kerala 673003",
+    "phoneNumber": "Phone Number"
+  },
+  "form": {
+    "title": "Send a Message",
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number",
+    "message": "Message",
+    "namePlaceholder": "John Doe",
+    "phonePlaceholder": "+91 98765 43210",
+    "messagePlaceholder": "How can we help you?",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "badge": "Statewide Association",
+    "description": "The ultimate voice for hire goods businesses in Kerala. Connecting districts, supporting owners, and building a stronger community.",
+    "quickLinks": "Quick Links",
+    "aboutLink": "About KSHGOA",
+    "galleryLink": "Photo Gallery",
+    "topDistricts": "Top Districts",
+    "contactDetails": "Contact Details",
+    "copyright": "Kerala State Hire Goods Owners Association. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "labels": {
+    "positions": {
+      "president": "President",
+      "generalSecretary": "General Secretary",
+      "vicePresident": "Vice President",
+      "chairman": "Chairman",
+      "treasurer": "Treasurer",
+      "executiveMember": "Executive Member",
+      "secretary": "Secretary"
+    }
+  },
+  "districtNames": {
+    "thiruvananthapuram": "Thiruvananthapuram",
+    "kollam": "Kollam",
+    "pathanamthitta": "Pathanamthitta",
+    "alappuzha": "Alappuzha",
+    "kottayam": "Kottayam",
+    "idukki": "Idukki",
+    "ernakulam": "Ernakulam",
+    "thrissur": "Thrissur",
+    "palakkad": "Palakkad",
+    "malappuram": "Malappuram",
+    "kozhikode": "Kozhikode",
+    "wayanad": "Wayanad",
+    "kannur": "Kannur",
+    "kasaragod": "Kasaragod"
+  },
+  "committee": {
+    "state": {
+      "ahamedKoya": "A. P. Ahamed Koya",
+      "balan": "T. V. Balan",
+      "shamsudheen": "P. Shamsudheen"
+    },
+    "districts": {
+      "thiruvananthapuram": {
+        "title": "Thiruvananthapuram District Committee",
+        "president": {
+          "name": "V. Vijayakumar",
+          "shop": "SV Hire service and Decorations",
+          "place": ""
+        },
+        "secretary": {
+          "name": "Alavudin. S",
+          "shop": "Event Rentals TVM",
+          "place": ""
+        },
+        "treasurer": {
+          "name": "Pradeep M",
+          "shop": "Vinayaka stage decorations & hire services",
+          "place": ""
+        }
+      },
+      "kollam": {
+        "title": "Kollam District Committee",
+        "president": {
+          "name": "A. C. Babu",
+          "shop": "Kollam Rentals",
+          "place": "Kollam"
+        },
+        "secretary": {
+          "name": "N. Prakash",
+          "shop": "Events Plus",
+          "place": "Kollam"
+        },
+        "treasurer": {
+          "name": "S. K. Unni",
+          "shop": "Heritage Events",
+          "place": "Kollam"
+        }
+      },
+      "pathanamthitta": {
+        "title": "Pathanamthitta District Committee",
+        "president": {
+          "name": "J. K. Anto",
+          "shop": "Divine Events",
+          "place": "Pathanamthitta"
+        },
+        "secretary": {
+          "name": "R. G. Ravi",
+          "shop": "Celebrations",
+          "place": "Pathanamthitta"
+        },
+        "treasurer": {
+          "name": "C. M. Sajan",
+          "shop": "Royal Rentals",
+          "place": "Pathanamthitta"
+        }
+      },
+      "alappuzha": {
+        "title": "Alappuzha District Committee",
+        "president": {
+          "name": "Sunil karukathara",
+          "place": "Kayamkulam",
+          "address1": "Karukatharayil house",
+          "address2": "Pullikkanakku Po",
+          "address3": "690537"
+        },
+        "generalSecretary": {
+          "name": "Sajikumar Peralasseril",
+          "place": "Kayamkulam",
+          "address1": "Malathinivas",
+          "address2": "Kareelakulangara Po",
+          "address3": "690572"
+        },
+        "treasurer": {
+          "name": "Rajesh Nalamadam",
+          "place": "Avalookkunnu",
+          "address1": "Nalamadam house",
+          "address2": "South Aryadu Po",
+          "address3": "Alapuzha"
+        }
+      },
+      "kottayam": {
+        "title": "Kottayam District Committee",
+        "president": {
+          "name": "KUNJUMON K.M",
+          "shop": "ST: PAULS DECORATION",
+          "place": "VETTI MUKAL P.O"
+        },
+        "generalSecretary": {
+          "name": "MADHUSUDHANAN NAIR",
+          "shop": "MADHURIMA",
+          "place": "S.H MOUNT P.O"
+        },
+        "treasurer": {
+          "name": "K.C. SURESH",
+          "shop": "ASIAN DECORATION",
+          "place": "KARUVALLITHARA"
+        }
+      },
+      "idukki": {
+        "title": "Idukki District Committee",
+        "president": {
+          "name": "S. P. Haridas",
+          "shop": "Mountain Events",
+          "place": "Idukki"
+        },
+        "secretary": {
+          "name": "K. J. Ali",
+          "shop": "Alpine Rentals",
+          "place": "Idukki"
+        },
+        "treasurer": {
+          "name": "P. K. Manoj",
+          "shop": "Valley Events",
+          "place": "Idukki"
+        }
+      },
+      "ernakulam": {
+        "title": "Ernakulam District Committee",
+        "president": {
+          "name": "B. R. Mohanan",
+          "shop": "Ernakulam Hire",
+          "place": "Ernakulam"
+        },
+        "secretary": {
+          "name": "T. K. Prem",
+          "shop": "Metro Events",
+          "place": "Ernakulam"
+        },
+        "treasurer": {
+          "name": "N. P. Anil",
+          "shop": "Urban Celebrations",
+          "place": "Ernakulam"
+        }
+      },
+      "thrissur": {
+        "title": "Thrissur District Committee",
+        "president": {
+          "name": "Manikanda Das. P.P",
+          "shop": "Thrissur Events",
+          "place": "Thrissur",
+          "phone": ""
+        },
+        "secretary": {
+          "name": "Jyothish K B",
+          "shop": "Festival Rentals",
+          "place": "Thrissur"
+        },
+        "treasurer": {
+          "name": "Shamsudheen CKM",
+          "shop": "Celebrations Plus",
+          "place": "Thrissur"
+        }
+      },
+      "palakkad": {
+        "title": "Palakkad District Committee",
+        "president": {
+          "name": "C. K. Gopal",
+          "shop": "Palakkad Hire",
+          "place": "Palakkad"
+        },
+        "secretary": {
+          "name": "K. V. Jayan",
+          "shop": "Gateway Events",
+          "place": "Palakkad"
+        },
+        "treasurer": {
+          "name": "P. N. Saju",
+          "shop": "Plains Events",
+          "place": "Palakkad"
+        }
+      },
+      "malappuram": {
+        "title": "Malappuram District Committee",
+        "president": {
+          "name": "M. K. Hamsa",
+          "shop": "Malappuram Rentals",
+          "place": "Malappuram"
+        },
+        "secretary": {
+          "name": "A. P. Saif",
+          "shop": "Grand Events",
+          "place": "Malappuram"
+        },
+        "treasurer": {
+          "name": "U. K. Rashid",
+          "shop": "Celebration Station",
+          "place": "Malappuram"
+        }
+      },
+      "kozhikode": {
+        "title": "Kozhikode District Committee",
+        "president": {
+          "name": "A. P. Ahamed Koya",
+          "shop": "Kozhikode Events",
+          "place": "Kozhikode"
+        },
+        "secretary": {
+          "name": "T. V. Balan",
+          "shop": "Coast Rentals",
+          "place": "Kozhikode"
+        },
+        "treasurer": {
+          "name": "P. Shamsudheen",
+          "shop": "Premier Celebrations",
+          "place": "Kozhikode"
+        }
+      },
+      "wayanad": {
+        "title": "Wayanad District Committee",
+        "president": {
+          "name": "SHIBU KARANI",
+          "shop": "Friends Decoration",
+          "place": "Karani"
+        },
+        "secretary": {
+          "name": "MANAF PIDANGOD",
+          "shop": "",
+          "place": ""
+        },
+        "treasurer": {
+          "name": "RAJU MASS",
+          "shop": "",
+          "place": ""
+        }
+      },
+      "kannur": {
+        "title": "Kannur District Committee",
+        "president": {
+          "name": "E. K. Nair",
+          "shop": "",
+          "place": ""
+        },
+        "secretary": {
+          "name": "M. N. Sasi",
+          "shop": "",
+          "place": ""
+        },
+        "treasurer": {
+          "name": "N. A. Kishan",
+          "shop": "",
+          "place": ""
+        }
+      },
+      "kasaragod": {
+        "title": "Kasaragod District Committee",
+        "president": {
+          "name": "X. K. Hassan",
+          "shop": "Kasaragod Hire",
+          "place": "Kasaragod"
+        },
+        "secretary": {
+          "name": "P. M. Ibrahim",
+          "shop": "Border Events",
+          "place": "Kasaragod"
+        },
+        "treasurer": {
+          "name": "K. P. Mustafa",
+          "shop": "Northern Star Events",
+          "place": "Kasaragod"
+        }
+      }
+    }
+  }
+}
