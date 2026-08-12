@@ -76,26 +76,35 @@ const districts = [
             {
                 posKey: "labels.positions.president",
                 nameKey: "committee.districts.kollam.president.name",
-                photo: "https://i.pravatar.cc/150?img=4",
+                photo: "img/district/kollam/president.png",
                 placeKey: "committee.districts.kollam.president.place",
                 shopNameKey: "committee.districts.kollam.president.shop",
+                address1Key: "committee.districts.kollam.president.address1",
+                address2Key: "committee.districts.kollam.president.address2",
+                address3Key: "committee.districts.kollam.president.address3",
                 phoneKey: "committee.districts.kollam.president.phone"
             },
             {
-                posKey: "labels.positions.secretary",
+                posKey: "labels.positions.generalSecretary",
                 nameKey: "committee.districts.kollam.generalSecretary.name",
-                photo: "https://i.pravatar.cc/150?img=5",
+                photo: "img/district/kollam/general-secretary.png",
                 placeKey: "committee.districts.kollam.generalSecretary.place",
                 shopNameKey: "committee.districts.kollam.generalSecretary.shop",
-                phoneKey: "committee.districts.kollam.generalSecretary.phone"
+                phoneKey: "committee.districts.kollam.generalSecretary.phone",
+                address1Key: "committee.districts.kollam.generalSecretary.address1",
+                address2Key: "committee.districts.kollam.generalSecretary.address2",
+                address3Key: "committee.districts.kollam.generalSecretary.address3"
             },
             {
                 posKey: "labels.positions.treasurer",
                 nameKey: "committee.districts.kollam.treasurer.name",
-                photo: "https://i.pravatar.cc/150?img=6",
+                photo: "img/district/kollam/treasurer.png",
                 placeKey: "committee.districts.kollam.treasurer.place",
                 shopNameKey: "committee.districts.kollam.treasurer.shop",
-                phoneKey: "committee.districts.kollam.treasurer.phone"
+                phoneKey: "committee.districts.kollam.treasurer.phone",
+                address1Key: "committee.districts.kollam.treasurer.address1",
+                address2Key: "committee.districts.kollam.treasurer.address2",
+                address3Key: "committee.districts.kollam.treasurer.address3"
             }
         ]
     },
@@ -107,26 +116,35 @@ const districts = [
             {
                 posKey: "labels.positions.president",
                 nameKey: "committee.districts.pathanamthitta.president.name",
-                photo: "https://i.pravatar.cc/150?img=7",
+                photo: "img/district/pathanamthitta/president.jpeg",
                 placeKey: "committee.districts.pathanamthitta.president.place",
                 shopNameKey: "committee.districts.pathanamthitta.president.shop",
+                address1Key: "committee.districts.pathanamthitta.president.address1",
+                address2Key: "committee.districts.pathanamthitta.president.address2",
+                address3Key: "committee.districts.pathanamthitta.president.address3",
                 phoneKey: "committee.districts.pathanamthitta.president.phone"
             },
             {
-                posKey: "labels.positions.secretary",
+                posKey: "labels.positions.generalSecretary",
                 nameKey: "committee.districts.pathanamthitta.generalSecretary.name",
-                photo: "https://i.pravatar.cc/150?img=8",
+                photo: "img/district/pathanamthitta/general-secretary.png",
                 placeKey: "committee.districts.pathanamthitta.generalSecretary.place",
                 shopNameKey: "committee.districts.pathanamthitta.generalSecretary.shop",
-                phoneKey: "committee.districts.pathanamthitta.generalSecretary.phone"
+                phoneKey: "committee.districts.pathanamthitta.generalSecretary.phone",
+                address1Key: "committee.districts.pathanamthitta.generalSecretary.address1",
+                address2Key: "committee.districts.pathanamthitta.generalSecretary.address2",
+                address3Key: "committee.districts.pathanamthitta.generalSecretary.address3"
             },
             {
                 posKey: "labels.positions.treasurer",
                 nameKey: "committee.districts.pathanamthitta.treasurer.name",
-                photo: "https://i.pravatar.cc/150?img=9",
+                photo: "img/district/pathanamthitta/treasurer.png",
                 placeKey: "committee.districts.pathanamthitta.treasurer.place",
                 shopNameKey: "committee.districts.pathanamthitta.treasurer.shop",
-                phoneKey: "committee.districts.pathanamthitta.treasurer.phone"
+                phoneKey: "committee.districts.pathanamthitta.treasurer.phone",
+                address1Key: "committee.districts.pathanamthitta.treasurer.address1",
+                address2Key: "committee.districts.pathanamthitta.treasurer.address2",
+                address3Key: "committee.districts.pathanamthitta.treasurer.address3"
             }
         ]
     },
@@ -538,8 +556,8 @@ const TRANSLATIONS = {
             },
             "districts": {
                 "thiruvananthapuram": { "title": "Thiruvananthapuram District Committee", "president": { "name": "V. Vijayakumar", "shop": "SV Hire service and Decorations", "place": "", "phone": "+91 9447167070" }, "generalSecretary": { "name": "Alavudin. S", "shop": "Event Rentals TVM", "place": "", "phone": "+91 9745926777" }, "treasurer": { "name": "Pradeep M", "shop": "Vinayaka stage decorations & hire services", "place": "", "phone": "+91 9746128880" } },
-                // "kollam": { "title": "Kollam District Committee", "president": { "name": "SHIBU", "shop": "Friends Decoration", "place": "Karani", "phone": "+91 9946915190" }, "generalSecretary": { "name": "MANAF PIDANGOD", "shop": "JAS Decoration", "place": "Pinangode", "phone": "+91 9961756180"  }, "treasurer": { "name": "RAJU", "shop": "Super MASS Decoration", "place": "Meenangadi", "phone": "+91 9447370326"  } },
-                // "pathanamthitta": { "title": "Pathanamthitta District Committee", "president": { "name": "J. K. Anto", "shop": "Divine Events", "place": "Pathanamthitta", "phone": "" }, "generalSecretary": { "name": "R. G. Ravi", "shop": "Celebrations", "place": "Pathanamthitta", "phone": "" }, "treasurer": { "name": "C. M. Sajan", "shop": "Royal Rentals", "place": "Pathanamthitta", "phone": "" } },
+                "kollam": { "title": "Kollam District Committee", "president": { "name": "Haris Vevees", "shop": "Vevees Events", "place": "Kollam", "phone": "" }, "generalSecretary": { "name": "Sivaprasad", "shop": "Mini Decoration", "place": "Karunagappally", "phone": ""  }, "treasurer": { "name": "Kalesh", "shop": "", "place": "Kollam", "phone": ""  } },
+                "pathanamthitta": { "title": "Pathanamthitta District Committee", "president": { "name": "B Prasad Kumar", "shop": "", "place": "Pathanamthitta", "phone": "" }, "generalSecretary": { "name": "Ajayan Somasoorya", "shop": "Somasoorya Decorations", "place": "Murinjakal, Pathanamthitta", "phone": "" }, "treasurer": { "name": "C A john", "shop": "Puthethu decorations", "place": "Kozhenchery, Pathanamthitta", "phone": "" } },
                 "alappuzha": { "title": "Alappuzha District Committee", "president": { "name": "Sunil karukathara", "place": "Kayamkulam", "address1": "Karukatharayil house", "address2": "Pullikkanakku Po", "address3": "690537", "phone": "" }, "generalSecretary": { "name": "Sajikumar Peralasseril", "place": "Kayamkulam", "address1": "Malathinivas", "address2": "Kareelakulangara Po", "address3": "690572", "phone": "+91 8075707566" }, "treasurer": { "name": "Rajesh Nalamadam", "place": "Avalookkunnu", "address1": "Nalamadam house", "address2": "South Aryadu Po", "address3": "Alapuzha", "phone": "+91 94952 10801" } },
                 "kottayam": { "title": "Kottayam District Committee", "president": { "name": "KUNJUMON K.M", "shop": "ST: PAULS DECORATION", "place": "VETTI MUKAL P.O", "phone": "" }, "generalSecretary": { "name": "MADHUSUDHANAN NAIR", "shop": "MADHURIMA", "place": "S.H MOUNT P.O", "phone": "" }, "treasurer": { "name": "K.C. SURESH", "shop": "ASIAN DECORATION", "place": "KARUVALLITHARA", "phone": "" } },
                 "idukki": { "title": "Idukki District Committee", "president": { "name": "George Varkey", "shop": "Jose & Co. Hiring Service", "place": "Parathode, Idukki", "phone": "+91 9446746806" }, "generalSecretary": { "name": "Jamal Rajakkad", "shop": "Edassery Kuttiyil Decorations", "place": "Rajakkad", "phone": "+91 9447379802"  }, "treasurer": { "name": "Gopinath K. A", "shop": "Pavithra Pandal Works", "place": "Adimali", "phone": "+91 9497037141"  } },
@@ -586,8 +604,8 @@ const TRANSLATIONS = {
             "state": { "president": "എ. പി. അഹമ്മദ് കോയ", "generalSecretary": "ടി. വി. ബാലൻ", "treasurer": "പി. ഷംസുദ്ദീൻ", "vicePresident": "ജോർജ്ജ്" },
             "districts": {
                 "thiruvananthapuram": { "title": "തിരുവനന്തപുരം ജില്ലാ കമ്മിറ്റി", "president": { "name": "വി. വിജയകുമാർ", "shop": "എസ്.വി ഹയർ സർവീസ് ആൻഡ് ഡെക്കറേഷൻസ്", "place": "", "phone": "+91 9447167070" }, "generalSecretary": { "name": "അലാവുദ്ദീൻ എസ്.", "shop": "ഇവന്റ് റെന്റൽസ് ടി.വി.എം", "place": "", "phone": "+91 9745926777" }, "treasurer": { "name": "പ്രദീപ് എം.", "shop": "വിനായക സ്റ്റേജ് ഡെക്കറേഷൻസ് & ഹയർ സർവീസസ്", "place": "", "phone": "+91 9746128880" } },
-                // "kollam": { "title": "കൊല്ലം ജില്ലാ കമ്മിറ്റി", "president": { "name": "എ. സി. ബാബു", "shop": "കൊല്ലം റെന്റൽസ്", "place": "കൊല്ലം", "phone": "" }, "generalSecretary": { "name": "എൻ. പ്രകാശ്", "shop": "ഇവന്റ്സ് പ്ലസ്", "place": "കൊല്ലം", "phone": "" }, "treasurer": { "name": "എസ്. കെ. ഉണ്ണി", "shop": "ഹെറിറ്റേജ് ഇവന്റ്സ്", "place": "കൊല്ലം", "phone": "" } },
-                // "pathanamthitta": { "title": "പത്തനംതിട്ട ജില്ലാ കമ്മിറ്റി", "president": { "name": "ജെ. കെ. ആന്റോ", "shop": "ഡിവൈൻ ഇവന്റ്സ്", "place": "പത്തനംതിട്ട", "phone": "" }, "generalSecretary": { "name": "ആർ. ജി. രവി", "shop": "സെലിബ്രേഷൻസ്", "place": "പത്തനംതിട്ട", "phone": "" }, "treasurer": { "name": "സി. എം. സാജൻ", "shop": "റോയൽ റെന്റൽസ്", "place": "പത്തനംതിട്ട", "phone": "" } },
+                "kollam": { "title": "കൊല്ലം ജില്ലാ കമ്മിറ്റി", "president": { "name": "Haris Vevees", "shop": "Vevees Events", "place": "Kollam", "phone": "" }, "generalSecretary": { "name": "Sivaprasad", "shop": "Mini Decoration", "place": "Karunagappally", "phone": ""  }, "treasurer": { "name": "Kalesh", "shop": "", "place": "Kollam", "phone": ""  } },
+                "pathanamthitta": { "title": "പത്തനംതിട്ട ജില്ലാ കമ്മിറ്റി", "president": { "name": "B Prasad Kumar", "shop": "", "place": "Pathanamthitta", "phone": "" }, "generalSecretary": { "name": "Ajayan Somasoorya", "shop": "Somasoorya Decorations", "place": "Murinjakal, Pathanamthitta", "phone": "" }, "treasurer": { "name": "C A john", "shop": "Puthethu decorations", "place": "Kozhenchery, Pathanamthitta", "phone": "" } },
                 "alappuzha": { "title": "ആലപ്പുഴ ജില്ലാ കമ്മിറ്റി", "president": { "name": "സുനിൽ കാരുക്കാത്ര", "place": "കായംകുളം", "address1": "കാരുക്കാത്രയിൽ ഹൗസ്", "address2": "പുള്ളിക്കണക്ക് പി.ഒ", "address3": "690537", "phone": "" }, "generalSecretary": { "name": "സജി കുമാർ പെരളശ്ശേരിൽ", "place": "കായംകുളം", "address1": "മാലതി നിവാസ്", "address2": "കരീലകുളങ്ങര പി.ഒ", "address3": "690572", "phone": "+91 8075707566" }, "treasurer": { "name": "രാജേഷ് നാലുമാടം", "place": "അവലൂക്കുന്ന്", "address1": "നാലുമാടം ഹൗസ്", "address2": "സൗത്ത് ആര്യാട് പി.ഒ", "address3": "ആലപ്പുഴ", "phone": "+91 94952 10801" } },
                 "kottayam": { "title": "കോട്ടയം ജില്ലാ കമ്മിറ്റി", "president": { "name": "കുഞ്ഞുമോൻ കെ.എം", "shop": "സെന്റ് പോൾസ് ഡെക്കറേഷൻ", "place": "വെട്ടിമുകൾ പി.ഒ", "phone": "" }, "generalSecretary": { "name": "മധുസൂദനൻ നായർ", "shop": "മധുരിമ", "place": "എസ്.എച്ച് മൗണ്ട് പി.ഒ", "phone": "" }, "treasurer": { "name": "കെ.സി. സുരേഷ്", "shop": "ഏഷ്യൻ ഡെക്കറേഷൻ", "place": "കരുവള്ളിത്തറ", "phone": "" } },
                 "idukki": { "title": "ഇടുക്കി ജില്ലാ കമ്മിറ്റി", "president": { "name": "George Varkey", "shop": "Jose & Co. Hiring Service", "place": "Parathode, Idukki", "phone": "" }, "generalSecretary": { "name": "Jamal Rajakkad", "shop": "Edassery Kuttiyil Decorations", "place": "Rajakkad", "phone": ""  }, "treasurer": { "name": "Gopinath K. A", "shop": "Pavithra Pandal Works", "place": "Adimali", "phone": ""  } },
